@@ -11,22 +11,6 @@ interface ContentItem {
   imageSrc: string;
 }
 
-interface SectionContent {
-  title: string;
-  items: ContentItem[];
-}
-
-interface Content {
-  hero: {
-    greeting: string;
-    title: string;
-    emphasisText: string;
-    description: string;
-  };
-  works: SectionContent;
-  insights: SectionContent;
-}
-
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "outline";
   className?: string;
@@ -37,58 +21,12 @@ interface CardProps extends ContentItem {
   imageHeight?: string;
 }
 
-interface SectionProps extends SectionContent {
-  type?: "works" | "insights";
-}
-
 // Constants
-const CONTENT: Content = {
+const CONTENT = {
   hero: {
-    greeting: "Hello! I'm Gabriel.",
     title: "Building & scaling businesses as",
-    emphasisText: "digital marketeer",
     description:
       "A seasoned, multidisciplinary growth product manager with over 7 years of expertise working globally integrating digital marketing, product strategy, and development to drive business success.",
-  },
-  works: {
-    title: "Previous works",
-    items: [
-      {
-        title: "Simoa",
-        description: "Jr. Front-end Engineer",
-        imageSrc: "/api/placeholder/600/400",
-      },
-      {
-        title: "Wishpond",
-        description: "Marketing Manager",
-        imageSrc: "/api/placeholder/600/400",
-      },
-      {
-        title: "Lift Ventures",
-        description: "Performance Marketing Manager",
-        imageSrc: "/api/placeholder/600/400",
-      },
-    ],
-  },
-  insights: {
-    title: "Insights",
-    items: [
-      {
-        title: "The Power of Typography in Visual Design",
-        description: "Exploring fundamentals and key principles",
-        imageSrc: "/api/placeholder/400/300",
-      },
-      {
-        title: "Breaking the User Experience",
-        description: "Creating lasting and engaging experiences",
-        imageSrc: "/api/placeholder/400/300",
-      },
-      {
-        title: "Mastering the Art of Color Theory",
-        description: "A comprehensive guide to color in design",
-        imageSrc: "/api/placeholder/400/300",
-      },
-    ],
   },
 };
 
@@ -115,58 +53,6 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-const Card: React.FC<CardProps> = ({
-  title,
-  description,
-  imageSrc,
-  imageHeight = "h-[280px]",
-}) => (
-  <div className="group cursor-pointer">
-    <div className="overflow-hidden rounded-2xl mb-6">
-      <Image
-        src={imageSrc}
-        alt={title}
-        width={600}
-        height={400}
-        className={`w-full transition-transform duration-500 group-hover:scale-105 object-cover ${imageHeight}`}
-      />
-    </div>
-    <h3 className="text-2xl font-medium mb-3">{title}</h3>
-    <p className="text-gray-600 text-lg">{description}</p>
-  </div>
-);
-
-const Section: React.FC<SectionProps> = ({
-  title,
-  items,
-  type = "insights",
-}) => (
-  <div className="px-4 md:px-8 py-32 max-w-7xl mx-auto">
-    <div className="flex items-center justify-between mb-16">
-      <h2 className="text-4xl font-medium">{title}</h2>
-      <Button variant="outline">
-        View All {type === "works" ? "Works" : "Insights"}{" "}
-        <ArrowRight size={20} />
-      </Button>
-    </div>
-    <div
-      className={`grid gap-8 ${
-        type === "works"
-          ? "grid-cols-1 lg:grid-cols-2"
-          : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-      }`}
-    >
-      {items.map((item, i) => (
-        <Card
-          key={i}
-          {...item}
-          imageHeight={type === "works" ? "h-[480px]" : "h-[280px]"}
-        />
-      ))}
-    </div>
-  </div>
-);
-
 const Hero: React.FC = () => {
   const [currentPhrase, setCurrentPhrase] = useState(0);
   const phrases = [
@@ -185,7 +71,6 @@ const Hero: React.FC = () => {
 
   return (
     <div className="px-4 md:px-8 pt-20 md:pt-40 max-w-7xl mx-auto">
-      <p className="text-xl mb-6">{CONTENT.hero.greeting}</p>
       <div className="grid md:grid-cols-[1fr,400px] gap-8">
         <div>
           <h1 className="text-6xl md:text-8xl leading-[1.1] tracking-tighter font-semibold mb-12">
@@ -195,7 +80,7 @@ const Hero: React.FC = () => {
             </span>
           </h1>
           <Button>
-            Let's Talk <ArrowRight size={20} />
+            Let&apos;s Talk <ArrowRight size={20} />
           </Button>
         </div>
         <p className="text-gray-600 text-xl self-end">

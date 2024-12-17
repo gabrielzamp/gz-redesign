@@ -29,14 +29,14 @@ const Navigation = () => {
             isOpen ? "opacity-0" : "opacity-100"
           }`}
         >
-          <span className="text-gray-500">show</span>
-          <span>casy.</span>
+          <span className="text-gray-500">gabriel</span>
+          <span>zamp.</span>
         </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-4">
           <button className="px-6 py-2 border border-black rounded-full flex items-center gap-2 hover:bg-black hover:text-white transition-colors">
-            Let's Talk <ArrowUpRight size={16} />
+            Let&apos;`s Talk <ArrowUpRight size={16} />
           </button>
           <button
             onClick={() => setIsOpen(true)}
