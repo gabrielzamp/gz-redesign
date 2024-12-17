@@ -79,12 +79,14 @@ const HeroSection = () => {
               Concentrate on your primary objective which is expanding your
               business, and leave it to me to ensure that your business is
               efficiently portrayed in the digital realm and distinguishes
-              itself from the rivals. I helped tech companies from EUA, Canada,
-              Europe, and Brazil to acquire over $1 million in revenue and 5
-              million new users. With 9+ years of experience in PPC, SEO, and
-              Web analytics, I am well-equipped to help your business succeed
-              creating new acquisition channels and optimizing the existing
-              ones.
+              itself from the rivals. ones.
+            </p>
+            <p className="text-base text-gray-600">
+              I helped tech companies from EUA, Canada, Europe, and Brazil to
+              acquire over $1 million in revenue and 5 million new users. With
+              9+ years of experience in PPC, SEO, and Web analytics, I am
+              well-equipped to help your business succeed creating new
+              acquisition channels and optimizing the existing
             </p>
             <button className="group inline-flex items-center gap-2 text-base font-medium">
               About Me
