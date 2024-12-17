@@ -15,7 +15,7 @@ const CONTENT = {
   hero: {
     title: "Building & scaling businesses as",
     description:
-      "A seasoned, multidisciplinary growth product manager with over 7 years of expertise working globally integrating digital marketing, product strategy, and development to drive business success.",
+      "A seasoned, multidisciplinary growth manager with over 7 years of expertise working globally integrating digital marketing, product strategy, and development to drive business success.",
   },
 };
 
@@ -45,10 +45,12 @@ const Button: React.FC<ButtonProps> = ({
 const Hero: React.FC = () => {
   const [currentPhrase, setCurrentPhrase] = useState(0);
   const phrases = [
-    "growth product manager",
+    "growth manager",
+    "product manager",
     "digital marketing manager",
-    "front-end engineer",
+    "front-end developer",
     "digital entrepreneur",
+    "data analyst",
   ];
 
   useEffect(() => {
@@ -93,8 +95,8 @@ const HomePage: React.FC = () => {
             <span>zamp.</span>
           </div>
           <div className="text-gray-600 text-lg text-center md:text-right">
-            A freelance digital designer and developer
-            <br className="hidden md:inline" /> currently based in Munich
+            A growth manager, digital marketeer and developer
+            <br className="hidden md:inline" /> currently based in Brazil
           </div>
         </div>
       </footer>
