@@ -1,5 +1,5 @@
 "use client";
-import { ArrowUpRight, Mail, Linkedin, Phone, ChevronDown } from "lucide-react";
+import { ArrowUpRight, Mail, Linkedin, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
