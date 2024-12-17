@@ -4,18 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-interface Education {
-  degree: string;
-  institution: string;
-  period: string;
-}
-
-const education: Education = {
-  degree: "Bachelor's Degree in Information Science",
-  institution: "Federal University of Santa Catarina",
-  period: "2015 - 2019",
-};
-
 interface Achievement {
   metric: string;
   description: string;
@@ -402,8 +390,8 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-6">Education</h2>
                 <div className="border-l-2 border-border pl-4 py-2">
-                  <h3 className=" font-semibold mb-1">
-                    Bachelor's Degree in Information Science
+                  <h3 className="font-semibold mb-1">
+                    Bachelor&apos;s Degree in Information Science
                   </h3>
                   <div className="text-muted-foreground text-sm">
                     Federal University of Santa Catarina • 2015 - 2019
@@ -431,14 +419,8 @@ export default function AboutPage() {
                         </div>
                         <div className="text-sm text-muted-foreground flex flex-wrap gap-x-4">
                           <span>{cert.issuer}</span>
-                          {cert.issued && <span>Issued: {cert.issued}</span>}
-                          {cert.expires && <span>Expires: {cert.expires}</span>}
+                          {cert.year && <span>{cert.year}</span>}
                         </div>
-                        {cert.credential && (
-                          <div className="text-xs text-muted-foreground">
-                            Credential ID: {cert.credential}
-                          </div>
-                        )}
                       </div>
                     ))}
                   {visibleCertifications < allCertifications.length && (
