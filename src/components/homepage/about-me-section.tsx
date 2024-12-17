@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const HeroSection = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -49,10 +50,13 @@ const HeroSection = () => {
               well-equipped to help your business succeed creating new
               acquisition channels and optimizing the existing ones.
             </p>
-            <button className="group inline-flex items-center gap-2 text-lg font-medium dark:text-white">
+            <Link
+              href="/about/"
+              className="group inline-flex items-center gap-2 text-lg font-medium dark:text-white"
+            >
               About Me
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
+            </Link>
           </div>
         </div>
 

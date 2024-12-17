@@ -39,20 +39,15 @@ export default function Navigation() {
               >
                 Home
               </Link>
+
               <Link
-                href="#works"
-                className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
-              >
-                Works
-              </Link>
-              <Link
-                href="#about"
+                href="/about/"
                 className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
               >
                 About
               </Link>
               <Link
-                href="#contact"
+                href="/contact/"
                 className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
               >
                 Contact

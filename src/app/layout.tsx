@@ -38,6 +38,20 @@ export default function RootLayout({
         >
           <Navigation />
           {children}
+          <footer className="px-4 md:px-8 py-12 border-t border-gray-200 dark:border-gray-800">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+              <div className="text-2xl font-medium dark:text-white">
+                <span className="text-gray-500 dark:text-gray-400">
+                  gabriel
+                </span>
+                <span>zamp.</span>
+              </div>
+              <div className="text-gray-600 dark:text-gray-400 text-lg text-center md:text-right">
+                A growth manager, digital marketeer and developer
+                <br className="hidden md:inline" /> currently based in Brazil
+              </div>
+            </div>
+          </footer>
         </ThemeProvider>
       </body>
     </html>
