@@ -1,142 +1,89 @@
-"use client";
-import React, { useState } from "react";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+import { Menu } from "lucide-react";
+import React from "react";
 
-const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const menuItems = [
-    { title: "Home", number: "01" },
-    { title: "About Me", number: "02" },
-    { title: "Works", number: "03" },
-    { title: "Insights", number: "04" },
-  ];
-
-  const socialLinks = [
-    { name: "INSTAGRAM", url: "#" },
-    { name: "BEHANCE", url: "#" },
-    { name: "TWITTER", url: "#" },
-    { name: "DRIBBLE", url: "#" },
-  ];
+export default function Navigation() {
+  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      <nav className="px-4 py-6 md:px-8 flex justify-between items-center bg-white">
-        {/* Logo */}
-        <a
-          href="/"
-          className={`text-2xl font-medium transition-opacity duration-300 ${
-            isOpen ? "opacity-0" : "opacity-100"
-          }`}
-        >
-          <span className="text-gray-500">gabriel</span>
-          <span>zamp.</span>
-        </a>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <div className="text-2xl font-medium">
+            <Link href="/" className="flex items-center">
+              <span className="text-gray-500">show</span>
+              <span>casy.</span>
+            </Link>
+          </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-4">
-          <button className="px-6 py-2 border border-black rounded-full flex items-center gap-2 hover:bg-black hover:text-white transition-colors">
-            Let&apos;`s Talk <ArrowUpRight size={16} />
-          </button>
+          {/* Mobile menu button */}
           <button
-            onClick={() => setIsOpen(true)}
-            className="p-2 hover:bg-gray-100 rounded-full"
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden rounded-lg p-2 hover:bg-gray-100"
           >
             <Menu size={24} />
           </button>
-        </div>
 
-        {/* Mobile Menu Button - Only show when menu is closed */}
-        <button
-          onClick={() => setIsOpen(true)}
-          className={`md:hidden transition-opacity duration-300 ${
-            isOpen ? "opacity-0 pointer-events-none" : "opacity-100"
-          }`}
-        >
-          <Menu size={24} />
-        </button>
-
-        {/* Full Screen Menu Overlay */}
-        <div
-          className={`fixed inset-0 bg-black transition-all duration-300 ${
-            isOpen
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          }`}
-        >
-          {/* Close Button - Positioned relative to the overlay */}
-          <div className="px-4 py-6 md:px-8 flex justify-between items-center">
-            <a href="/" className="text-2xl font-medium text-white">
-              <span className="text-gray-500">show</span>
-              <span>casy.</span>
-            </a>
-            <button
-              onClick={() => setIsOpen(false)}
-              className="text-white z-50"
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
+            <Link
+              href="/"
+              className="text-gray-600 hover:text-black transition-colors"
             >
-              <X size={24} />
-            </button>
-          </div>
-
-          {/* Menu Content */}
-          <div className="h-[calc(100%-5rem)] flex flex-col justify-between p-4 md:p-8 text-white">
-            {/* Main Navigation */}
-            <div className="mt-8">
-              {menuItems.map((item) => (
-                <div
-                  key={item.number}
-                  className="group relative py-4 border-b border-gray-800"
-                >
-                  <a
-                    href={`#${item.title.toLowerCase()}`}
-                    className="flex items-center justify-between text-3xl md:text-5xl font-medium hover:text-gray-300 transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.title}
-                    <span className="text-gray-500 text-lg md:text-xl">
-                      {item.number}
-                    </span>
-                  </a>
-                </div>
-              ))}
-            </div>
-
-            {/* Footer Section */}
-            <div className="pb-8">
-              <div className="mb-8">
-                <h3 className="text-gray-500 mb-4">Follow me.</h3>
-                <div className="flex flex-wrap gap-4">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.name}
-                      href={social.url}
-                      className="flex items-center gap-2 hover:text-gray-300 transition-colors"
-                    >
-                      {social.name} <ArrowUpRight size={16} />
-                    </a>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-gray-500 mb-4">Stay connected w/ me.</h3>
-                <div className="flex items-center gap-2 border-b border-gray-800 pb-2">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="bg-transparent w-full focus:outline-none text-white placeholder:text-gray-500"
-                  />
-                  <button className="text-white">
-                    <ArrowUpRight size={16} />
-                  </button>
-                </div>
-              </div>
-            </div>
+              Home
+            </Link>
+            <Link
+              href="#works"
+              className="text-gray-600 hover:text-black transition-colors"
+            >
+              Works
+            </Link>
+            <Link
+              href="#about"
+              className="text-gray-600 hover:text-black transition-colors"
+            >
+              About
+            </Link>
+            <Link
+              href="#contact"
+              className="text-gray-600 hover:text-black transition-colors"
+            >
+              Contact
+            </Link>
           </div>
         </div>
-      </nav>
-    </header>
-  );
-};
 
-export default Navigation;
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden py-4">
+            <Link
+              href="/"
+              className="block py-2 text-gray-600 hover:text-black transition-colors"
+            >
+              Home
+            </Link>
+            <Link
+              href="#works"
+              className="block py-2 text-gray-600 hover:text-black transition-colors"
+            >
+              Works
+            </Link>
+            <Link
+              href="#about"
+              className="block py-2 text-gray-600 hover:text-black transition-colors"
+            >
+              About
+            </Link>
+            <Link
+              href="#contact"
+              className="block py-2 text-gray-600 hover:text-black transition-colors"
+            >
+              Contact
+            </Link>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}

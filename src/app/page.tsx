@@ -1,24 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import AboutMeSection from "@/components/homepage/about-me-section";
 
 // Types
-interface ContentItem {
-  title: string;
-  description: string;
-  imageSrc: string;
-}
-
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "outline";
   className?: string;
   children: React.ReactNode;
-}
-
-interface CardProps extends ContentItem {
-  imageHeight?: string;
 }
 
 // Constants
@@ -67,7 +56,7 @@ const Hero: React.FC = () => {
       setCurrentPhrase((prev) => (prev + 1) % phrases.length);
     }, 3000);
     return () => clearInterval(timer);
-  }, []);
+  }, [phrases.length]); // Added phrases.length as dependency
 
   return (
     <div className="px-4 md:px-8 pt-20 md:pt-40 max-w-7xl mx-auto">
