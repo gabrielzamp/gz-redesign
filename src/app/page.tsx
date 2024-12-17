@@ -89,8 +89,8 @@ const HomePage: React.FC = () => {
       <footer className="px-4 md:px-8 py-12 border-t border-gray-200">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-2xl font-medium">
-            <span className="text-gray-500">show</span>
-            <span>casy.</span>
+            <span className="text-gray-500">gabriel</span>
+            <span>zamp.</span>
           </div>
           <div className="text-gray-600 text-lg text-center md:text-right">
             A freelance digital designer and developer

@@ -75,20 +75,19 @@ const HeroSection = () => {
             <h1 className="text-4xl font-bold leading-tight tracking-tighter">
               Strategies that inspires action and drives revenue
             </h1>
-            <p className="text-base text-gray-600">
+            <p className="text-xl text-gray-600">
               Concentrate on your primary objective which is expanding your
               business, and leave it to me to ensure that your business is
               efficiently portrayed in the digital realm and distinguishes
               itself from the rivals. ones.
             </p>
-            <p className="text-base text-gray-600">
+            <p className="text-xl text-gray-600">
               I helped tech companies from EUA, Canada, Europe, and Brazil to
               acquire over $1 million in revenue and 5 million new users. With
               9+ years of experience in PPC, SEO, and Web analytics, I am
-              well-equipped to help your business succeed creating new
-              acquisition channels and optimizing the existing
+              well-equipped to create and optimize revenue channels.
             </p>
-            <button className="group inline-flex items-center gap-2 text-base font-medium">
+            <button className="group inline-flex items-center gap-2 text-base font-medium pt-8">
               About Me
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>

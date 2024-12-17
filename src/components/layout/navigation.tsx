@@ -13,8 +13,8 @@ export default function Navigation() {
           {/* Logo */}
           <div className="text-2xl font-medium">
             <Link href="/" className="flex items-center">
-              <span className="text-gray-500">show</span>
-              <span>casy.</span>
+              <span className="text-gray-500">gabriel</span>
+              <span>zamp.</span>
             </Link>
           </div>
 
