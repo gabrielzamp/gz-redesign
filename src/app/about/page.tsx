@@ -288,7 +288,7 @@ export default function AboutPage() {
               SEO, and Analytics. Product Manager with 2+ years of experience
               supporting startups in Silicon Valley and New York. Developer with
               more than 1 year of professional experience in front-end
-              development
+              development.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
