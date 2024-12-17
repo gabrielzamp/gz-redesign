@@ -4,6 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+interface Education {
+  degree: string;
+  institution: string;
+  period: string;
+}
+
+const education: Education = {
+  degree: "Bachelor's Degree in Information Science",
+  institution: "Federal University of Santa Catarina",
+  period: "2015 - 2019",
+};
+
 interface Achievement {
   metric: string;
   description: string;
@@ -22,7 +34,6 @@ interface Certification {
   issuer: string;
   year: string;
 }
-
 interface SkillCategory {
   name: string;
   skills: string[];
@@ -31,7 +42,7 @@ interface SkillCategory {
 const achievements: Achievement[] = [
   {
     metric: "$1M+",
-    description: "Revenue generated for tech companies",
+    description: "Revenue generated for  companies",
   },
   {
     metric: "5M+",
@@ -168,42 +179,86 @@ const allExperiences: Experience[] = [
 
 const allCertifications: Certification[] = [
   {
-    name: "Management of High Performance",
-    issuer: "Reforge",
-    year: "2022",
-  },
-  {
-    name: "Digital Marketing",
+    name: "Google Ads Display Certification",
     issuer: "Google",
+    year: "2023",
+  },
+  {
+    name: "Google Ads Search Certification",
+    issuer: "Google",
+    year: "2023",
+  },
+  {
+    name: "Google Ads Video Certification",
+    issuer: "Google",
+    year: "2023",
+  },
+  {
+    name: "Google Analytics 4",
+    issuer: "CXL",
     year: "2022",
   },
   {
-    name: "Growth Series",
-    issuer: "Reforge",
-    year: "2022",
-  },
-  {
-    name: "Growth Marketing",
-    issuer: "Reforge",
-    year: "2022",
-  },
-  {
-    name: "Ecommerce Analytics: From Data to Decisions",
-    issuer: "Coursera",
-    year: "2021",
-  },
-  {
-    name: "Microsoft SQL Server",
-    issuer: "Microsoft",
+    name: "Experimentation Program Management",
+    issuer: "CXL",
     year: "2021",
   },
   {
     name: "Digital Product Management: Modern Fundamentals",
-    issuer: "Coursera",
+    issuer: "University of Virginia",
+    year: "2020",
+  },
+  {
+    name: "Social Media Certification",
+    issuer: "HubSpot",
+    year: "2020",
+  },
+  {
+    name: "Inbound Marketing Certified",
+    issuer: "HubSpot",
+    year: "2020",
+  },
+  {
+    name: "Microsoft SQL Server",
+    issuer: "Alura",
+    year: "2019",
+  },
+  {
+    name: "Scrum Fundamentals Certified",
+    issuer: "SCRUMstudy",
+    year: "2019",
+  },
+  {
+    name: "Management of High Performance Digital Marketing",
+    issuer: "ComSchool",
+    year: "2017",
+  },
+  {
+    name: "Advanced Google Analytics",
+    issuer: "Google",
+    year: "2022",
+  },
+  {
+    name: "CLIP: Mindset Colaborativo",
+    issuer: "Perestroika",
+    year: "2020",
+  },
+  {
+    name: "Ecommerce Analytics: From Data to Decisions",
+    issuer: "Google",
     year: "2021",
   },
+  {
+    name: "Google Analytics Certification",
+    issuer: "Google",
+    year: "2022",
+  },
+  {
+    name: "Project Management with Scrum",
+    issuer: "Alura",
+    year: "2019",
+  },
 ];
-
 export default function AboutPage() {
   const [visibleExperiences, setVisibleExperiences] = useState(2);
   const [visibleCertifications, setVisibleCertifications] = useState(3);
@@ -224,14 +279,16 @@ export default function AboutPage() {
       <section className="px-4 md:px-8 pt-32 pb-16 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-[1fr,400px] gap-12 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              <span className="text-muted-foreground">About me</span>, a Growth
-              Manager in Brazil
+            <h1 className="text-6xl md:text-8xl font-semibold tracking-tight">
+              <span className="text-muted-foreground">A proud</span> generalist
+              from Brazil
             </h1>
             <p className="text-xl text-muted-foreground">
-              Marketing Manager with 9+ years of experience in PPC, SEO, and
-              Social Ads. Currently focusing on growth strategies and front-end
-              development.
+              Marketing Manager with over 9 years of global experience in PPC,
+              SEO, and Analytics. Product Manager with 2+ years of experience
+              supporting startups in Silicon Valley and New York. Developer with
+              more than 1 year of professional experience in front-end
+              development
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
@@ -250,10 +307,10 @@ export default function AboutPage() {
           </div>
           <div className="relative aspect-square rounded-3xl overflow-hidden">
             <Image
-              src="/img/gabriel-zamp.png"
+              src="/img/gabriel-zamp-5.png"
               alt="Gabriel Zampieri"
               fill
-              className="object-cover"
+              className="object-cover transform scale-x-[-1]"
               priority
             />
           </div>
@@ -313,7 +370,7 @@ export default function AboutPage() {
 
       {/* Skills & Certifications */}
       <section className="px-4 md:px-8 py-16 bg-accent">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Skills */}
             <div>
@@ -339,30 +396,60 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Certifications */}
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Certifications</h2>
-              <div className="space-y-3">
-                {allCertifications
-                  .slice(0, visibleCertifications)
-                  .map((cert, i) => (
-                    <div
-                      key={i}
-                      className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
+            {/* Education & Certifications Column */}
+            <div className="space-y-12">
+              {/* Education */}
+              <div>
+                <h2 className="text-2xl font-bold mb-6">Education</h2>
+                <div className="border-l-2 border-border pl-4 py-2">
+                  <h3 className=" font-semibold mb-1">
+                    Bachelor's Degree in Information Science
+                  </h3>
+                  <div className="text-muted-foreground text-sm">
+                    Federal University of Santa Catarina • 2015 - 2019
+                  </div>
+                </div>
+              </div>
+
+              {/* Certifications */}
+              <div>
+                <h2 className="text-2xl font-bold mb-6">Certifications</h2>
+                <div className="space-y-3">
+                  {allCertifications
+                    .slice(0, visibleCertifications)
+                    .map((cert, i) => (
+                      <div
+                        key={i}
+                        className="space-y-1 border-l-2 border-border pl-4 py-2"
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="font-medium">{cert.name}</div>
+                          <ArrowUpRight
+                            size={16}
+                            className="text-muted-foreground"
+                          />
+                        </div>
+                        <div className="text-sm text-muted-foreground flex flex-wrap gap-x-4">
+                          <span>{cert.issuer}</span>
+                          {cert.issued && <span>Issued: {cert.issued}</span>}
+                          {cert.expires && <span>Expires: {cert.expires}</span>}
+                        </div>
+                        {cert.credential && (
+                          <div className="text-xs text-muted-foreground">
+                            Credential ID: {cert.credential}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  {visibleCertifications < allCertifications.length && (
+                    <button
+                      onClick={showMoreCertifications}
+                      className="flex items-center gap-2 text-muted-foreground hover:text-foreground mt-4 mx-auto"
                     >
-                      <ArrowUpRight size={16} />
-                      <span>{cert.name}</span>
-                      <span className="text-sm ml-auto">{cert.year}</span>
-                    </div>
-                  ))}
-                {visibleCertifications < allCertifications.length && (
-                  <button
-                    onClick={showMoreCertifications}
-                    className="flex items-center gap-2 text-muted-foreground hover:text-foreground mt-4"
-                  >
-                    Load More <ChevronDown size={20} />
-                  </button>
-                )}
+                      Load More <ChevronDown size={20} />
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
           </div>

@@ -69,9 +69,9 @@ const Hero: React.FC = () => {
               {phrases[currentPhrase]}
             </span>
           </h1>
-          <Link href="/contact/">
+          <Link href="/about/">
             <Button>
-              Let&apos;s Talk <ArrowRight size={20} />
+              Get to know me <ArrowRight size={20} />
             </Button>
           </Link>
         </div>

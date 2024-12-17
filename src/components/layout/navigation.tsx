@@ -13,7 +13,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="text-2xl font-medium dark:text-white">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center font-bold">
               <span className="text-gray-500 dark:text-gray-400">gabriel</span>
               <span>zamp.</span>
             </Link>
@@ -65,20 +65,15 @@ export default function Navigation() {
             >
               Home
             </Link>
+
             <Link
-              href="#works"
-              className="block py-2 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
-            >
-              Works
-            </Link>
-            <Link
-              href="#about"
+              href="/about"
               className="block py-2 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
             >
               About
             </Link>
             <Link
-              href="#contact"
+              href="/contact"
               className="block py-2 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
             >
               Contact
