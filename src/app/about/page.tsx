@@ -319,11 +319,12 @@ export default function AboutPage() {
               from Brazil
             </h1>
             <p className="text-xl text-muted-foreground">
-              Product Manager with 2+ years of experience supporting startups in
-              Silicon Valley and New York. Developer with professional
-              experience in front-end development. Marketing Manager with over 9
-              years of global experience in PPC, SEO, and Analytics working with
-              companies from North America, Europe and Brazil.
+              Versatile Product manager with Silicon Valley and New York startup
+              experience, skilled front-end developer, and marketing leader with
+              9+ years driving global digital strategies across North America,
+              Europe, and Brazil. Uniquely positioned to bridge technical
+              implementation, product strategy, and marketing to deliver
+              measurable business growth.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
