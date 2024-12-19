@@ -167,6 +167,58 @@ const allExperiences: Experience[] = [
 
 const allCertifications: Certification[] = [
   {
+    name: "Growth Series",
+    issuer: "Reforge",
+    year: "2022",
+  },
+  {
+    name: "Digital Product Management: Modern Fundamentals",
+    issuer: "University of Virginia",
+    year: "2020",
+  },
+  {
+    name: "Experimentation Program Management",
+    issuer: "CXL",
+    year: "2021",
+  },
+  {
+    name: "Scrum Fundamentals Certified",
+    issuer: "SCRUMstudy",
+    year: "2019",
+  },
+  {
+    name: "Project Management with Scrum",
+    issuer: "Alura",
+    year: "2019",
+  },
+  {
+    name: "Microsoft SQL Server",
+    issuer: "Alura",
+    year: "2019",
+  },
+  {
+    name: "Ecommerce Analytics: From Data to Decisions",
+    issuer: "Google",
+    year: "2021",
+  },
+  {
+    name: "Growth Marketing",
+    issuer: "Reforge",
+    year: "2022",
+  },
+  {
+    name: "Management of High Performance Digital Marketing",
+    issuer: "ComSchool",
+    year: "2017",
+  },
+
+  {
+    name: "CLIP: Collaborative Mindset",
+    issuer: "Perestroika",
+    year: "2020",
+  },
+
+  {
     name: "Google Ads Display Certification",
     issuer: "Google",
     year: "2023",
@@ -184,17 +236,17 @@ const allCertifications: Certification[] = [
   {
     name: "Google Analytics 4",
     issuer: "CXL",
+    year: "2019",
+  },
+  {
+    name: "Google Analytics Certification",
+    issuer: "Google",
     year: "2022",
   },
   {
-    name: "Experimentation Program Management",
-    issuer: "CXL",
-    year: "2021",
-  },
-  {
-    name: "Digital Product Management: Modern Fundamentals",
-    issuer: "University of Virginia",
-    year: "2020",
+    name: "Advanced Google Analytics",
+    issuer: "Google",
+    year: "2022",
   },
   {
     name: "Social Media Certification",
@@ -207,44 +259,39 @@ const allCertifications: Certification[] = [
     year: "2020",
   },
   {
-    name: "Microsoft SQL Server",
-    issuer: "Alura",
-    year: "2019",
+    name: "Javascript",
+    issuer: "b7web",
+    year: "2024",
   },
   {
-    name: "Scrum Fundamentals Certified",
-    issuer: "SCRUMstudy",
-    year: "2019",
+    name: "HTML5 & CSS3",
+    issuer: "b7web",
+    year: "2024",
   },
   {
-    name: "Management of High Performance Digital Marketing",
-    issuer: "ComSchool",
-    year: "2017",
+    name: "React",
+    issuer: "b7web",
+    year: "2024",
   },
   {
-    name: "Advanced Google Analytics",
-    issuer: "Google",
-    year: "2022",
+    name: "Next.js",
+    issuer: "b7web",
+    year: "2024",
   },
   {
-    name: "CLIP: Mindset Colaborativo",
-    issuer: "Perestroika",
-    year: "2020",
+    name: "Tailwind",
+    issuer: "b7web",
+    year: "2024",
   },
   {
-    name: "Ecommerce Analytics: From Data to Decisions",
-    issuer: "Google",
-    year: "2021",
+    name: "Typescript",
+    issuer: "b7web",
+    year: "2024",
   },
   {
-    name: "Google Analytics Certification",
-    issuer: "Google",
-    year: "2022",
-  },
-  {
-    name: "Project Management with Scrum",
-    issuer: "Alura",
-    year: "2019",
+    name: "Python",
+    issuer: "CursoEmVideo",
+    year: "2024",
   },
 ];
 export default function AboutPage() {
@@ -272,11 +319,11 @@ export default function AboutPage() {
               from Brazil
             </h1>
             <p className="text-xl text-muted-foreground">
-              Marketing Manager with over 9 years of global experience in PPC,
-              SEO, and Analytics. Product Manager with 2+ years of experience
-              supporting startups in Silicon Valley and New York. Developer with
-              more than 1 year of professional experience in front-end
-              development.
+              Product Manager with 2+ years of experience supporting startups in
+              Silicon Valley and New York. Developer with professional
+              experience in front-end development. Marketing Manager with over 9
+              years of global experience in PPC, SEO, and Analytics working with
+              companies from North America, Europe and Brazil.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
@@ -394,7 +441,7 @@ export default function AboutPage() {
                     Bachelor&apos;s Degree in Information Science
                   </h3>
                   <div className="text-muted-foreground text-sm">
-                    Federal University of Santa Catarina • 2015 - 2019
+                    Federal University of Santa Catarina • 2018 - 2024
                   </div>
                 </div>
               </div>
