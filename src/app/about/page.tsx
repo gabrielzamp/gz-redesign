@@ -117,18 +117,6 @@ const allExperiences: Experience[] = [
     ],
   },
   {
-    period: "Jan 2018 - Dec 2023",
-    role: "Digital Marketing Consultant",
-    company: "Gabriel Zamp - Marketing Digital",
-    location: "Remote",
-    description: [
-      "Paid Media: Strategy, Google Ads, Meta Ads, and LinkedIn Ads",
-      "SEO: Strategy, SEO Audit, Keyword Research, Content, On-Page, and Off-Page",
-      "Web Analytics: Strategy, Google Analytics, Google Tag Manager, and Google Data Studio",
-      "Email Marketing: Strategy, Newsletter, Promotional, and Lead Nurturing",
-    ],
-  },
-  {
     period: "Jun 2022 - Jan 2023",
     role: "Performance Marketing Manager",
     company: "Lift Ventures",
