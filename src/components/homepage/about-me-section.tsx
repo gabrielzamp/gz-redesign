@@ -23,7 +23,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gray-100 dark:bg-gray-800">
               <Image
-                src="/img/gabriel-zamp.png"
+                src="/img/gabriel-zamp.webp"
                 alt="Designer portrait"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -65,7 +65,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden bg-gray-100 dark:bg-gray-800">
               <Image
-                src="/img/gabriel-zamp.png"
+                src="/img/gabriel-zamp.webp"
                 alt="Designer portrait"
                 fill
                 sizes="100vw"
