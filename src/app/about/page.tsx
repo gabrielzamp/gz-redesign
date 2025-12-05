@@ -414,12 +414,24 @@ export default function AboutPage() {
               {/* Education */}
               <div>
                 <h2 className="text-2xl font-bold mb-6">Education</h2>
-                <div className="border-l-2 border-border pl-4 py-2">
-                  <h3 className="font-semibold mb-1">
-                    Bachelor&apos;s Degree in Information Science
-                  </h3>
-                  <div className="text-muted-foreground text-sm">
-                    Federal University of Santa Catarina • 2018 - 2024
+                <div className="space-y-4">
+                  <div className="border-l-2 border-border pl-4 py-2">
+                    <h3 className="font-semibold mb-1">
+                      Master of Business Administration in Marketing, Growth, and
+                      Branding
+                    </h3>
+                    <div className="text-muted-foreground text-sm">
+                      Pontifical Catholic University of Rio Grande do Sul • Mar
+                      2026
+                    </div>
+                  </div>
+                  <div className="border-l-2 border-border pl-4 py-2">
+                    <h3 className="font-semibold mb-1">
+                      Bachelor&apos;s Degree in Information Science
+                    </h3>
+                    <div className="text-muted-foreground text-sm">
+                      Federal University of Santa Catarina • 2018 - 2024
+                    </div>
                   </div>
                 </div>
               </div>
