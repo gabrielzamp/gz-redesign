@@ -93,62 +93,51 @@ const skillCategories: SkillCategory[] = [
 
 const allExperiences: Experience[] = [
   {
-    period: "Dec 2023 - Present",
-    role: "Jr. Front-end Engineer",
-    company: "Simoa",
-    location: "São Paulo, Brazil",
+    period: "Feb 2025 - Nov 2025",
+    role: "Sr Digital Marketing Strategist",
+    company: "Interactive Financial Marketing Group",
+    location: "Richmond, VA",
     description: [
-      "Designed front-end code using NextJS, React, HTML, CSS, and JavaScript",
-      "Developed reusable components using React, NextJS, and Typescript",
-      "Integrated front-end web application with back-end endpoints",
+      "Managed a $4M lead generation budget across Google Ads, Microsoft Ads, and TikTok Ads",
+      "Restructured TikTok Ads to cut CPL from $5 to $2.4 through A/B testing",
+      "Implemented audience segmentation based on RPL metrics, increasing RPL by 30% via tailored geo-targeting",
+      "Led an SEO audit for a new car website, identifying and resolving 9+ technical issues",
+      "Built an AI agent that sped up Search campaign launches by 5x for the new cars vertical",
     ],
   },
   {
-    period: "Feb 2023 - Dec 2023",
+    period: "Jan 2023 - Jan 2024",
     role: "Digital Marketing Manager",
-    company: "Wishpond",
-    location: "Vancouver, Canada",
+    company: "Wishpond (TSXV:WISH)",
+    location: "Vancouver, BC",
     description: [
-      "Implemented a new business model leading to a 406% increase in ARPU",
-      "Led Marketing, Product, and Customer Success teams driving a 47% growth in Active Users",
-      "Raised app ratings on the Shopify Store from 3.5 to 4.0",
-      "Achieved 86% Revenue Churn reduction through Customer Success implementation",
-      "Launched growth marketing projects leading to a 10% increase in the MRR",
+      "Implemented growth loops and systems that drove a 10% increase in MRR",
+      "Launched a new SaaS business model with upselling, boosting ARPU by 406%",
+      "Led cross-functional collaboration to optimize onboarding and grow Active Users by 47%",
+      "Deployed a Customer Success framework with personalized retention campaigns, reducing revenue churn by 86%",
     ],
   },
   {
-    period: "Jun 2022 - Jan 2023",
+    period: "Aug 2021 - Jan 2023",
     role: "Performance Marketing Manager",
     company: "Lift Ventures",
-    location: "San Francisco Bay Area",
+    location: "San Diego, CA",
     description: [
-      "Managed Google Ads leading a 1.3K% increase in monthly sales with an 18% improvement in ROAS",
-      "Established Google Ads as a sustainable channel representing +25% of monthly new income revenue",
-      "Implemented Google Analytics in 3 products with +3M monthly users",
-      "Collaborated on CRO A/B tests with the Product team",
+      "Partnered with Conversion Rate Experts on A/B testing to refine pricing and messaging",
+      "Managed Google Ads to increase monthly sales by 1.3% with an 18% improvement in ROAS",
+      "Established PPC as a sustainable channel representing over 25% of new monthly revenue for the top product",
+      "Led Google Analytics 4 implementation across three products, enabling insights for 3M+ monthly users",
     ],
   },
   {
-    period: "Jul 2020 - Aug 2021",
-    role: "Product Owner",
-    company: "Seasoned",
-    location: "Remote",
+    period: "Mar 2020 - Aug 2021",
+    role: "Sr Project Manager (Product Owner)",
+    company: "Lift Ventures",
+    location: "San Diego, CA",
     description: [
-      "Led a team of developers and designers at SuperSummary.com and TheClearCut.com",
-      "Collaborated in launching and post-launching phases of a product with +1M monthly users",
-      "Led the Discovery of new features with Startup founders and multiple stakeholders",
-    ],
-  },
-  {
-    period: "Aug 2017 - Dec 2019",
-    role: "Paid Media Specialist",
-    company: "Hostinger International",
-    location: "Vilnius, Lithuania",
-    description: [
-      "Collaborated on managing a +1M dollar paid media budget in +20 countries",
-      "Grew monthly PPC revenue by 287% in one year",
-      "Ran keyword research that generated +473K new monthly organic users",
-      "Accelerated PPC global expansion strategy for +9 countries",
+      "Collaborated on A/B testing programs to validate new features and pricing",
+      "Coordinated cross-functional teams to deliver product improvements tied to revenue goals",
+      "Implemented analytics customization to support experimentation and performance tracking",
     ],
   },
 ];
@@ -425,12 +414,24 @@ export default function AboutPage() {
               {/* Education */}
               <div>
                 <h2 className="text-2xl font-bold mb-6">Education</h2>
-                <div className="border-l-2 border-border pl-4 py-2">
-                  <h3 className="font-semibold mb-1">
-                    Bachelor&apos;s Degree in Information Science
-                  </h3>
-                  <div className="text-muted-foreground text-sm">
-                    Federal University of Santa Catarina • 2018 - 2024
+                <div className="space-y-4">
+                  <div className="border-l-2 border-border pl-4 py-2">
+                    <h3 className="font-semibold mb-1">
+                      Master of Business Administration in Marketing, Growth, and
+                      Branding
+                    </h3>
+                    <div className="text-muted-foreground text-sm">
+                      Pontifical Catholic University of Rio Grande do Sul • Mar
+                      2026
+                    </div>
+                  </div>
+                  <div className="border-l-2 border-border pl-4 py-2">
+                    <h3 className="font-semibold mb-1">
+                      Bachelor&apos;s Degree in Information Science
+                    </h3>
+                    <div className="text-muted-foreground text-sm">
+                      Federal University of Santa Catarina • 2018 - 2024
+                    </div>
                   </div>
                 </div>
               </div>
