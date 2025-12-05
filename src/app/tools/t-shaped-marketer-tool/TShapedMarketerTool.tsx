@@ -188,7 +188,7 @@ const InfoModal = ({ onClose }: { onClose: () => void }) => (
         <section>
           <h3 className="text-lg font-bold text-slate-800 mb-2">What is a T-Shaped Marketer?</h3>
           <p className="mb-3">
-            A T-shaped marketer is a "Jack of all trades, master of some." The concept, popularized in marketing by CXL and others,
+            A T-shaped marketer is a &ldquo;Jack of all trades, master of some.&rdquo; The concept, popularized in marketing by CXL and others,
             visualizes skills as the letter <strong>T</strong>:
           </p>
           <ul className="list-disc pl-5 space-y-2">
@@ -808,7 +808,7 @@ export default function TShapedMarketerToolPage() {
                 rel="noopener noreferrer"
                 className="text-sky-600 hover:underline flex items-center gap-0.5"
               >
-                CXL's T-Shaped Marketer Framework <ExternalLink className="w-3 h-3" />
+                CXL&apos;s T-Shaped Marketer Framework <ExternalLink className="w-3 h-3" />
               </a>
             </p>
           </div>
