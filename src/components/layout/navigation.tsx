@@ -52,6 +52,12 @@ export default function Navigation() {
               >
                 Contact
               </Link>
+              <Link
+                href="/tools/t-shaped-marketer-tool/"
+                className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
+              >
+                Tools
+              </Link>
             </div>
           </div>
         </div>
@@ -77,6 +83,12 @@ export default function Navigation() {
               className="block py-2 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
             >
               Contact
+            </Link>
+            <Link
+              href="/tools/t-shaped-marketer-tool"
+              className="block py-2 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
+            >
+              Tools
             </Link>
           </div>
         )}
