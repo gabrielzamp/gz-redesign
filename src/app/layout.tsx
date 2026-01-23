@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/layout/navigation";
+import Footer from "@/components/layout/footer"; // Importando o novo Footer
 import Script from "next/script";
 
 const geistSans = Geist({
@@ -16,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gabriel Zamp - Growth Manager & Front-end Developer",
+  title: "Gabriel Zamp - Growth Marketer & Engineer",
   description:
     "Growth manager, digital marketeer and developer based in Brazil",
 };
@@ -61,30 +62,22 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-geist-sans)] bg-white dark:bg-gray-900 transition-colors`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-zinc-50 font-sans selection:bg-blue-500/30`}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          enableSystem={false}
           disableTransitionOnChange
         >
+          {/* Header Fixo */}
           <Navigation />
-          {children}
-          <footer className="px-4 md:px-8 py-12 border-t border-gray-200 dark:border-gray-800">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-              <div className="text-2xl font-medium dark:text-white">
-                <span className="text-gray-500 dark:text-gray-400">
-                  gabriel
-                </span>
-                <span>zamp.</span>
-              </div>
-              <div className="text-gray-600 dark:text-gray-400 text-lg text-center md:text-right">
-                A growth manager, digital marketeer and developer
-                <br className="hidden md:inline" /> currently based in Brazil
-              </div>
-            </div>
-          </footer>
+
+          {/* Conteúdo da Página */}
+          <main className="min-h-screen">{children}</main>
+
+          {/* Novo Footer */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
