@@ -1,4 +1,3 @@
-import { ThemeProvider } from "next-themes";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -17,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gabriel Zamp - Growth Marketer & Engineer",
+  title: "Gabriel Zamp - Growth Marketer & Paid Ads Manager",
   description:
-    "Growth manager, digital marketeer and developer based in Brazil",
+    "Growth manager, paid ads manager, digital marketeer and developer based in Brazil",
 };
 
 export default function RootLayout({
@@ -28,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <Script
           id="microsoft-clarity"
@@ -62,23 +61,16 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-zinc-50 font-sans selection:bg-blue-500/30`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans selection:bg-blue-500/30`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          {/* Header Fixo */}
-          <Navigation />
+        {/* Header Fixo */}
+        <Navigation />
 
-          {/* Conteúdo da Página */}
-          <main className="min-h-screen">{children}</main>
+        {/* Conteúdo da Página */}
+        <main className="min-h-screen">{children}</main>
 
-          {/* Novo Footer */}
-          <Footer />
-        </ThemeProvider>
+        {/* Novo Footer */}
+        <Footer />
       </body>
     </html>
   );

@@ -5,15 +5,15 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black border-t border-zinc-800 pt-16 pb-8">
+    <footer className="bg-white border-t border-slate-200 pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Coluna 1: Marca & Descrição */}
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="text-2xl font-bold text-white mb-4 block">
-              gabriel<span className="text-zinc-600">zamp.</span>
+            <Link href="/" className="text-2xl font-bold text-slate-900 mb-4 block">
+              gabriel<span className="text-slate-400">zamp.</span>
             </Link>
-            <p className="text-zinc-400 max-w-sm leading-relaxed mb-6">
+            <p className="text-slate-600 max-w-sm leading-relaxed mb-6">
               Growth Marketer & Engineer helping companies scale revenue through
               data-driven performance marketing and full-funnel optimization.
             </p>
@@ -35,7 +35,7 @@ export default function Footer() {
 
           {/* Coluna 2: Navegação */}
           <div>
-            <h3 className="text-white font-semibold mb-6">Navigation</h3>
+            <h3 className="text-slate-900 font-semibold mb-6">Navigation</h3>
             <ul className="space-y-4">
               <FooterLink href="/" label="Home" />
               <FooterLink href="/about" label="About Me" />
@@ -49,13 +49,13 @@ export default function Footer() {
 
           {/* Coluna 3: Legal / Contato */}
           <div>
-            <h3 className="text-white font-semibold mb-6">Contact</h3>
-            <ul className="space-y-4 text-zinc-400">
+            <h3 className="text-slate-900 font-semibold mb-6">Contact</h3>
+            <ul className="space-y-4 text-slate-600">
               <li>Florianópolis, Brazil</li>
               <li>
                 <a
                   href="mailto:gabriel@gabrielzamp.com"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-slate-900 transition-colors"
                 >
                   gabriel@gabrielzamp.com
                 </a>
@@ -63,7 +63,7 @@ export default function Footer() {
               <li className="pt-4">
                 <Link
                   href="/contact"
-                  className="text-blue-400 hover:text-blue-300 text-sm font-medium"
+                  className="text-blue-600 hover:text-blue-500 text-sm font-medium"
                 >
                   → Schedule a Call
                 </Link>
@@ -73,13 +73,13 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-zinc-600">
+        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
           <p>© {currentYear} Gabriel Zamp. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-zinc-400 transition-colors">
+            <Link href="#" className="hover:text-slate-900 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-zinc-400 transition-colors">
+            <Link href="#" className="hover:text-slate-900 transition-colors">
               Terms of Service
             </Link>
           </div>
@@ -96,7 +96,7 @@ function SocialLink({ href, icon }: { href: string; icon: React.ReactNode }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition-all duration-300 border border-zinc-800"
+      className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-slate-900 hover:text-white transition-all duration-300 border border-slate-200"
     >
       {icon}
     </a>
@@ -108,7 +108,7 @@ function FooterLink({ href, label }: { href: string; label: string }) {
     <li>
       <Link
         href={href}
-        className="text-zinc-400 hover:text-white transition-colors text-sm"
+        className="text-slate-600 hover:text-slate-900 transition-colors text-sm"
       >
         {label}
       </Link>

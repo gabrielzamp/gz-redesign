@@ -138,6 +138,7 @@ const InlineInput = ({
   value: string;
   onSave: (val: string) => void;
   onCancel: () => void;
+  onCancel: () => void;
   className?: string;
 }) => {
   const [text, setText] = useState(value);
@@ -165,7 +166,7 @@ const InlineInput = ({
       onChange={(e) => setText(e.target.value)}
       onBlur={() => onSave(text)}
       onKeyDown={handleKeyDown}
-      className={`outline-none bg-white border border-sky-400 rounded px-1 min-w-[60px] w-full text-slate-900 ${className}`}
+      className={`outline-none bg-background border border-primary rounded px-1 min-w-[60px] w-full text-foreground ${className}`}
       onClick={(e) => e.stopPropagation()}
     />
   );
@@ -173,13 +174,13 @@ const InlineInput = ({
 
 const InfoModal = ({ onClose }: { onClose: () => void }) => (
   <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/50 backdrop-blur-sm p-4 print:hidden">
-    <div className="bg-white w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
-      <div className="bg-slate-50 border-b border-slate-200 p-4 flex justify-between items-center">
-        <h2 className="text-xl font-bold text-slate-800 flex items-center gap-2">
-          <BookOpen className="w-6 h-6 text-sky-600" />
+    <div className="bg-background w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col border border-border">
+      <div className="bg-secondary/50 border-b border-border p-4 flex justify-between items-center">
+        <h2 className="text-xl font-bold text-foreground flex items-center gap-2">
+          <BookOpen className="w-6 h-6 text-primary" />
           The T-Shaped Marketer Framework
         </h2>
-        <button onClick={onClose} className="text-slate-400 hover:text-slate-600 p-1">
+        <button onClick={onClose} className="text-muted-foreground hover:text-foreground p-1 transition-colors">
           <X className="w-6 h-6" />
         </button>
       </div>
@@ -400,26 +401,26 @@ export default function TShapedMarketerToolPage() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-100 flex flex-col md:flex-row font-sans pt-24">
+    <main className="min-h-screen bg-secondary/30 flex flex-col md:flex-row font-sans pt-20">
       {showInfo && <InfoModal onClose={() => setShowInfo(false)} />}
 
-      <div className="w-full md:w-1/3 lg:w-1/4 bg-white border-r border-slate-200 h-auto md:h-screen overflow-y-auto p-4 print:hidden shadow-xl z-50">
+      <div className="w-full md:w-1/3 lg:w-1/4 bg-background border-r border-border h-auto md:h-screen overflow-y-auto p-4 print:hidden shadow-xl z-50">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-bold text-slate-800 flex items-center gap-2">
-            <Layout className="w-5 h-5 text-sky-600" />
+          <h2 className="text-xl font-bold text-foreground flex items-center gap-2">
+            
             Builder
           </h2>
           <div className="flex gap-2">
             <button
               onClick={() => setShowInfo(true)}
-              className="flex items-center gap-2 bg-sky-50 text-sky-700 border border-sky-200 px-3 py-1.5 rounded-lg text-sm hover:bg-sky-100 transition-colors"
+              className="flex items-center gap-2 bg-secondary text-secondary-foreground border border-border px-3 py-1.5 rounded-lg text-sm hover:bg-secondary/80 transition-colors"
               title="About T-Shaped Marketer"
             >
               <Info className="w-4 h-4" />
             </button>
             <button
               onClick={handlePrint}
-              className="flex items-center gap-2 bg-slate-900 text-white px-3 py-1.5 rounded-lg text-sm hover:bg-slate-700 transition-colors"
+              className="flex items-center gap-2 bg-primary text-primary-foreground px-3 py-1.5 rounded-lg text-sm hover:bg-primary/90 transition-colors"
               title="Download PDF"
             >
               <Download className="w-4 h-4" />

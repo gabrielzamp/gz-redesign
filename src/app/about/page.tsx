@@ -14,22 +14,22 @@ import {
 
 function AboutHero() {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden">
-      <div className="container px-4 mx-auto">
+    <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-brand-blue text-white">
+      <div className="container px-4 mx-auto relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Text Content */}
-          <div className="flex-1 z-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-xs font-medium mb-6">
-              <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+          <div className="flex-1">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-100 text-xs font-bold mb-6">
+              <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
               The Story So Far
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Not just a Marketer. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+              <span className="text-blue-200">
                 A Growth Engineer.
               </span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-xl">
+            <p className="text-xl text-blue-100 leading-relaxed mb-8 max-w-xl font-medium">
               I bridge the gap between <strong>creative marketing</strong> and{" "}
               <strong>technical engineering</strong>. While most marketers
               guess, I build systems, write code, and analyze data to engineer
@@ -38,10 +38,10 @@ function AboutHero() {
             <div className="flex gap-4">
               <Link
                 href="/contact"
-                className="h-12 px-8 rounded-full bg-white text-black font-bold flex items-center gap-2 hover:bg-zinc-200 transition-colors"
+                className="h-14 px-10 rounded-md bg-brand-orange text-white font-bold flex items-center gap-2 hover:bg-orange-600 transition-colors shadow-lg group"
               >
-                Let's Talk Business
-                <ArrowRight size={16} />
+                Book a Growth Call
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>
@@ -49,21 +49,18 @@ function AboutHero() {
           {/* Image/Visual */}
           <div className="flex-1 relative">
             <div className="relative w-full aspect-square max-w-md mx-auto md:ml-auto">
-              <div className="absolute inset-0 bg-blue-500/20 blur-[100px] rounded-full"></div>
+              <div className="absolute inset-0 bg-blue-400/20 blur-[100px] rounded-full"></div>
               <Image
-                src="/img/gabriel-zamp-3.png" // Certifique-se que esta imagem existe ou use outra
+                src="/img/gabriel-zamp-3.png"
                 alt="Gabriel Zamp"
                 width={500}
                 height={500}
-                className="relative z-10 rounded-2xl border border-zinc-800 bg-zinc-900/50 object-cover shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500"
+                className="relative z-10 rounded-2xl border border-white/10 bg-white/5 object-cover shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 backdrop-blur-sm"
               />
             </div>
           </div>
         </div>
       </div>
-
-      {/* Background Grid */}
-      <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
     </section>
   );
 }
@@ -77,15 +74,15 @@ function StatsSection() {
   ];
 
   return (
-    <section className="py-12 border-y border-zinc-900 bg-black/50">
+    <section className="section-padding border-y border-border bg-muted/50">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, idx) => (
             <div key={idx} className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+              <div className="text-3xl md:text-4xl font-bold text-heading mb-1">
                 {stat.value}
               </div>
-              <div className="text-sm text-zinc-500 uppercase tracking-wider">
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">
                 {stat.label}
               </div>
             </div>
@@ -98,44 +95,44 @@ function StatsSection() {
 
 function Philosophy() {
   return (
-    <section className="py-24 bg-zinc-950">
+    <section className="section-padding bg-background">
       <div className="container px-4 mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-white mb-4">My Philosophy</h2>
-          <p className="text-zinc-400">
+          <h2 className="text-3xl font-bold text-heading mb-4">My Philosophy</h2>
+          <p className="text-body">
             Why I deliver results where others fail.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800">
-            <Code2 className="w-10 h-10 text-blue-500 mb-4" />
-            <h3 className="text-xl font-bold text-white mb-3">
+          <div className="p-6 rounded-xl bg-muted border border-border">
+            <Code2 className="w-10 h-10 text-blue-600 mb-4" />
+            <h3 className="text-xl font-bold text-heading mb-3">
               Code-First Approach
             </h3>
-            <p className="text-zinc-400 text-sm leading-relaxed">
+            <p className="text-body text-sm leading-relaxed">
               I don't rely on developers for tracking or automation. I write
               Python scripts for data analysis, build custom AI agents, and fix
               pixel issues myself.
             </p>
           </div>
-          <div className="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800">
-            <Database className="w-10 h-10 text-purple-500 mb-4" />
-            <h3 className="text-xl font-bold text-white mb-3">
+          <div className="p-6 rounded-xl bg-muted border border-border">
+            <Database className="w-10 h-10 text-purple-600 mb-4" />
+            <h3 className="text-xl font-bold text-heading mb-3">
               Data Over Opinions
             </h3>
-            <p className="text-zinc-400 text-sm leading-relaxed">
+            <p className="text-body text-sm leading-relaxed">
               Creativity is important, but math pays the bills. Every campaign
               is backed by Unit Economics, LTV:CAC ratios, and rigorous A/B
               testing.
             </p>
           </div>
-          <div className="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800">
-            <TrendingUp className="w-10 h-10 text-green-500 mb-4" />
-            <h3 className="text-xl font-bold text-white mb-3">
+          <div className="p-6 rounded-xl bg-muted border border-border">
+            <TrendingUp className="w-10 h-10 text-green-600 mb-4" />
+            <h3 className="text-xl font-bold text-heading mb-3">
               Full-Funnel Ownership
             </h3>
-            <p className="text-zinc-400 text-sm leading-relaxed">
+            <p className="text-body text-sm leading-relaxed">
               Clicks don't matter if they don't convert. I optimize the entire
               journey: from the first ad impression to the landing page and
               post-purchase retention.
@@ -170,28 +167,28 @@ function ExperienceTimeline() {
   ];
 
   return (
-    <section className="py-24 bg-black">
+    <section className="py-24 bg-white">
       <div className="container px-4 mx-auto max-w-3xl">
-        <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-3">
-          <Briefcase className="text-blue-500" /> Career Journey
+        <h2 className="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3">
+          <Briefcase className="text-blue-600" /> Career Journey
         </h2>
 
-        <div className="relative border-l border-zinc-800 ml-3 space-y-12">
+        <div className="relative border-l border-slate-200 ml-3 space-y-12">
           {experiences.map((exp, idx) => (
             <div key={idx} className="pl-8 relative">
               {/* Dot */}
-              <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-blue-500 ring-4 ring-black"></div>
+              <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-blue-600 ring-4 ring-white"></div>
 
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                <h3 className="text-xl font-bold text-white">{exp.role}</h3>
-                <span className="text-xs font-mono text-zinc-500 bg-zinc-900 px-2 py-1 rounded">
+                <h3 className="text-xl font-bold text-slate-900">{exp.role}</h3>
+                <span className="text-xs font-mono text-slate-500 bg-slate-50 px-2 py-1 rounded">
                   {exp.period}
                 </span>
               </div>
-              <div className="text-blue-400 font-medium mb-3">
+              <div className="text-blue-600 font-medium mb-3">
                 {exp.company}
               </div>
-              <p className="text-zinc-400 leading-relaxed text-sm">
+              <p className="text-slate-600 leading-relaxed text-sm">
                 {exp.desc}
               </p>
             </div>
@@ -204,42 +201,42 @@ function ExperienceTimeline() {
 
 function Education() {
   return (
-    <section className="py-24 border-t border-zinc-900 bg-zinc-950/50">
+    <section className="py-24 border-t border-slate-100 bg-slate-50/50">
       <div className="container px-4 mx-auto max-w-3xl">
-        <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-3">
-          <GraduationCap className="text-blue-500" /> Education
+        <h2 className="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3">
+          <GraduationCap className="text-blue-600" /> Education
         </h2>
 
         <div className="grid gap-6">
-          <div className="p-6 rounded-xl bg-zinc-900 border border-zinc-800 flex flex-col md:flex-row gap-4 items-start">
-            <div className="w-12 h-12 rounded bg-zinc-800 flex items-center justify-center shrink-0 font-bold text-zinc-500">
+          <div className="p-6 rounded-xl bg-white border border-slate-100 flex flex-col md:flex-row gap-4 items-start">
+            <div className="w-12 h-12 rounded bg-slate-50 flex items-center justify-center shrink-0 font-bold text-slate-400">
               MBA
             </div>
             <div>
-              <h3 className="text-lg font-bold text-white">
+              <h3 className="text-lg font-bold text-slate-900">
                 MBA in Marketing, Growth & Branding
               </h3>
-              <p className="text-zinc-400 text-sm mb-2">
+              <p className="text-slate-600 text-sm mb-2">
                 Pontifical Catholic University (PUCRS)
               </p>
-              <p className="text-xs text-zinc-500">
+              <p className="text-xs text-slate-500">
                 Focus on Business Growth and Brand Strategy.
               </p>
             </div>
           </div>
 
-          <div className="p-6 rounded-xl bg-zinc-900 border border-zinc-800 flex flex-col md:flex-row gap-4 items-start">
-            <div className="w-12 h-12 rounded bg-zinc-800 flex items-center justify-center shrink-0 font-bold text-zinc-500">
+          <div className="p-6 rounded-xl bg-white border border-slate-100 flex flex-col md:flex-row gap-4 items-start">
+            <div className="w-12 h-12 rounded bg-slate-50 flex items-center justify-center shrink-0 font-bold text-slate-400">
               BS
             </div>
             <div>
-              <h3 className="text-lg font-bold text-white">
+              <h3 className="text-lg font-bold text-slate-900">
                 Bachelor's in Information Science
               </h3>
-              <p className="text-zinc-400 text-sm mb-2">
+              <p className="text-slate-600 text-sm mb-2">
                 Federal University of Santa Catarina (UFSC)
               </p>
-              <p className="text-xs text-zinc-500">
+              <p className="text-xs text-slate-500">
                 Emphasis on Data Analysis (Python, SQL) and Startup Business
                 Models.
               </p>
@@ -253,20 +250,20 @@ function Education() {
 
 function FinalCTA() {
   return (
-    <section className="py-32 bg-gradient-to-b from-zinc-900 to-black text-center border-t border-zinc-800">
+    <section className="py-32 bg-gradient-to-b from-slate-50 to-white text-center border-t border-slate-100">
       <div className="container px-4 mx-auto max-w-2xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
           Ready to engineer your growth?
         </h2>
-        <p className="text-lg text-zinc-400 mb-10">
+        <p className="text-lg text-slate-600 mb-10">
           I'm currently open for new challenges and consulting projects.
         </p>
         <Link
           href="/contact"
-          className="inline-flex h-14 px-10 rounded-full bg-white text-black font-bold text-lg items-center justify-center hover:bg-zinc-200 transition-colors shadow-lg shadow-white/10"
+          className="inline-flex h-14 px-10 rounded-md bg-brand-orange text-white font-bold text-lg items-center justify-center hover:bg-orange-600 transition-colors shadow-lg group"
         >
-          Work With Me
-          <ArrowRight className="ml-2 w-5 h-5" />
+          Book a Growth Call
+          <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>
     </section>
@@ -277,7 +274,7 @@ function FinalCTA() {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-black text-zinc-100 selection:bg-blue-500/30">
+    <main className="min-h-screen bg-white text-slate-900 selection:bg-blue-500/30">
       <AboutHero />
       <StatsSection />
       <Philosophy />
