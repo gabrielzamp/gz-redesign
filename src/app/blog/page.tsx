@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import { getBlogPosts, getAllCategories } from '@/lib/blog';
-import { CategorySidebar } from '@/components/blog/category-sidebar';
-import { ArrowLeft } from 'lucide-react';
 
 export const metadata = {
   title: 'Blog | Gabriel Zampieri',
@@ -10,7 +8,7 @@ export const metadata = {
 
 export default function BlogPage() {
   const posts = getBlogPosts();
-  const categories = getAllCategories();
+  // const categories = getAllCategories();
 
   return (
     <>

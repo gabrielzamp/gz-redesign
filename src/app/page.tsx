@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -8,7 +7,6 @@ import {
   Zap,
   Code2,
   Database,
-  Users,
   Target,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -37,7 +35,7 @@ function Hero() {
 
         <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
           Growth Marketer & Engineer managing <strong>$4M+/year</strong> in ad
-          spend. See what people want, fix what holds you back, and track your growth—that's what a marketing platform should do.
+          spend. See what people want, fix what holds you back, and track your growth—that&apos;s what a marketing platform should do.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -104,7 +102,7 @@ function ResultsLayer() {
             <span className="text-blue-600">Not Just Vanity Metrics.</span>
           </h2>
           <p className="text-body">
-            Most marketers talk about "clicks". I talk about revenue, retention,
+            Most marketers talk about &quot;clicks&quot;. I talk about revenue, retention,
             and scaling efficiency.
           </p>
         </div>

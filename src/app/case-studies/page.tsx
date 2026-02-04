@@ -5,8 +5,6 @@ import {
   BarChart3,
   Bot,
   LineChart,
-  Target,
-  Zap,
 } from "lucide-react";
 
 // --- Components ---
@@ -149,7 +147,7 @@ function CaseStudy2() {
             </div>
             <p className="text-body leading-relaxed mb-6">
               **The Challenge:** The company needed to increase MRR without just
-              "spending more on ads". We needed to squeeze more revenue from
+              &quot;spending more on ads&quot;. We needed to squeeze more revenue from
               existing users and stop them from leaving.
             </p>
             <div className="grid grid-cols-2 gap-4">
@@ -192,7 +190,7 @@ function CaseStudy2() {
                 Churn Prevention Framework
               </h3>
               <p className="text-body leading-relaxed pl-10 border-l border-border ml-4 pb-4">
-                Deployed a Customer Success framework that flagged "at-risk"
+                Deployed a Customer Success framework that flagged &quot;at-risk&quot;
                 accounts based on usage drops. We launched personalized
                 retention campaigns before they even cancelled.
                 <br />
@@ -255,7 +253,7 @@ function CaseStudy3() {
               </h3>
               <p className="text-body leading-relaxed pl-10 border-l border-border ml-4 pb-4">
                 Led the migration and customization of Google Analytics 4 across
-                3 products. This wasn't just basic tracking; we set up custom
+                3 products. This wasn&apos;t just basic tracking; we set up custom
                 events to track user behavior deeply for over 3 million monthly
                 users.
                 <br />

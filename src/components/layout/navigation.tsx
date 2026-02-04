@@ -7,13 +7,12 @@ import { Menu, X, ArrowRight } from "lucide-react";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false);
-  const [isScrolled, setIsScrolled] = React.useState(false);
   const pathname = usePathname();
 
   // Detectar scroll para adicionar fundo "vidro"
   React.useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      // No current use for isScrolled with fixed blue header
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

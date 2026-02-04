@@ -5,7 +5,6 @@ import {
   Code2,
   Database,
   TrendingUp,
-  Award,
   Briefcase,
   GraduationCap,
 } from "lucide-react";
@@ -111,7 +110,7 @@ function Philosophy() {
               Code-First Approach
             </h3>
             <p className="text-body text-sm leading-relaxed">
-              I don't rely on developers for tracking or automation. I write
+              I don&apos;t rely on developers for tracking or automation. I write
               Python scripts for data analysis, build custom AI agents, and fix
               pixel issues myself.
             </p>
@@ -133,7 +132,7 @@ function Philosophy() {
               Full-Funnel Ownership
             </h3>
             <p className="text-body text-sm leading-relaxed">
-              Clicks don't matter if they don't convert. I optimize the entire
+              Clicks don&apos;t matter if they don&apos;t convert. I optimize the entire
               journey: from the first ad impression to the landing page and
               post-purchase retention.
             </p>
@@ -231,7 +230,7 @@ function Education() {
             </div>
             <div>
               <h3 className="text-lg font-bold text-slate-900">
-                Bachelor's in Information Science
+                Bachelor&apos;s in Information Science
               </h3>
               <p className="text-slate-600 text-sm mb-2">
                 Federal University of Santa Catarina (UFSC)
@@ -256,7 +255,7 @@ function FinalCTA() {
           Ready to engineer your growth?
         </h2>
         <p className="text-lg text-slate-600 mb-10">
-          I'm currently open for new challenges and consulting projects.
+          I&apos;m currently open for new challenges and consulting projects.
         </p>
         <Link
           href="/contact"

@@ -4,7 +4,6 @@ import { markdownToHtml } from '@/lib/markdown';
 import { extractHeadings } from '@/lib/toc';
 import { TableOfContents } from '@/components/blog/table-of-contents';
 import { NewsletterCTA } from '@/components/blog/newsletter-cta';
-import { AuthorCard } from '@/components/blog/author-card';
 import Image from 'next/image';
 import Link from 'next/link';
 

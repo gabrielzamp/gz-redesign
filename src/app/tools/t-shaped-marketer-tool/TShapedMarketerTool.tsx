@@ -7,7 +7,6 @@ import {
   Download,
   ExternalLink,
   Info,
-  Layout,
   Plus,
   Trash2,
   X,
@@ -138,7 +137,6 @@ const InlineInput = ({
   value: string;
   onSave: (val: string) => void;
   onCancel: () => void;
-  onCancel: () => void;
   className?: string;
 }) => {
   const [text, setText] = useState(value);
@@ -189,7 +187,7 @@ const InfoModal = ({ onClose }: { onClose: () => void }) => (
         <section>
           <h3 className="text-lg font-bold text-slate-800 mb-2">What is a T-Shaped Marketer?</h3>
           <p className="mb-3">
-            A T-shaped marketer is a &ldquo;Jack of all trades, master of some.&rdquo; The concept, popularized in marketing by CXL and others,
+            A T-shaped marketer is a &quot;Jack of all trades, master of some.&quot; The concept, popularized in marketing by CXL and others,
             visualizes skills as the letter <strong>T</strong>:
           </p>
           <ul className="list-disc pl-5 space-y-2">
