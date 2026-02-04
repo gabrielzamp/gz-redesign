@@ -8,14 +8,12 @@ import {
   Code2,
   Database,
   Target,
-  Users,
   Building2,
   ShoppingCart,
   Briefcase,
   Search,
   Rocket,
   LineChart,
-  FileCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
