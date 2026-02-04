@@ -6,9 +6,9 @@ import { CategorySidebar } from "@/components/blog/category-sidebar";
 import { ArrowLeft } from "lucide-react";
 
 interface Props {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export function generateStaticParams() {
@@ -18,8 +18,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default function CategoryPage({ params }: Props) {
-  const category = decodeURIComponent(params.slug);
+export default async function CategoryPage({ params }: Props) {
+  const { slug } = await params;
+  const category = decodeURIComponent(slug);
   const posts = getPostsByCategory(category);
   const allCategories = getAllCategories();
 
