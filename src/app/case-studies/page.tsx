@@ -4,7 +4,6 @@ import {
   ArrowRight,
   BarChart3,
   Bot,
-  LineChart,
   TrendingUp,
   Users,
 } from "lucide-react";
@@ -156,7 +155,7 @@ function CaseStudy2() {
               Wishpond (TSXV:WISH)
             </div>
             <p className="text-body leading-relaxed mb-6">
-              <strong>The Challenge:</strong> A publicly-traded SaaS company ($20M+ ARR) was bleeding revenue with high monthly churn. Users weren't seeing value fast enough, and onboarding was broken.
+              <strong>The Challenge:</strong> A publicly-traded SaaS company ($20M+ ARR) was bleeding revenue with high monthly churn. Users weren&apos;t seeing value fast enough, and onboarding was broken.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 bg-white rounded-lg border border-slate-100 shadow-sm">
@@ -183,7 +182,7 @@ function CaseStudy2() {
                 Collaborated with Product and Customer Success teams to completely redesign onboarding. Implemented progressive onboarding with milestone-based activation triggers and in-app guidance.
                 <br />
                 <br />
-                <span className="text-heading font-medium">Result:</span> Active users grew by 47% as more users reached "aha moment" faster.
+                <span className="text-heading font-medium">Result:</span> Active users grew by 47% as more users reached &quot;aha moment&quot; faster.
               </p>
             </div>
 
@@ -350,7 +349,7 @@ function CaseStudy4() {
               Hostinger International
             </div>
             <p className="text-body leading-relaxed mb-6">
-              <strong>The Challenge:</strong> Europe's fastest-growing web hosting company needed to scale PPC revenue in 20+ countries while simultaneously building organic traffic foundation.
+              <strong>The Challenge:</strong> Europe&apos;s fastest-growing web hosting company needed to scale PPC revenue in 20+ countries while simultaneously building organic traffic foundation.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 bg-white rounded-lg border border-slate-100 shadow-sm">
