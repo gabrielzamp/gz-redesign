@@ -51,7 +51,7 @@ function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button asChild size="lg" className="h-14 px-10 text-lg shadow-xl bg-brand-orange hover:bg-orange-600 text-white border-0 font-bold rounded-md group">
-            <Link href="/contact" className="flex items-center gap-2">
+            <Link href="https://calendly.com/gabriel-growwithzamp/30min" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               Book a Growth Call
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -457,7 +457,9 @@ function ContactCTA() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            href="/contact"
+            href="https://calendly.com/gabriel-growwithzamp/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="h-14 px-10 rounded-md bg-brand-orange text-white font-bold text-lg flex items-center justify-center hover:bg-orange-600 transition-colors shadow-xl group"
           >
             Book a Growth Call

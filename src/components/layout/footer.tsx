@@ -62,7 +62,9 @@ export default function Footer() {
               </li>
               <li className="pt-4">
                 <Link
-                  href="/contact"
+                  href="https://calendly.com/gabriel-growwithzamp/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-500 text-sm font-medium"
                 >
                   → Book a Growth Call

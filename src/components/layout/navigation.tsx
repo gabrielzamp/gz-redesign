@@ -58,7 +58,9 @@ export default function Navigation() {
           {/* CTA Button (Desktop) */}
           <div className="hidden md:block">
             <Link
-              href="/contact"
+              href="https://calendly.com/gabriel-growwithzamp/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-brand-orange text-white text-sm font-bold hover:bg-orange-600 transition-all shadow-md group"
             >
               Book a Growth Call
@@ -91,7 +93,9 @@ export default function Navigation() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="https://calendly.com/gabriel-growwithzamp/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="mt-4 inline-flex items-center gap-2 px-8 py-4 rounded-md bg-brand-orange text-white font-bold text-lg shadow-lg hover:bg-orange-600 transition-colors group"
             >

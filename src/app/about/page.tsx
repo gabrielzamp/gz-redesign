@@ -34,7 +34,9 @@ function AboutHero() {
             </p>
             <div className="flex gap-4">
               <Link
-                href="/contact"
+                href="https://calendly.com/gabriel-growwithzamp/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-14 px-10 rounded-md bg-brand-orange text-white font-bold flex items-center gap-2 hover:bg-orange-600 transition-colors shadow-lg group"
               >
                 Book a Growth Call
@@ -141,7 +143,7 @@ function KeyHighlights() {
               key={idx}
               className="p-6 rounded-xl bg-white border border-slate-100 hover:border-blue-500/50 transition-all hover:shadow-lg group"
             >
-              <div className={`w-12 h-12 rounded-lg ${colorMap[item.color]} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+              <div className={`w-12 h-12 rounded-lg ${colorMap[item.color as keyof typeof colorMap]} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                 <item.icon className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-heading mb-2">
@@ -387,7 +389,9 @@ function FinalCTA() {
           I&apos;m currently open for new growth projects and consulting engagements.
         </p>
         <Link
-          href="/contact"
+          href="https://calendly.com/gabriel-growwithzamp/30min"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex h-14 px-10 rounded-md bg-brand-orange text-white font-bold text-lg items-center justify-center hover:bg-orange-600 transition-colors shadow-lg group"
         >
           Book a Growth Call
