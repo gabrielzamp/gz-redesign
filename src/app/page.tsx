@@ -8,34 +8,47 @@ import {
   Code2,
   Database,
   Target,
+  Users,
+  Building2,
+  ShoppingCart,
+  Briefcase,
+  Search,
+  Rocket,
+  LineChart,
+  FileCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // --- 1. Visual Hierarchy Layer (Hero) ---
 function Hero() {
   const companies = [
-    "Interactive Financial",
+    "Interactive Financial ",
     "Wishpond",
     "Lift Ventures",
-    "Conversion Experts",
-    "Westpac", 
-    "Expedia"
+    "Hostinger",
+    "Essen", 
+    "Way2"
   ];
 
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-brand-blue text-white">
       <div className="container px-4 mx-auto text-center relative z-10 max-w-6xl">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 leading-tight text-white">
-          I Turn Marketing Budgets Into <br className="hidden md:block" />
-          Predictable Revenue Engines
+        {/* Availability Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100/10 border border-green-400/20 backdrop-blur-sm mb-6">
+          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+          <span className="text-sm font-medium text-green-100">Available for new growth projects</span>
+        </div>
+
+        <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-8 leading-tight text-white">
+          Scale Your Revenue With <br className="hidden md:block" />
+          The G.R.O.W.S Method
           <span className="text-brand-orange inline-block ml-2 align-top text-4xl md:text-6xl">
             ✨  
           </span>
         </h1>
 
         <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
-          Growth Marketer & Engineer managing <strong>$4M+/year</strong> in ad
-          spend. See what people want, fix what holds you back, and track your growth—that&apos;s what a marketing platform should do.
+          A growth marketing service for ambitious companies that wants to grow fast. Run by experts, driven by data, and focused on rapidly, measurable results without long-term contract.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -51,11 +64,7 @@ function Hero() {
         <div className="flex items-center justify-center gap-4 text-sm text-blue-200 font-medium mb-16">
           <div className="flex items-center gap-2">
              <span className="text-2xl">❤️</span>
-             <span>Trusted by <strong>20,000+</strong> marketers</span>
-          </div>
-          <div className="hidden md:block w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-          <div className="max-md:hidden">
-              Joined in the last 7 days
+             <span>Trusted by <strong>40+</strong> teams around the world who play to win</span>
           </div>
         </div>
 
@@ -74,7 +83,7 @@ function Hero() {
            ))}
          </div>
          <p className="text-blue-300 text-xs mt-8">
-            Marketers at 44% of the Fortune 500 use these strategies to stay ahead.
+            Firms that adopts experimentation see a 30% to 100% improvement in performance in just one year.
          </p>
       </div>
     </section>
@@ -135,7 +144,7 @@ function ValueProposition() {
     },
     {
       title: "The T-Shaped Advantage",
-      desc: "My background in Information Science means I can code custom scripts, automate reporting with SQL/Python, and build AI agents to scale faster than humanly possible.",
+      desc: "My seasoned background in Marketing and Information Science means I can analyze data, launch killer campaigns, optimize creatives and scale new channels fast and independently.",
       icon: Code2,
     },
     {
@@ -156,6 +165,149 @@ function ValueProposition() {
               </div>
               <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
               <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function PersonasSection() {
+  const personas = [
+    {
+      title: "SaaS Founders",
+      icon: Rocket,
+      description: "Scale user acquisition profitably while maintaining healthy unit economics.",
+      metric: "3x ROAS improvement",
+    },
+    {
+      title: "E-commerce Brands",
+      icon: ShoppingCart,
+      description: "Lower CAC and increase AOV with data-driven creative testing and funnel optimization.",
+      metric: "52% reduction in CPA",
+    },
+    {
+      title: "B2C & B2B Companies",
+      icon: Building2,
+      description: "Generate qualified leads at scale with advanced tracking and attribution models.",
+      metric: "5x faster launches",
+    },
+    {
+      title: "Agencies & Partners",
+      icon: Briefcase,
+      description: "White-label strategy and execution for growth marketing, tracking, automation, and reporting.",
+      metric: "10+ agency partnerships",
+    },
+  ];
+
+  return (
+    <section className="py-20 bg-background">
+      <div className="container px-4 mx-auto">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-heading">
+            Who I Work With
+          </h2>
+          <p className="text-body">
+            From startups to Fortune 500, I help growth-focused companies maximize their marketing ROI.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {personas.map((persona, idx) => (
+            <div
+              key={idx}
+              className="p-6 rounded-xl bg-white border border-slate-100 hover:border-blue-500/50 transition-all hover:shadow-lg group"
+            >
+              <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center mb-4 group-hover:bg-blue-100 transition-colors">
+                <persona.icon className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold text-heading mb-2">
+                {persona.title}
+              </h3>
+              <p className="text-body text-sm mb-4 leading-relaxed">
+                {persona.description}
+              </p>
+              <div className="text-xs font-semibold text-blue-600 uppercase tracking-wide">
+                {persona.metric}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HowItWorksSection() {
+  const steps = [
+    {
+      number: "01",
+      title: "Audit & Analysis",
+      icon: Search,
+      description: "Deep dive into your current marketing stack, tracking setup, and funnel performance to identify gaps.",
+    },
+
+    {
+      number: "02",
+      title: "Foundational Strategy",
+      icon: Target,
+      description: "Develop strategic assets to ensure the success of the G.R.O.W.S process implementation.",
+    },
+    {
+      number: "03",
+      title: "Launch G.R.O.W.S",
+      icon: Rocket,
+      description: "Curate high-impact ideas, prioritize concepts, launch A/B tests, learn from data, and scale winners.",
+    },
+    {
+      number: "04",
+      title: "Optimize & Report",
+      icon: LineChart,
+      description: "Continuous improvement through data analysis, creative iteration, and transparent ROI reporting.",
+    },
+  ];
+
+  return (
+    <section className="py-20 bg-secondary/30">
+      <div className="container px-4 mx-auto">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-heading">
+            How It Works
+          </h2>
+          <p className="text-body">
+            A systematic approach to scaling your revenue with predictable, measurable results.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {steps.map((step, idx) => (
+            <div key={idx} className="relative">
+              {/* Connector line for desktop */}
+              {idx < steps.length - 1 && (
+                <div className="hidden lg:block absolute top-16 left-1/2 w-full h-0.5 bg-gradient-to-r from-blue-200 to-transparent -z-10" />
+              )}
+              
+              <div className="text-center space-y-4">
+                <div className="relative inline-flex items-center justify-center">
+                  <div className="absolute inset-0 bg-blue-100 rounded-full blur-xl opacity-50" />
+                  <div className="relative w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+                    <step.icon className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                
+                <div className="space-y-2">
+                  <div className="text-sm font-bold text-blue-600 uppercase tracking-wider">
+                    Step {step.number}
+                  </div>
+                  <h3 className="text-xl font-bold text-heading">
+                    {step.title}
+                  </h3>
+                  <p className="text-body text-sm leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -236,19 +388,39 @@ function TShapedSection() {
 // --- 3. Qualification Layer (FAQ & CTA) ---
 function FaqSection() {
   const faqs = [
-    {
-      q: "Do you only do ads?",
-      a: "No. I manage the entire growth loop: Ad Creative Strategy, Media Buying, Tracking/Analytics Setup, and Landing Page CRO.",
-    },
-    {
-      q: "What budgets do you work with?",
-      a: "I deliver the best impact for companies spending between $10k - $200k/month on ads who want to scale efficiently.",
-    },
-    {
-      q: "How fast can we launch?",
-      a: "With my pre-built AI agents and growth frameworks, we can typically audit, fix tracking, and launch new campaigns within 7-10 days.",
-    },
-  ];
+  {
+    q: "What exactly do you help with?",
+    a: "I manage the full growth system—ad strategy, media buying, tracking (GA4/server-side), creative optimization, landing page CRO, and experimentation.",
+  },
+  {
+    q: "Is this just performance marketing, or full growth strategy?",
+    a: "It's full-funnel growth. I go beyond ads to align acquisition, activation, retention, and referral with your business goals using proven frameworks like G.R.O.W.S.",
+  },
+  {
+    q: "What budgets do you work with?",
+    a: "I deliver the best impact for companies spending between $10k - $200k/month on ads who want to scale efficiently and learn fast.",
+  },
+  {
+    q: "How fast can we launch?",
+    a: "With my pre-built AI agents and growth frameworks, we can typically audit, fix tracking, and launch new campaigns within 7–10 days.",
+  },
+  {
+    q: "Do I need in-house resources to work with you?",
+    a: "Not necessarily. I can run end-to-end or plug into your team. I handle setup, tracking, creatives, execution, and reporting.",
+  },
+  {
+    q: "Do you work as a freelancer or agency?",
+    a: "Think of me as your external growth partner—with the flexibility of a freelancer and the process of a well-run growth team.",
+  },
+  {
+    q: "How do you measure success?",
+    a: "Every project starts with your main KPI—CAC, ROAS, LTV, conversion rate, etc.—and we track progress through weekly reporting.",
+  },
+  {
+    q: "Are there long-term contracts?",
+    a: "No. I work in flexible sprints or month-to-month retainers. You stay because it works—not because you're locked in.",
+  },
+];
 
   return (
     <section className="py-20 bg-background">
@@ -305,8 +477,10 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
       <Hero />
       <ResultsLayer />
-      <ValueProposition />
+      <PersonasSection />
+      <HowItWorksSection />
       <TShapedSection />
+      <ValueProposition />
       <FaqSection />
       <ContactCTA />
     </main>

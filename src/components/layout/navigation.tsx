@@ -21,8 +21,8 @@ export default function Navigation() {
   const navLinks = [
     { name: "About", href: "/about" },
     { name: "Case Studies", href: "/case-studies" },
-    { name: "Tools", href: "/tools" },
-    { name: "Blog", href: "/blog" },
+   // { name: "Tools", href: "/tools" },
+    //{ name: "Blog", href: "/blog" },
   ];
 
   return (

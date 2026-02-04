@@ -11,11 +11,11 @@ export default function Footer() {
           {/* Coluna 1: Marca & Descrição */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="text-2xl font-bold text-slate-900 mb-4 block">
-              gabriel<span className="text-slate-400">zamp.</span>
+              grow<span className="text-slate-400">.with.</span>zamp
             </Link>
             <p className="text-slate-600 max-w-sm leading-relaxed mb-6">
-              Growth Marketer & Engineer helping companies scale revenue through
-              data-driven performance marketing and full-funnel optimization.
+              Helping companies scale revenue through
+              data-driven experimentation programs and full-funnel optimization.
             </p>
             <div className="flex gap-4">
               <SocialLink
@@ -38,12 +38,12 @@ export default function Footer() {
             <h3 className="text-slate-900 font-semibold mb-6">Navigation</h3>
             <ul className="space-y-4">
               <FooterLink href="/" label="Home" />
-              <FooterLink href="/about" label="About Me" />
+              <FooterLink href="/about" label="About" />
               <FooterLink href="/#case-studies" label="Case Studies" />
-              <FooterLink
+              {/*<FooterLink
                 href="/tools/t-shaped-marketer-tool"
                 label="Tools & Resources"
-              />
+              />*/}
             </ul>
           </div>
 
@@ -51,13 +51,13 @@ export default function Footer() {
           <div>
             <h3 className="text-slate-900 font-semibold mb-6">Contact</h3>
             <ul className="space-y-4 text-slate-600">
-              <li>Florianópolis, Brazil</li>
+              <li>Brazil</li>
               <li>
                 <a
                   href="mailto:gabriel@gabrielzamp.com"
                   className="hover:text-slate-900 transition-colors"
                 >
-                  gabriel@gabrielzamp.com
+                  gabriel@growwithzamp.com
                 </a>
               </li>
               <li className="pt-4">
@@ -65,7 +65,7 @@ export default function Footer() {
                   href="/contact"
                   className="text-blue-600 hover:text-blue-500 text-sm font-medium"
                 >
-                  → Schedule a Call
+                  → Book a Growth Call
                 </Link>
               </li>
             </ul>
@@ -74,7 +74,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
-          <p>© {currentYear} Gabriel Zamp. All rights reserved.</p>
+          <p>© {currentYear} Grow With Zamp. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-slate-900 transition-colors">
               Privacy Policy
