@@ -50,8 +50,8 @@ function AboutHero() {
             <div className="relative w-full aspect-square max-w-md mx-auto md:ml-auto">
               <div className="absolute inset-0 bg-blue-400/20 blur-[100px] rounded-full"></div>
               <Image
-                src="/img/gabriel-zamp-3.png"
-                alt="Gabriel Zamp"
+                src="/img/gabriel-about.jpg"
+                alt="Gabriel Zampieri"
                 width={500}
                 height={500}
                 className="relative z-10 rounded-2xl border border-white/10 bg-white/5 object-cover shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 backdrop-blur-sm"
