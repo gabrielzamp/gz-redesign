@@ -101,7 +101,7 @@ function CaseStudy1() {
               </h3>
               <p className="text-body leading-relaxed pl-10 border-l border-border ml-4 pb-4">
                 We stopped treating TikTok like Facebook. I implemented a
-                creative testing framework focused on "UGC-style" native content
+                creative testing framework focused on &quot;UGC-style&quot; native content
                 and aggressive A/B testing of hooks.
                 <br />
                 <br />
@@ -172,7 +172,7 @@ function CaseStudy2() {
                 The Upsell Growth Loop
               </h3>
               <p className="text-body leading-relaxed pl-10 border-l border-border ml-4 pb-4">
-                Implemented a new SaaS business model focused on "outcome-based"
+                Implemented a new SaaS business model focused on &quot;outcome-based&quot;
                 upselling rather than just feature gating. We identified
                 high-usage users and triggered automated upsell offers.
                 <br />

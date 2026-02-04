@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { getPostsByCategory, getAllCategories } from "@/lib/blog";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CategorySidebar } from "@/components/blog/category-sidebar";
-import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 interface Props {

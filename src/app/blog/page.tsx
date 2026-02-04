@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { getBlogPosts, getAllCategories } from '@/lib/blog';
+import Image from 'next/image';
+import { getBlogPosts } from '@/lib/blog';
 
 export const metadata = {
   title: 'Blog | Gabriel Zampieri',
@@ -58,7 +59,13 @@ export default function BlogPage() {
                     <div className="flex items-center gap-2 mt-auto">
                         <div className="w-8 h-8 rounded-full bg-muted overflow-hidden relative">
                              {post.author?.image && (
-                                <img src={post.author.image} alt={post.author.name} className="object-cover w-full h-full" />
+                                <Image 
+                                  src={post.author.image} 
+                                  alt={post.author.name} 
+                                  width={32}
+                                  height={32}
+                                  className="object-cover w-full h-full" 
+                                />
                              )}
                         </div>
                         <div className="text-xs text-muted-foreground flex flex-col">
