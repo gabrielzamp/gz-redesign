@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 
 export function NewsletterCTA() {
   return (
-    <div className="bg-muted border border-border rounded-xl p-6 sticky top-24">
+    <div className="bg-muted border border-border rounded-xl p-6">
       <div className="flex items-center gap-2 mb-4 text-brand-blue">
         <Mail className="w-5 h-5" />
         <span className="font-bold uppercase tracking-wider text-xs">Newsletter</span>
