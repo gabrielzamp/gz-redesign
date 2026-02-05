@@ -193,14 +193,23 @@
     "badge": "Available for new growth projects",
     "title1": "Scale Your Revenue With",
     "title2": "The G.R.O.W.S Method",
-    "subtitle": "A growth marketing service for ambitious companies that wants to grow fast. Run by experts, driven by data, and focused on rapidly, measurable results without long-term contract.",
-    "trustedBy": "Trusted by 40+ teams around the world who play to win"
+    "subtitle": "A growth marketing service for ambitious companies that want to grow fast. Run by experts, driven by data, and focused on measurable results without long-term contracts.",
+    "trustedBy": "Trusted by 40+ teams around the world who play to win",
+    "stats": ["52% CPL drop", "5x faster launches", "$4M+ ad spend managed"]
   },
   "results": {
     "title": "Firms that adopts experimentation see a 30% to 100% improvement in performance in just one year.",
     "cta": "See Case Studies"
   },
   "resultsLayer": {
+    "kicker": "Proof",
+    "title": "Results that compound over time",
+    "subtitle": "Most marketers talk about clicks. I focus on revenue, retention, and scaling efficiency with a system built for compounding gains.",
+    "proofPoints": [
+      "Multi-million dollar budgets managed with ROI discipline.",
+      "Full-funnel optimization across acquisition, activation, and retention.",
+      "Fast experimentation cycles with clear, measurable outcomes."
+    ],
     "title1": "Results That Matter.",
     "title2": "Not Just Vanity Metrics.",
     "desc1": "Most marketers talk about \"clicks\". I talk about revenue, retention, and scaling efficiency.",
@@ -256,6 +265,8 @@
   "howItWorks": {
     "title": "How I Work",
     "subtitle": "A transparent, data-first process to identify and scale growth opportunities.",
+    "note": "Typical kickoff in 7-10 days with a sprint cadence that keeps your growth engine moving.",
+    "link": "Read the methodology",
     "steps": [
       {
         "title": "Audit & Analysis",
@@ -637,6 +648,27 @@
       "p2": "Keep communication open. Many top teams share weekly updates or maintain a dedicated channel for experiment results and learnings. This keeps momentum high and aligns stakeholders.",
       "cta": "Book a Growth Call"
     }
+  },
+  "home": {
+    "heroCard": {
+      "title": "Growth Engine",
+      "status": "Live",
+      "revenueLift": "Revenue Lift",
+      "revenueValue": "1.3K%",
+      "roasValue": "+18% ROAS",
+      "payback": "Payback",
+      "paybackValue": "45 days",
+      "momentum": "Weekly momentum",
+      "momentumValue": "+24%",
+      "activeExperiments": "Active experiments",
+      "activeExperimentsValue": "8 running",
+      "growsLoop": "G.R.O.W.S loop",
+      "stableCac": "Stable CAC"
+    },
+    "capabilitiesTitle": "Your growth engine, end-to-end",
+    "capabilitiesSubtitle": "Strategy, experimentation, and execution built around sustainable growth. Everything ties back to your North Star metric.",
+    "playbooksTitle": "Playbooks & Experimentation",
+    "playbooksDesc": "Every experiment is documented and turned into playbooks for faster onboarding, clearer learning, and smarter iteration."
   },
   "finalCta": {
     "title": "Ready to scale past your current plateau?",

@@ -193,14 +193,23 @@
     "badge": "Disponível para novos projetos de growth",
     "title1": "Escale sua Receita com o",
     "title2": "Método G.R.O.W.S",
-    "subtitle": "Um serviço de growth marketing para empresas ambiciosas que querem crescer rápido. Operado por especialistas, orientado por dados e focado em resultados rápidos e mensuráveis — sem contratos de longo prazo.",
-    "trustedBy": "Confiado por mais de 40 equipes ao redor do mundo que jogam para ganhar"
+    "subtitle": "Um serviço de growth marketing para empresas ambiciosas que querem crescer rápido. Operado por especialistas, orientado por dados e focado em resultados mensuráveis — sem contratos de longo prazo.",
+    "trustedBy": "Confiado por mais de 40 equipes ao redor do mundo que jogam para ganhar",
+    "stats": ["Queda de 52% no CPL", "Lançamentos 5x mais rápidos", "$4M+ em mídia gerida"]
   },
   "results": {
     "title": "Empresas que adotam experimentação veem uma melhoria de 30% a 100% na performance em apenas um ano.",
     "cta": "Ver Cases de Estudo"
   },
   "resultsLayer": {
+    "kicker": "Prova",
+    "title": "Resultados que se acumulam no tempo",
+    "subtitle": "A maioria fala de cliques. Eu foco em receita, retenção e eficiência de escala com um sistema feito para ganhos compostos.",
+    "proofPoints": [
+      "Orçamentos multimilionários geridos com disciplina de ROI.",
+      "Otimização full-funnel em aquisição, ativação e retenção.",
+      "Ciclos rápidos de experimentação com resultados mensuráveis."
+    ],
     "title1": "Resultados Que Importam.",
     "title2": "Além de Métricas de Vaidade.",
     "desc1": "A maioria dos profissionais de marketing fala sobre \"cliques\". Eu foco em receita, retenção e eficiência de escala.",
@@ -256,6 +265,8 @@
   "howItWorks": {
     "title": "Como Eu Trabalho",
     "subtitle": "Um processo transparente e guiado por dados para identificar e escalar oportunidades de crescimento.",
+    "note": "Kickoff típico em 7 a 10 dias com cadência de sprints para manter o motor de growth acelerando.",
+    "link": "Ler a metodologia",
     "steps": [
       {
         "title": "Auditoria & Análise",
@@ -637,6 +648,27 @@
       "p2": "Mantenha comunicação aberta. Muitos times de alto desempenho compartilham atualizações semanais ou mantêm um canal dedicado aos resultados e aprendizados dos testes.",
       "cta": "Agendar uma Chamada de Growth"
     }
+  },
+  "home": {
+    "heroCard": {
+      "title": "Motor de Growth",
+      "status": "Ativo",
+      "revenueLift": "Aumento de Receita",
+      "revenueValue": "1,3K%",
+      "roasValue": "+18% ROAS",
+      "payback": "Payback",
+      "paybackValue": "45 dias",
+      "momentum": "Momentum semanal",
+      "momentumValue": "+24%",
+      "activeExperiments": "Experimentos ativos",
+      "activeExperimentsValue": "8 rodando",
+      "growsLoop": "Loop G.R.O.W.S",
+      "stableCac": "CAC estável"
+    },
+    "capabilitiesTitle": "Seu motor de growth, ponta a ponta",
+    "capabilitiesSubtitle": "Estratégia, experimentação e execução para crescimento sustentável. Tudo conectado à sua North Star.",
+    "playbooksTitle": "Playbooks & Experimentação",
+    "playbooksDesc": "Cada experimento vira um playbook para onboarding mais rápido, aprendizado mais claro e iteração mais inteligente."
   },
   "finalCta": {
     "title": "Pronto para escalar além do seu patamar atual?",
