@@ -19,9 +19,17 @@
       "blog": "Blog"
     },
     "footer": {
-      "desc": "Growth Marketing and Paid Media Specialist scaling multi-million dollar budgets.",
+      "desc": "Helping companies scale revenue through data-driven experimentation programs and full-funnel optimization.",
       "contact": "Contact",
-      "menu": "Menu"
+      "menu": "Menu",
+      "resources": "Resources",
+      "tools": "Tools",
+      "contactLink": "Contact",
+      "location": "Brazil",
+      "kicker": "Ready to grow",
+      "ctaTitle": "Let’s build your growth engine",
+      "ctaSubtitle": "A structured, data-driven system to scale acquisition, retention, and revenue.",
+      "rights": "All rights reserved."
     }
   },
   "about": {
