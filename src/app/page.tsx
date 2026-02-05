@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { useLanguage } from "@/context/LanguageContext";
 import {
   ArrowRight,
   BarChart3,
@@ -22,7 +19,6 @@ import { Button } from "@/components/ui/button";
 
 // --- 1. Visual Hierarchy Layer (Hero) ---
 function Hero() {
-  const { t } = useLanguage();
   const companies = [
     "Interactive Financial ",
     "Wishpond",
@@ -38,25 +34,25 @@ function Hero() {
         {/* Availability Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100/10 border border-green-400/20 backdrop-blur-sm mb-6">
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-          <span className="text-sm font-medium text-green-100">{t("hero.badge")}</span>
+          <span className="text-sm font-medium text-green-100">Available for new growth projects</span>
         </div>
 
         <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-8 leading-tight text-white">
-          {t("hero.title1")} <br className="hidden md:block" />
-          {t("hero.title2")}
+          Scale Your Revenue With <br className="hidden md:block" />
+          The G.R.O.W.S Method
           <span className="text-brand-orange inline-block ml-2 align-top text-4xl md:text-6xl">
             ✨  
           </span>
         </h1>
 
         <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
-          {t("hero.subtitle")}
+          A growth marketing service for ambitious companies that wants to grow fast. Run by experts, driven by data, and focused on rapidly, measurable results without long-term contract.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button asChild size="lg" className="h-14 px-10 text-lg shadow-xl bg-brand-orange hover:bg-orange-600 text-white border-0 font-bold rounded-md group">
             <Link href="https://calendly.com/gabriel-growwithzamp/30min" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-              {t("common.bookCall")}
+              Book a Growth Call
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
@@ -66,7 +62,7 @@ function Hero() {
         <div className="flex items-center justify-center gap-4 text-sm text-blue-200 font-medium mb-16">
           <div className="flex items-center gap-2">
              <span className="text-2xl">❤️</span>
-             <span>{t("hero.trustedBy")}</span>
+             <span>Trusted by <strong>40+</strong> teams around the world who play to win</span>
           </div>
         </div>
 
@@ -85,7 +81,7 @@ function Hero() {
            ))}
          </div>
          <p className="text-blue-300 text-xs mt-8">
-            {t("results.title")}
+            Firms that adopts experimentation see a 30% to 100% improvement in performance in just one year.
          </p>
       </div>
     </section>
@@ -97,12 +93,11 @@ function Hero() {
 
 // --- 2. Persuasion Layer (Results & Benefits) ---
 function ResultsLayer() {
-  const { t } = useLanguage();
   const stats = [
-    { value: "52%", label: t("resultsLayer.stats.tiktok"), icon: TrendingUp },
-    { value: "$4M+", label: t("resultsLayer.stats.adSpend"), icon: BarChart3 },
-    { value: "86%", label: t("resultsLayer.stats.churn"), icon: CheckCircle2 },
-    { value: "5x", label: t("resultsLayer.stats.ai"), icon: Zap },
+    { value: "52%", label: "Reduction in CPA (TikTok Ads)", icon: TrendingUp },
+    { value: "$4M+", label: "Annual Ad Spend Managed", icon: BarChart3 },
+    { value: "86%", label: "Reduction in Revenue Churn", icon: CheckCircle2 },
+    { value: "5x", label: "Faster Campaign Launch (AI)", icon: Zap },
   ];
 
   return (
@@ -110,11 +105,12 @@ function ResultsLayer() {
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-heading">
-            {t("resultsLayer.title1")}{" "}
-            <span className="text-blue-600">{t("resultsLayer.title2")}</span>
+            Results That Matter.{" "}
+            <span className="text-blue-600">Not Just Vanity Metrics.</span>
           </h2>
           <p className="text-body">
-            {t("resultsLayer.desc1")}
+            Most marketers talk about &quot;clicks&quot;. I talk about revenue, retention,
+            and scaling efficiency.
           </p>
         </div>
 
@@ -138,21 +134,20 @@ function ResultsLayer() {
 }
 
 function ValueProposition() {
-  const { t } = useLanguage();
   const benefits = [
     {
-      title: t("valueProposition.benefits.engineering.title"),
-      desc: t("valueProposition.benefits.engineering.desc"),
+      title: "Full-Funnel Engineering",
+      desc: "I don't just run ads. I fix the tracking (GA4/Server-side), optimize the landing page CRO, and align the creatives. A broken funnel kills the best ads.",
       icon: Target,
     },
     {
-      title: t("valueProposition.benefits.tshaped.title"),
-      desc: t("valueProposition.benefits.tshaped.desc"),
+      title: "The T-Shaped Advantage",
+      desc: "My seasoned background in Marketing and Information Science means I can analyze data, launch killer campaigns, optimize creatives and scale new channels fast and independently.",
       icon: Code2,
     },
     {
-      title: t("valueProposition.benefits.profit.title"),
-      desc: t("valueProposition.benefits.profit.desc"),
+      title: "Profit-First Scaling",
+      desc: "Scaling isn't just spending more. It's about maintaining unit economics. I use LTV:CAC ratios to determine exactly when and where to push the budget.",
       icon: Database,
     },
   ];
@@ -177,31 +172,30 @@ function ValueProposition() {
 }
 
 function PersonasSection() {
-  const { t } = useLanguage();
   const personas = [
     {
-      title: t("personas.items.saas.title"),
+      title: "SaaS Founders",
       icon: Rocket,
-      description: t("personas.items.saas.desc"),
-      metric: t("personas.items.saas.metric"),
+      description: "Scale user acquisition profitably while maintaining healthy unit economics.",
+      metric: "3x ROAS improvement",
     },
     {
-      title: t("personas.items.ecommerce.title"),
+      title: "E-commerce Brands",
       icon: ShoppingCart,
-      description: t("personas.items.ecommerce.desc"),
-      metric: t("personas.items.ecommerce.metric"),
+      description: "Lower CAC and increase AOV with data-driven creative testing and funnel optimization.",
+      metric: "52% reduction in CPA",
     },
     {
-      title: t("personas.items.b2b.title"),
+      title: "B2C & B2B Companies",
       icon: Building2,
-      description: t("personas.items.b2b.desc"),
-      metric: t("personas.items.b2b.metric"),
+      description: "Generate qualified leads at scale with advanced tracking and attribution models.",
+      metric: "5x faster launches",
     },
     {
-      title: t("personas.items.agencies.title"),
+      title: "Agencies & Partners",
       icon: Briefcase,
-      description: t("personas.items.agencies.desc"),
-      metric: t("personas.items.agencies.metric"),
+      description: "White-label strategy and execution for growth marketing, tracking, automation, and reporting.",
+      metric: "10+ agency partnerships",
     },
   ];
 
@@ -210,10 +204,10 @@ function PersonasSection() {
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-heading">
-            {t("personas.title")}
+            Who I Work With
           </h2>
           <p className="text-body">
-            {t("personas.subtitle")}
+            From startups to Fortune 500, I help growth-focused companies maximize their marketing ROI.
           </p>
         </div>
 
@@ -244,32 +238,31 @@ function PersonasSection() {
 }
 
 function HowItWorksSection() {
-  const { t, dict } = useLanguage();
-  const stepsData = dict.howItWorks.steps;
   const steps = [
     {
       number: "01",
-      title: stepsData[0].title,
+      title: "Audit & Analysis",
       icon: Search,
-      description: stepsData[0].desc,
+      description: "Deep dive into your current marketing stack, tracking setup, and funnel performance to identify gaps.",
     },
+
     {
       number: "02",
-      title: stepsData[1].title,
+      title: "Foundational Strategy",
       icon: Target,
-      description: stepsData[1].desc,
+      description: "Develop strategic assets to ensure the success of the G.R.O.W.S process implementation.",
     },
     {
       number: "03",
-      title: stepsData[2].title,
+      title: "Launch G.R.O.W.S",
       icon: Rocket,
-      description: stepsData[2].desc,
+      description: "Curate high-impact ideas, prioritize concepts, launch A/B tests, learn from data, and scale winners.",
     },
     {
       number: "04",
-      title: stepsData[3].title,
+      title: "Optimize & Report",
       icon: LineChart,
-      description: stepsData[3].desc,
+      description: "Continuous improvement through data analysis, creative iteration, and transparent ROI reporting.",
     },
   ];
 
@@ -278,10 +271,10 @@ function HowItWorksSection() {
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-heading">
-            {t("howItWorks.title")}
+            How It Works
           </h2>
           <p className="text-body">
-            {t("howItWorks.subtitle")}
+            A systematic approach to scaling your revenue with predictable, measurable results.
           </p>
         </div>
 
@@ -303,7 +296,7 @@ function HowItWorksSection() {
                 
                 <div className="space-y-2">
                   <div className="text-sm font-bold text-blue-600 uppercase tracking-wider">
-                    {t("common.step") || "Step"} {step.number}
+                    Step {step.number}
                   </div>
                   <h3 className="text-xl font-bold text-heading">
                     {step.title}
@@ -322,20 +315,24 @@ function HowItWorksSection() {
 }
 
 function TShapedSection() {
-  const { t, dict } = useLanguage();
-  const skillsData = dict.skills.categories;
   const skills = [
     {
-      area: skillsData.channels.title,
-      items: skillsData.channels.items,
+      area: "Growth Channels",
+      items: ["Google Ads", "Meta Ads", "TikTok Ads", "LinkedIn Ads", "SEO"],
     },
     {
-      area: skillsData.technical.title,
-      items: skillsData.technical.items,
+      area: "Technical & Data",
+      items: ["Python", "SQL", "GA4 & GTM", "HTML/CSS/JS", "Next.js"],
     },
     {
-      area: skillsData.strategy.title,
-      items: skillsData.strategy.items,
+      area: "Strategy",
+      items: [
+        "CRO",
+        "Unit Economics",
+        "Retention/Churn",
+        "Marketing Automation",
+        "AI Agents",
+      ],
     },
   ];
 
@@ -345,17 +342,17 @@ function TShapedSection() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 gap-6">
           <div>
             <h2 className="text-3xl font-bold text-slate-900 mb-2">
-              {t("skills.title")}
+              My T-Shaped Skill Stack
             </h2>
             <p className="text-slate-600">
-              {t("skills.subtitle")}
+              Bridging the gap between Marketing, Data, and Engineering.
             </p>
           </div>
           <Link
             href="/tools/t-shaped-marketer-tool"
             className="text-blue-600 hover:text-blue-500 text-sm font-medium flex items-center gap-1"
           >
-            {t("skills.interactive")} <ArrowRight size={14} />
+            View Interactive Map <ArrowRight size={14} />
           </Link>
         </div>
 
@@ -388,14 +385,46 @@ function TShapedSection() {
 
 // --- 3. Qualification Layer (FAQ & CTA) ---
 function FaqSection() {
-  const { t, dict } = useLanguage();
-  const faqs = dict.faq.items;
+  const faqs = [
+  {
+    q: "What exactly do you help with?",
+    a: "I manage the full growth system—ad strategy, media buying, tracking (GA4/server-side), creative optimization, landing page CRO, and experimentation.",
+  },
+  {
+    q: "Is this just performance marketing, or full growth strategy?",
+    a: "It's full-funnel growth. I go beyond ads to align acquisition, activation, retention, and referral with your business goals using proven frameworks like G.R.O.W.S.",
+  },
+  {
+    q: "What budgets do you work with?",
+    a: "I deliver the best impact for companies spending between $10k - $200k/month on ads who want to scale efficiently and learn fast.",
+  },
+  {
+    q: "How fast can we launch?",
+    a: "With my pre-built AI agents and growth frameworks, we can typically audit, fix tracking, and launch new campaigns within 7–10 days.",
+  },
+  {
+    q: "Do I need in-house resources to work with you?",
+    a: "Not necessarily. I can run end-to-end or plug into your team. I handle setup, tracking, creatives, execution, and reporting.",
+  },
+  {
+    q: "Do you work as a freelancer or agency?",
+    a: "Think of me as your external growth partner—with the flexibility of a freelancer and the process of a well-run growth team.",
+  },
+  {
+    q: "How do you measure success?",
+    a: "Every project starts with your main KPI—CAC, ROAS, LTV, conversion rate, etc.—and we track progress through weekly reporting.",
+  },
+  {
+    q: "Are there long-term contracts?",
+    a: "No. I work in flexible sprints or month-to-month retainers. You stay because it works—not because you're locked in.",
+  },
+];
 
   return (
     <section className="py-20 bg-background">
       <div className="container px-4 mx-auto max-w-3xl">
         <h2 className="text-3xl font-bold text-heading text-center mb-12">
-          {t("faq.title")}
+          Common Questions
         </h2>
         <div className="space-y-6">
           {faqs.map((item, idx) => (
@@ -416,15 +445,15 @@ function FaqSection() {
 }
 
 function ContactCTA() {
-  const { t } = useLanguage();
   return (
     <section className="py-32 bg-gradient-to-b from-slate-50 to-white text-center border-t border-slate-100">
       <div className="container px-4 mx-auto max-w-2xl">
         <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-          {t("finalCta.title")}
+          Ready to scale past your current plateau?
         </h2>
         <p className="text-xl text-slate-600 mb-10">
-          {t("finalCta.subtitle")}
+          I only take on 2 new growth projects per quarter to ensure maximum
+          focus.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
@@ -433,7 +462,7 @@ function ContactCTA() {
             rel="noopener noreferrer"
             className="h-14 px-10 rounded-md bg-brand-orange text-white font-bold text-lg flex items-center justify-center hover:bg-orange-600 transition-colors shadow-xl group"
           >
-            {t("finalCta.button")}
+            Book a Growth Call
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -448,7 +477,7 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
       <Hero />
       <ResultsLayer />
-      <PersonasSection />
+      {/* <PersonasSection /> */}
       <HowItWorksSection />
       <TShapedSection />
       <ValueProposition />

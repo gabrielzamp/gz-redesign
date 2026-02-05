@@ -49,7 +49,7 @@ function CaseStudy1() {
       <div className="container px-4 mx-auto max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left: Context & Challenge */}
-          <div className="sticky top-24">
+          <div className="md:sticky md:top-24">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold mb-6">
               <Bot size={14} /> {t("caseStudies.cs1.badge")}
             </div>
@@ -147,7 +147,7 @@ function CaseStudy2() {
       <div className="container px-4 mx-auto max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left: Context */}
-          <div className="sticky top-24">
+          <div className="md:sticky md:top-24">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100 text-purple-600 text-xs font-bold mb-6">
               <Users size={14} /> {t("caseStudies.cs2.badge")}
             </div>
@@ -245,7 +245,7 @@ function CaseStudy3() {
       <div className="container px-4 mx-auto max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left: Context */}
-          <div className="sticky top-24">
+          <div className="md:sticky md:top-24">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 border border-green-100 text-green-600 text-xs font-bold mb-6">
               <TrendingUp size={14} /> {t("caseStudies.cs3.badge")}
             </div>
@@ -343,7 +343,7 @@ function CaseStudy4() {
       <div className="container px-4 mx-auto max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left: Context */}
-          <div className="sticky top-24">
+          <div className="md:sticky md:top-24">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-xs font-bold mb-6">
               <BarChart3 size={14} /> {t("caseStudies.cs4.badge")}
             </div>

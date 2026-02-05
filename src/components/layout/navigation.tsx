@@ -74,13 +74,16 @@ export default function Navigation() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-white hover:text-white/80 z-50"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          {/* Mobile Actions */}
+          <div className="md:hidden flex items-center gap-3 z-50">
+            <LanguageSwitcher />
+            <button
+              className="text-white hover:text-white/80"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
 
           {/* Mobile Nav Overlay */}
           <div
@@ -108,9 +111,6 @@ export default function Navigation() {
               {t("common.bookCall")}
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
-            <div className="mt-8">
-              <LanguageSwitcher />
-            </div>
           </div>
         </nav>
       </div>
