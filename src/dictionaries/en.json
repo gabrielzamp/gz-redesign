@@ -195,7 +195,11 @@
     "title2": "The G.R.O.W.S Method",
     "subtitle": "A growth marketing service for ambitious companies that want to grow fast. Run by experts, driven by data, and focused on measurable results without long-term contracts.",
     "trustedBy": "Trusted by 40+ teams around the world who play to win",
-    "stats": ["52% CPL drop", "5x faster launches", "$4M+ ad spend managed"]
+    "stats": [
+      "52% CPL drop",
+      "5x faster launches",
+      "$4M+ ad spend managed"
+    ]
   },
   "results": {
     "title": "Firms that adopts experimentation see a 30% to 100% improvement in performance in just one year.",
@@ -293,15 +297,33 @@
     "categories": {
       "channels": {
         "title": "Growth Channels",
-        "items": ["Google Ads", "Meta Ads", "TikTok Ads", "LinkedIn Ads", "SEO"]
+        "items": [
+          "Google Ads",
+          "Meta Ads",
+          "TikTok Ads",
+          "LinkedIn Ads",
+          "SEO"
+        ]
       },
       "technical": {
         "title": "Technical & Data",
-        "items": ["Python", "SQL", "GA4 & GTM", "HTML/CSS/JS", "Next.js"]
+        "items": [
+          "Python",
+          "SQL",
+          "GA4 & GTM",
+          "HTML/CSS/JS",
+          "Next.js"
+        ]
       },
       "strategy": {
         "title": "Strategy",
-        "items": ["CRO", "Unit Economics", "Retention/Churn", "Marketing Automation", "AI Agents"]
+        "items": [
+          "CRO",
+          "Unit Economics",
+          "Retention/Churn",
+          "Marketing Automation",
+          "AI Agents"
+        ]
       }
     }
   },
@@ -469,16 +491,18 @@
     "hero": {
       "badge": "The Growth Hacking Process: A Step-by-Step Guide",
       "title": "Growth Hacking Is a Process, Not a Trick",
-      "subtitle": "Growth hacking is not a magical solution or a quick fix. It is a disciplined, repeatable process of experimentation, measurement, and refinement.",
-      "quote": "Fall in love with the process, and the results will come - Eric Thomas"
+      "subtitle": "Growth hacking is not a quick fix. It's a repeatable process of testing, learning, and improving over time.",
+      "quote": "Fall in love with the process, and the results will come. — Eric Thomas"
     },
     "intro": {
       "title": "Growth marketing is a system",
-      "p1": "There is no single trick. The companies that scale do it by running a strict, data-driven process. Discovering \"silver bullets\" is the result of hard work, not random ideas.",
-      "p2": "Do you follow a structured approach for researching, prioritizing, designing, testing, and analyzing growth experiments? If not, your experiments are unlikely to produce consistent paying customers.",
-      "p3": "A magic growth hack that works for everyone does not exist. Beyond the buzz, growth hacking is a step-by-step process.",
-      "p4": "Scraping, automation, virality loops, and other \"hacky\" tactics can be powerful, but without a disciplined system they rarely create sustainable growth.",
-      "quickLook": "A quick look into the process"
+      "p1": "There is no single tactic that makes companies successful. The teams that scale run an organized, data-driven process.",
+      "p2": "If you do not have a plan for researching, prioritizing, designing, testing, and analyzing experiments, you will not get consistent paying customers.",
+      "p3": "There is no universal formula. Growth hacking is a simple step-by-step process.",
+      "p4": "Scraping, automation, virality loops, and other tactics can be powerful, but without a system they rarely create durable growth.",
+      "quickLook": "A quick look into the process",
+      "calloutTitle": "Hacky tactics only work with a system",
+      "calloutBody": "Shortcuts can create spikes, but only a disciplined process turns them into lasting growth."
     },
     "overview": [
       "Find product-market fit",
@@ -489,17 +513,24 @@
     "step1": {
       "badge": "Step 1",
       "title": "Find Product-Market Fit",
-      "p1": "A fast growth process is useless without product-market fit. If users would not miss your product, growth will not save you. Your priority is building the right product for the right market.",
-      "noteTitle": "Growth before PMF is wasted",
-      "noteBody": "Embrace a lean approach: identify your potential customers, understand their needs, and build a product that turns them into early advocates. It takes time and iteration, but scaling a weak product wastes even more time.",
-      "signalsTitle": "How do you know you reached PMF?",
+      "lead": "A product that grows fast is worthless if people do not truly need it. If users would not notice it disappearing, growth will not save you.",
+      "foundationTitle": "Growth before PMF is a weak foundation",
+      "foundationBody": "Scaling before demand is real is like building a house on sand. Focus on the right customers, understand their needs, and build a product they want to talk about.",
+      "pmfChecklistTitle": "Signals you are close to PMF",
+      "pmfChecklist": [
+        "Users would be disappointed if the product disappeared.",
+        "People talk about the product and recommend it.",
+        "Retention is strong and usage is meaningful.",
+        "Customers are willing to pay and revenue is repeatable."
+      ],
+      "signalsTitle": "Structured PMF tests",
       "signals": [
         {
           "title": "Sean Ellis \"Very Disappointed\" method",
           "points": [
-            "Survey active users with: \"How would you feel if you could no longer use our product tomorrow?\"",
+            "Ask active users: \"How would you feel if you could no longer use our product tomorrow?\"",
             "Options: extremely upset, somewhat upset, not upset at all, or I no longer use this.",
-            "If 40%+ answer \"very disappointed\", you have a strong PMF signal."
+            "If 40%+ answer \"very disappointed,\" you have a strong PMF signal."
           ]
         },
         {
@@ -507,40 +538,40 @@
           "points": [
             "Strong organic growth and referrals.",
             "High retention and low churn for the category.",
-            "Meaningful, frequent product usage that matches the core value."
+            "Meaningful, frequent usage that reflects the core value."
           ]
         }
       ],
       "overlapTitle": "When can growth hacking start?",
-      "overlapBody": "There is overlap between the Problem-Solution Fit phase and PMF. At this stage, growth hacking can be used to explore opportunities in data and behavior patterns. Use frameworks like the Bullseye Template from Traction to focus on the most promising channels, but never use growth tactics to mask a product without real pull.",
+      "overlapBody": "There is overlap between Problem-Solution Fit and PMF. At this stage, use growth to explore data and behavior patterns. Use tools like the Bullseye Template from Traction to focus on promising channels, but never use growth tactics to mask weak demand.",
       "timingTitle": "Timing matters",
-      "timingBody": "Growth processes work best when the company is past the early validation phase and ready to scale. The right strategy at the right time turns a good product into a fast-growing business."
+      "timingBody": "Once product validation is clear, growth processes start paying off. The right strategy at the right time turns a good product into a fast-growing business."
     },
     "step2": {
       "badge": "Step 2",
-      "title": "Five prerequisites before you scale",
-      "p1": "Once you hit PMF, the growth process still needs a foundation. Align the team on these prerequisites before rapid experimentation.",
-      "p2": "Growth is a team sport. Everyone involved in the process needs to understand the system. A clear foundation ensures experiments are focused and measurable.",
+      "title": "Set the five prerequisites",
+      "lead": "After PMF, growth still needs a foundation. Align the team on these prerequisites before rapid experimentation.",
+      "teamNote": "Growth is a team sport. Everyone needs to understand the system so experiments stay focused and measurable.",
       "cards": [
         {
           "title": "Business Model Canvas",
-          "desc": "A one-page visual model of your value proposition, customers, channels, operations, and economics. It aligns teams and speeds onboarding."
+          "desc": "A one-page map of your value proposition, customers, channels, operations, and economics. It aligns teams and speeds onboarding."
         },
         {
           "title": "Value Proposition Canvas",
-          "desc": "Clarifies how your product solves real customer pains and creates gains. It should reflect actual customer behavior, not idealized assumptions."
+          "desc": "Clarifies how your product solves real customer pains and creates gains. It should reflect real behavior, not assumptions."
         },
         {
           "title": "Personas",
-          "desc": "Define 2 to 3 key personas deeply: goals, behaviors, pain points, alternatives, and decision criteria. Validate them with real feedback."
+          "desc": "Define 2 to 3 key personas deeply: goals, behaviors, pain points, alternatives, and decision criteria. Validate with feedback."
         },
         {
           "title": "Pirate Funnel (AAARRR)",
-          "desc": "Map the user journey (Awareness, Acquisition, Activation, Retention, Referral, Revenue) and define the key actions and metrics at each stage."
+          "desc": "Map the user journey (Awareness, Acquisition, Activation, Retention, Referral, Revenue) and define the key actions and metrics."
         },
         {
           "title": "OMTM + North Star",
-          "desc": "Pick one metric that matters right now (OMTM). It changes over time, but it should always move you toward the North Star metric."
+          "desc": "Choose the One Metric That Matters right now. It changes over time but should always move you toward the North Star."
         }
       ],
       "personaTitle": "Persona guidelines",
@@ -550,39 +581,39 @@
         "Validate and refine personas through real tests and feedback."
       ],
       "omtmTitle": "OMTM vs North Star",
-      "omtmBody": "Your OMTM is a short-term focus that changes as you hit milestones. The North Star metric is the long-term direction. For example, a team might focus on trial conversion this month while the North Star is total hours delivered or recurring revenue."
+      "omtmBody": "The OMTM is a short-term focus that changes as you hit milestones. The North Star is the long-term direction. Example: this month you focus on trial conversion while the North Star is total hours delivered or recurring revenue."
     },
     "step3": {
       "badge": "Step 3",
       "title": "Implement Rapid Experimentation (G.R.O.W.S)",
-      "p1": "The growth loop makes experimentation predictable, fast, and measurable. It is how winning teams find the few experiments that unlock exponential growth.",
-      "p2": "It does not matter if you follow the Sean Ellis or Growth Tribe flavor of G.R.O.W.S. The structure is what creates speed and learning. If you want a visual walkthrough, Growth Tribe's David Arnoux has a clear step-by-step explanation of the loop.",
+      "lead": "The growth loop makes experimentation predictable, fast, and measurable. It helps teams find the few experiments that unlock outsized growth.",
+      "note": "Whether you follow the Sean Ellis or Growth Tribe flavor, the structure is what creates speed and learning.",
       "grows": [
         {
           "letter": "G",
           "title": "Gather Ideas",
-          "desc": "Collect hypotheses that could improve your OMTM. Use market research, qualitative insights, and quantitative data to feed a structured idea backlog.",
+          "desc": "Collect hypotheses that could improve your OMTM.",
           "bullets": [
             "Observe your market: best practices, trends, articles, and competitor patterns.",
-            "Quantitative data shows what happens; qualitative data explains why it happens.",
-            "Idea format: concept title, 5Ws + H, theory, success metric, and minimum benchmark.",
+            "Quantitative data shows what happens; qualitative data explains why.",
+            "Use a clear format: concept title, 5Ws + H, theory, success metric, minimum benchmark.",
             "Use a shared system to capture ideas, rank them, and track outcomes."
           ]
         },
         {
           "letter": "R",
           "title": "Rank Ideas",
-          "desc": "Prioritize with a scoring model (ICE, BRASS, PIES). Focus on momentum: mix high-impact bets with low-effort wins.",
+          "desc": "Prioritize with a scoring model like ICE, BRASS, or PIES.",
           "bullets": [
             "Ask the team to nominate a few top ideas before the sprint meeting.",
             "Decide and ship the best-scoring experiments each cycle.",
-            "Include low-hanging fruit to keep velocity high."
+            "Include low-hanging fruit to keep momentum high."
           ]
         },
         {
           "letter": "O",
           "title": "Outline Experiments",
-          "desc": "Keep it fast and simple. Design experiments that can ship quickly and validate potential before heavy investment.",
+          "desc": "Design fast experiments that validate potential before heavy investment.",
           "bullets": [
             "Define roles: Growth Lead, Developer, Designer, Analyst.",
             "Use agile rituals to keep velocity high.",
@@ -592,16 +623,16 @@
         {
           "letter": "W",
           "title": "Work the Plan",
-          "desc": "Execute. Do the 20% of work that yields 80% of results. If the test shows promise, double down; if not, move on.",
+          "desc": "Execute the 20% of work that yields 80% of results.",
           "bullets": [
             "Optimize for speed and learning, not perfection.",
-            "Agile Scrum principles help the team ship fast and stay aligned."
+            "Agile Scrum principles keep the team aligned and shipping."
           ]
         },
         {
           "letter": "S",
           "title": "Study the Data",
-          "desc": "Analyze carefully and categorize outcomes: inconclusive, failed (learned), failed (tweak), success (explore), success (scale).",
+          "desc": "Analyze carefully and classify outcomes: inconclusive, failed (learned), failed (tweak), success (explore), success (scale).",
           "bullets": [
             "Expect failures; they are part of the path to a breakthrough.",
             "Segment results by device, audience, geography, or product cohort.",
@@ -611,15 +642,15 @@
       ],
       "analysisTitle": "How to analyze experiments",
       "analysisPoints": [
-        "The experiment ends (usually 1 to 3 weeks to reduce seasonality).",
+        "End the experiment after 1 to 3 weeks to reduce seasonality.",
         "The growth lead reviews results using a consistent evaluation template.",
         "Classify outcomes: inconclusive, failure (no tweak), failure (tweak), success (explore), success (scale)."
       ],
       "abPrereqsTitle": "A/B testing prerequisites",
       "abPrereqs": [
-        "You need enough volume. A good rule of thumb is 1,000 conversions on the target action.",
-        "Early stage teams should run bigger changes instead of tiny tweaks.",
-        "Pick a statistical approach that matches your speed, risk tolerance, and team communication."
+        "You need enough volume. Aim for 1,000 conversions on the target action.",
+        "Early-stage teams should test bigger changes, not tiny tweaks.",
+        "Choose a statistical approach that matches your speed, risk tolerance, and team communication."
       ],
       "abNotesTitle": "A/B testing notes",
       "abNotes": [
@@ -644,9 +675,24 @@
     "step4": {
       "badge": "Step 4",
       "title": "Develop playbooks to iterate and scale",
-      "p1": "Store every experiment with its hypothesis, setup, results, and learnings. A living knowledge base prevents repeated failures and accelerates onboarding for new team members.",
-      "p2": "Keep communication open. Many top teams share weekly updates or maintain a dedicated channel for experiment results and learnings. This keeps momentum high and aligns stakeholders.",
-      "cta": "Book a Growth Call"
+      "lead": "Document every experiment with its hypothesis, setup, results, and learnings.",
+      "bullets": [
+        "Avoid repeating failed tests and accelerate new team onboarding.",
+        "Turn wins into repeatable playbooks.",
+        "Keep stakeholders aligned with a single source of truth."
+      ],
+      "note": "Keep communication open. Many top teams share weekly updates or maintain a dedicated channel for results and learnings."
+    },
+    "cta": {
+      "title": "Ready to build a repeatable growth system?",
+      "subtitle": "I can help you validate PMF, set the prerequisites, and run a high-velocity experimentation loop.",
+      "bullets": [
+        "Audit + roadmap in 7–10 days",
+        "Weekly experiments tied to your OMTM",
+        "Clear reporting and playbooks that compound"
+      ],
+      "button": "Book a Growth Call",
+      "note": "I only take on 2 new growth projects per quarter to keep focus high."
     }
   },
   "home": {

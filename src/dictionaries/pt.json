@@ -195,7 +195,11 @@
     "title2": "Método G.R.O.W.S",
     "subtitle": "Um serviço de growth marketing para empresas ambiciosas que querem crescer rápido. Operado por especialistas, orientado por dados e focado em resultados mensuráveis — sem contratos de longo prazo.",
     "trustedBy": "Confiado por mais de 40 equipes ao redor do mundo que jogam para ganhar",
-    "stats": ["Queda de 52% no CPL", "Lançamentos 5x mais rápidos", "$4M+ em mídia gerida"]
+    "stats": [
+      "Queda de 52% no CPL",
+      "Lançamentos 5x mais rápidos",
+      "$4M+ em mídia gerida"
+    ]
   },
   "results": {
     "title": "Empresas que adotam experimentação veem uma melhoria de 30% a 100% na performance em apenas um ano.",
@@ -293,15 +297,33 @@
     "categories": {
       "channels": {
         "title": "Canais de Growth",
-        "items": ["Google Ads", "Meta Ads", "TikTok Ads", "LinkedIn Ads", "SEO"]
+        "items": [
+          "Google Ads",
+          "Meta Ads",
+          "TikTok Ads",
+          "LinkedIn Ads",
+          "SEO"
+        ]
       },
       "technical": {
         "title": "Técnico & Dados",
-        "items": ["Python", "SQL", "GA4 & GTM", "HTML/CSS/JS", "Next.js"]
+        "items": [
+          "Python",
+          "SQL",
+          "GA4 & GTM",
+          "HTML/CSS/JS",
+          "Next.js"
+        ]
       },
       "strategy": {
         "title": "Estratégia",
-        "items": ["CRO", "Economia Unitária", "Retenção/Churn", "Automação de Marketing", "Agentes de IA"]
+        "items": [
+          "CRO",
+          "Economia Unitária",
+          "Retenção/Churn",
+          "Automação de Marketing",
+          "Agentes de IA"
+        ]
       }
     }
   },
@@ -469,16 +491,18 @@
     "hero": {
       "badge": "O Processo de Growth Hacking: Guia Passo a Passo",
       "title": "Growth Hacking é um processo, não um truque",
-      "subtitle": "Growth hacking não é solução mágica nem atalho. É um processo disciplinado e repetível de experimentação, medição e refinamento.",
-      "quote": "Apaixone-se pelo processo, e os resultados virão - Eric Thomas"
+      "subtitle": "Growth hacking não é um atalho. É um processo repetível de testar, aprender e melhorar ao longo do tempo.",
+      "quote": "Apaixone-se pelo processo, e os resultados virão. — Eric Thomas"
     },
     "intro": {
       "title": "Growth marketing é um sistema",
-      "p1": "Não existe um único truque. As empresas que escalam fazem isso seguindo um processo rigoroso e orientado a dados. Encontrar \"balas de prata\" é resultado de trabalho duro, não de ideias aleatórias.",
-      "p2": "Você segue uma abordagem estruturada para pesquisar, priorizar, desenhar, testar e analisar experimentos de growth? Se não, seus experimentos dificilmente vão gerar clientes pagantes de forma consistente.",
-      "p3": "Uma growth hack mágica que funciona para todos não existe. Além do buzz, growth hacking é um processo passo a passo.",
-      "p4": "Scraping, automação, loops de viralidade e outras táticas \"hacky\" podem ser poderosas, mas sem um sistema disciplinado raramente geram crescimento sustentável.",
-      "quickLook": "Visão rápida do processo"
+      "p1": "Não existe uma única tática que faz uma empresa crescer. Os times que escalam seguem um processo organizado e orientado por dados.",
+      "p2": "Se você não tem um plano para pesquisar, priorizar, desenhar, testar e analisar experimentos, dificilmente terá clientes pagantes consistentes.",
+      "p3": "Não há fórmula universal. Growth hacking é um processo simples, passo a passo.",
+      "p4": "Scraping, automação, loops de viralidade e outras táticas podem ser poderosas, mas sem um sistema raramente geram crescimento duradouro.",
+      "quickLook": "Visão rápida do processo",
+      "calloutTitle": "Táticas “hacky” só funcionam com sistema",
+      "calloutBody": "Atalhos podem gerar picos, mas apenas um processo disciplinado transforma isso em crescimento sustentável."
     },
     "overview": [
       "Encontrar product-market fit",
@@ -489,15 +513,22 @@
     "step1": {
       "badge": "Etapa 1",
       "title": "Encontrar Product-Market Fit",
-      "p1": "Um processo de crescimento rápido é inútil sem product-market fit. Se os usuários não sentirem falta do seu produto, growth não vai salvar. Sua prioridade é construir o produto certo para o mercado certo.",
-      "noteTitle": "Growth antes de PMF é desperdício",
-      "noteBody": "Adote uma abordagem lean: identifique clientes potenciais, entenda necessidades e construa um produto que os transforme em primeiros defensores. Isso leva tempo e iteração, mas escalar um produto fraco desperdiça ainda mais tempo.",
-      "signalsTitle": "Como saber se você chegou ao PMF?",
+      "lead": "Um produto que cresce rápido não vale nada se as pessoas não precisam dele. Se os usuários nem sentirem falta, o growth não vai salvar.",
+      "foundationTitle": "Growth antes de PMF é uma base frágil",
+      "foundationBody": "Escalar antes de existir demanda real é como construir uma casa na areia. Foque nos clientes certos, entenda suas necessidades e construa um produto que eles queiram recomendar.",
+      "pmfChecklistTitle": "Sinais de que você está perto do PMF",
+      "pmfChecklist": [
+        "Usuários ficariam desapontados se o produto sumisse.",
+        "As pessoas falam do produto e recomendam.",
+        "A retenção é forte e o uso é significativo.",
+        "Clientes estão dispostos a pagar e a receita é repetível."
+      ],
+      "signalsTitle": "Testes estruturados de PMF",
       "signals": [
         {
           "title": "Método de Sean Ellis \"Very Disappointed\"",
           "points": [
-            "Pesquise usuários ativos com: \"Como você se sentiria se não pudesse usar nosso produto a partir de amanhã?\"",
+            "Pergunte aos usuários ativos: \"Como você se sentiria se não pudesse usar nosso produto amanhã?\"",
             "Opções: extremamente desapontado, um pouco desapontado, nada desapontado, ou não uso mais.",
             "Se 40%+ responderem \"muito desapontado\", você tem um forte sinal de PMF."
           ]
@@ -507,82 +538,82 @@
           "points": [
             "Crescimento orgânico forte e indicações.",
             "Alta retenção e baixo churn para a categoria.",
-            "Uso significativo e frequente que reflete o valor central do produto."
+            "Uso frequente e significativo que reflete o valor central."
           ]
         }
       ],
       "overlapTitle": "Quando o growth hacking pode começar?",
-      "overlapBody": "Há sobreposição entre a fase de Problem-Solution Fit e o PMF. Nesse estágio, growth pode explorar oportunidades em dados e padrões de uso. Use frameworks como o Bullseye Template do Traction para focar nos canais mais promissores, mas nunca use táticas de growth para mascarar um produto sem tração real.",
+      "overlapBody": "Há sobreposição entre Problem-Solution Fit e PMF. Nesse estágio, use growth para explorar dados e padrões de comportamento. Use ferramentas como o Bullseye Template do Traction para focar nos canais promissores, mas nunca use táticas para mascarar demanda fraca.",
       "timingTitle": "O timing importa",
-      "timingBody": "Processos de growth funcionam melhor quando a empresa já passou da validação inicial e está pronta para escalar. A estratégia certa no momento certo transforma um bom produto em um negócio de crescimento acelerado."
+      "timingBody": "Quando a validação do produto está clara, o processo de growth começa a gerar resultado. A estratégia certa no momento certo transforma um bom produto em um negócio que cresce rápido."
     },
     "step2": {
       "badge": "Etapa 2",
-      "title": "Cinco pré-requisitos antes de escalar",
-      "p1": "Depois do PMF, o growth ainda precisa de uma base sólida. Alinhe o time nesses pré-requisitos antes da experimentação rápida.",
-      "p2": "Growth é um esporte coletivo. Todos no processo precisam entender o sistema. Uma base clara garante experimentos focados e mensuráveis.",
+      "title": "Definir os cinco pré-requisitos",
+      "lead": "Depois do PMF, o growth ainda precisa de base. Alinhe o time nesses pré-requisitos antes de experimentar rápido.",
+      "teamNote": "Growth é um esporte coletivo. Todos precisam entender o sistema para manter os experimentos focados e mensuráveis.",
       "cards": [
         {
           "title": "Business Model Canvas",
-          "desc": "Um modelo visual de uma página com proposta de valor, clientes, canais, operações e economia. Alinha o time e acelera o onboarding."
+          "desc": "Um mapa em uma página da proposta de valor, clientes, canais, operações e economia. Alinha o time e acelera o onboarding."
         },
         {
           "title": "Value Proposition Canvas",
-          "desc": "Clarifica como seu produto resolve dores reais e gera ganhos. Deve refletir o comportamento real do cliente, não suposições idealizadas."
+          "desc": "Explica como seu produto resolve dores reais e gera ganhos. Deve refletir o comportamento real, não suposições."
         },
         {
           "title": "Personas",
-          "desc": "Defina de 2 a 3 personas principais em profundidade: objetivos, comportamentos, dores, alternativas e critérios de decisão. Valide com feedback real."
+          "desc": "Defina 2 ou 3 personas-chave em profundidade: objetivos, comportamentos, dores, alternativas e critérios de decisão. Valide com feedback."
         },
         {
           "title": "Pirate Funnel (AAARRR)",
-          "desc": "Mapeie a jornada do usuário (Awareness, Acquisition, Activation, Retention, Referral, Revenue) e defina as ações e métricas-chave de cada etapa."
+          "desc": "Mapeie a jornada (Awareness, Acquisition, Activation, Retention, Referral, Revenue) e defina ações e métricas-chave."
         },
         {
           "title": "OMTM + North Star",
-          "desc": "Escolha uma métrica que importa agora (OMTM). Ela muda com o tempo, mas sempre deve levar à North Star."
+          "desc": "Escolha a métrica que importa agora. Ela muda com o tempo, mas deve sempre levar à North Star."
         }
       ],
-      "personaTitle": "Diretrizes para personas",
+      "personaTitle": "Diretrizes de personas",
       "personaPoints": [
         "Foque primeiro nas 2 ou 3 personas mais importantes.",
         "Defina traços profundos: objetivos, comportamentos, dia a dia e alternativas atuais.",
         "Valide e refine as personas com testes e feedback reais."
       ],
       "omtmTitle": "OMTM vs North Star",
-      "omtmBody": "O OMTM é um foco de curto prazo que muda conforme você atinge marcos. A North Star é a direção de longo prazo. Por exemplo, o time pode focar conversão do trial este mês enquanto a North Star é horas entregues ou receita recorrente."
+      "omtmBody": "O OMTM é um foco de curto prazo que muda conforme você atinge marcos. A North Star é a direção de longo prazo. Exemplo: neste mês você foca conversão do trial enquanto a North Star é horas entregues ou receita recorrente."
     },
     "step3": {
       "badge": "Etapa 3",
       "title": "Implementar Experimentação Rápida (G.R.O.W.S)",
-      "p1": "O loop de growth torna a experimentação previsível, rápida e mensurável. É assim que times vencedores encontram os poucos testes que desbloqueiam crescimento exponencial.",
-      "p2": "Não importa se você segue a abordagem de Sean Ellis ou Growth Tribe. A estrutura é o que gera velocidade e aprendizado. Se quiser um guia visual, o David Arnoux da Growth Tribe explica o loop passo a passo.",
+      "lead": "O loop de growth torna a experimentação previsível, rápida e mensurável. Ele ajuda a encontrar os poucos testes que destravam crescimento fora da curva.",
+      "note": "Não importa se você segue a abordagem de Sean Ellis ou Growth Tribe. A estrutura é o que gera velocidade e aprendizado.",
       "grows": [
         {
           "letter": "G",
           "title": "Gerar Ideias",
-          "desc": "Colete hipóteses que possam melhorar seu OMTM. Use pesquisa de mercado, insights qualitativos e dados quantitativos para alimentar um backlog estruturado de ideias.",
+          "desc": "Colete hipóteses que podem melhorar seu OMTM.",
           "bullets": [
             "Observe seu mercado: melhores práticas, tendências, artigos e padrões de concorrentes.",
-            "Dados quantitativos mostram o que acontece; qualitativos explicam o porquê.",
-            "Formato da ideia: título, 5Ws + H, teoria, métrica de sucesso e benchmark mínimo.",
-            "Use um sistema compartilhado para capturar ideias, ranqueá-las e acompanhar resultados."
+            "Dados quantitativos mostram o que acontece; dados qualitativos explicam o porquê.",
+            "Use um formato claro: título, 5Ws + H, teoria, métrica de sucesso e benchmark mínimo.",
+            "Use um sistema compartilhado para capturar ideias, ranquear e acompanhar resultados."
           ]
         },
         {
           "letter": "R",
           "title": "Priorizar Ideias",
-          "desc": "Priorize com um modelo de pontuação (ICE, BRASS, PIES). Busque momentum: combine apostas de alto impacto com ganhos rápidos.",
+          "desc": "Priorize com um modelo de pontuação como ICE, BRASS ou PIES.",
           "bullets": [
-            "Peça ao time para indicar poucas ideias antes da reunião de sprint.",
-            "Decida e execute os experimentos com maior pontuação.",
-            "Inclua low-hanging fruit para manter a velocidade."
+            "Peça ao time para indicar algumas ideias antes da reunião de sprint.",
+            "Decida e execute os experimentos com maior pontuação em cada ciclo.",
+            "Inclua low-hanging fruit para manter o momentum."
           ]
         },
         {
           "letter": "O",
           "title": "Desenhar Experimentos",
-          "desc": "Mantenha rápido e simples. Desenhe experimentos que possam ser lançados rápido e validem potencial antes de investir pesado.",
+          "desc": "Desenhe experimentos rápidos que validem potencial antes de grande investimento.",
           "bullets": [
             "Defina papéis: Growth Lead, Dev, Designer, Analista.",
             "Use rituais ágeis para manter a cadência.",
@@ -592,18 +623,18 @@
         {
           "letter": "W",
           "title": "Executar o Plano",
-          "desc": "Execute. Faça os 20% de trabalho que geram 80% dos resultados. Se o teste mostrar potencial, aprofunde; se não, siga em frente.",
+          "desc": "Execute os 20% de trabalho que geram 80% dos resultados.",
           "bullets": [
             "Otimize para velocidade e aprendizado, não perfeição.",
-            "Princípios de Agile Scrum ajudam o time a entregar rápido e alinhado."
+            "Princípios de Agile Scrum mantêm o time alinhado e entregando."
           ]
         },
         {
           "letter": "S",
           "title": "Estudar os Dados",
-          "desc": "Analise com cuidado e categorize resultados: inconclusivo, falha (aprender), falha (ajustar), sucesso (explorar), sucesso (escalar).",
+          "desc": "Analise e classifique resultados: inconclusivo, falha (aprendeu), falha (ajustar), sucesso (explorar), sucesso (escalar).",
           "bullets": [
-            "Espere falhas; elas fazem parte do caminho até o acerto.",
+            "Espere falhas; elas fazem parte do caminho até o breakthrough.",
             "Segmente resultados por dispositivo, audiência, geografia ou coorte.",
             "Documente aprendizados para os próximos testes."
           ]
@@ -611,14 +642,14 @@
       ],
       "analysisTitle": "Como analisar experimentos",
       "analysisPoints": [
-        "O experimento termina (geralmente de 1 a 3 semanas para reduzir sazonalidade).",
-        "O growth lead revisa os resultados usando um template consistente.",
-        "Classifique os resultados: inconclusivo, falha (sem ajuste), falha (ajustar), sucesso (explorar), sucesso (escalar)."
+        "Encerre o experimento após 1 a 3 semanas para reduzir sazonalidade.",
+        "O growth lead revisa resultados usando um template consistente.",
+        "Classifique resultados: inconclusivo, falha (sem ajuste), falha (ajustar), sucesso (explorar), sucesso (escalar)."
       ],
       "abPrereqsTitle": "Pré-requisitos para A/B testing",
       "abPrereqs": [
-        "É preciso volume suficiente. Uma boa regra é 1.000 conversões na ação-alvo.",
-        "Times em estágio inicial devem fazer mudanças maiores, não micro ajustes.",
+        "Você precisa de volume suficiente. Mire em 1.000 conversões na ação-alvo.",
+        "Times em estágio inicial devem testar mudanças maiores, não micro ajustes.",
         "Escolha uma abordagem estatística que combine com velocidade, risco e comunicação do time."
       ],
       "abNotesTitle": "Notas sobre A/B testing",
@@ -644,9 +675,24 @@
     "step4": {
       "badge": "Etapa 4",
       "title": "Criar playbooks para iterar e escalar",
-      "p1": "Armazene cada experimento com hipótese, setup, resultados e aprendizados. Uma base viva evita repetir falhas e acelera o onboarding.",
-      "p2": "Mantenha comunicação aberta. Muitos times de alto desempenho compartilham atualizações semanais ou mantêm um canal dedicado aos resultados e aprendizados dos testes.",
-      "cta": "Agendar uma Chamada de Growth"
+      "lead": "Documente cada experimento com hipótese, setup, resultados e aprendizados.",
+      "bullets": [
+        "Evite repetir testes falhos e acelere o onboarding do time.",
+        "Transforme vitórias em playbooks repetíveis.",
+        "Mantenha stakeholders alinhados com uma única fonte de verdade."
+      ],
+      "note": "Mantenha comunicação aberta. Muitos times de alto desempenho compartilham atualizações semanais ou mantêm um canal dedicado aos resultados e aprendizados."
+    },
+    "cta": {
+      "title": "Pronto para construir um sistema de growth repetível?",
+      "subtitle": "Posso ajudar a validar PMF, definir os pré-requisitos e rodar um loop de experimentação em alta velocidade.",
+      "bullets": [
+        "Auditoria + roadmap em 7–10 dias",
+        "Experimentos semanais ligados ao seu OMTM",
+        "Relatórios claros e playbooks que acumulam aprendizado"
+      ],
+      "button": "Agendar uma Chamada de Growth",
+      "note": "Eu só assumo 2 novos projetos de growth por trimestre para manter foco máximo."
     }
   },
   "home": {
