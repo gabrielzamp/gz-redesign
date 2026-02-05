@@ -1,90 +1,98 @@
+"use client";
+
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
-    <footer className="bg-white border-t border-slate-200 pt-16 pb-8">
+    <footer className="bg-brand-blue text-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          {/* Coluna 1: Marca & Descrição */}
-          <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="text-2xl font-bold text-slate-900 mb-4 block">
-              grow<span className="text-slate-400">.with.</span>zamp
+        <div className="pt-16 pb-8">
+          <div className="mb-12 rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60 mb-2">
+                {t("common.footer.kicker")}
+              </p>
+              <h3 className="text-2xl md:text-3xl font-bold text-white">
+                {t("common.footer.ctaTitle")}
+              </h3>
+              <p className="text-white/70 mt-2 max-w-xl">
+                {t("common.footer.ctaSubtitle")}
+              </p>
+            </div>
+            <Link
+              href="https://calendly.com/gabriel-growwithzamp/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-brand-orange text-white text-sm font-bold hover:bg-orange-600 transition-all shadow-lg group"
+            >
+              {t("common.bookCall")}
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
-            <p className="text-slate-600 max-w-sm leading-relaxed mb-6">
-              Helping companies scale revenue through
-              data-driven experimentation programs and full-funnel optimization.
-            </p>
-            <div className="flex gap-4">
-              <SocialLink
-                href="https://linkedin.com/in/gabrielzamp"
-                icon={<Linkedin size={20} />}
-              />
-              <SocialLink
-                href="https://github.com/gabrielzamp"
-                icon={<Github size={20} />}
-              />
-              <SocialLink
-                href="mailto:gabriel@gabrielzamp.com"
-                icon={<Mail size={20} />}
-              />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-12">
+            <div className="md:col-span-2">
+              <Link href="/" className="text-2xl font-bold text-white mb-4 block">
+                grow<span className="text-white/60">.with.</span>zamp
+              </Link>
+              <p className="text-white/70 max-w-sm leading-relaxed mb-6">
+                {t("common.footer.desc")}
+              </p>
+              <div className="flex gap-4">
+                <SocialLink
+                  href="https://linkedin.com/in/gabrielzamp"
+                  label="LinkedIn"
+                  icon={<Linkedin size={20} />}
+                />
+                <SocialLink
+                  href="https://github.com/gabrielzamp"
+                  label="GitHub"
+                  icon={<Github size={20} />}
+                />
+                <SocialLink
+                  href="mailto:gabriel@growwithzamp.com"
+                  label="Email"
+                  icon={<Mail size={20} />}
+                />
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-white font-semibold mb-6">{t("common.footer.menu")}</h3>
+              <ul className="space-y-3">
+                <FooterLink href="/" label={t("common.nav.home")} />
+                <FooterLink href="/about" label={t("common.nav.about")} />
+                <FooterLink href="/case-studies" label={t("common.nav.caseStudies")} />
+                <FooterLink href="/methodology" label={t("common.nav.methodology")} />
+              </ul>
+            </div>
+
+
+
+            <div>
+              <h3 className="text-white font-semibold mb-6">{t("common.footer.contact")}</h3>
+              <ul className="space-y-3 text-white/70 text-sm">
+                <li>{t("common.footer.location")}</li>
+                <li>
+                  <a
+                    href="mailto:gabriel@growwithzamp.com"
+                    className="hover:text-white transition-colors"
+                  >
+                    gabriel@growwithzamp.com
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
-          {/* Coluna 2: Navegação */}
-          <div>
-            <h3 className="text-slate-900 font-semibold mb-6">Navigation</h3>
-            <ul className="space-y-4">
-              <FooterLink href="/" label="Home" />
-              <FooterLink href="/about" label="About" />
-              <FooterLink href="/#case-studies" label="Case Studies" />
-              {/*<FooterLink
-                href="/tools/t-shaped-marketer-tool"
-                label="Tools & Resources"
-              />*/}
-            </ul>
-          </div>
-
-          {/* Coluna 3: Legal / Contato */}
-          <div>
-            <h3 className="text-slate-900 font-semibold mb-6">Contact</h3>
-            <ul className="space-y-4 text-slate-600">
-              <li>Brazil</li>
-              <li>
-                <a
-                  href="mailto:gabriel@gabrielzamp.com"
-                  className="hover:text-slate-900 transition-colors"
-                >
-                  gabriel@growwithzamp.com
-                </a>
-              </li>
-              <li className="pt-4">
-                <Link
-                  href="https://calendly.com/gabriel-growwithzamp/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-500 text-sm font-medium"
-                >
-                  → Book a Growth Call
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Copyright */}
-        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
-          <p>© {currentYear} Grow With Zamp. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="#" className="hover:text-slate-900 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="hover:text-slate-900 transition-colors">
-              Terms of Service
-            </Link>
+          <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+            <p>© {currentYear} Grow With Zamp. {t("common.footer.rights")}</p>
           </div>
         </div>
       </div>
@@ -93,13 +101,14 @@ export default function Footer() {
 }
 
 // Pequenos componentes auxiliares para limpar o código principal
-function SocialLink({ href, icon }: { href: string; icon: ReactNode }) {
+function SocialLink({ href, icon, label }: { href: string; icon: ReactNode; label: string }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-slate-900 hover:text-white transition-all duration-300 border border-slate-200"
+      aria-label={label}
+      className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/70 hover:bg-white hover:text-slate-900 transition-all duration-300 border border-white/10"
     >
       {icon}
     </a>
@@ -111,7 +120,7 @@ function FooterLink({ href, label }: { href: string; label: string }) {
     <li>
       <Link
         href={href}
-        className="text-slate-600 hover:text-slate-900 transition-colors text-sm"
+        className="text-white/70 hover:text-white transition-colors text-sm"
       >
         {label}
       </Link>

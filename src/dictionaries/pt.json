@@ -19,9 +19,17 @@
       "blog": "Blog"
     },
     "footer": {
-      "desc": "Especialista em Growth Marketing e Mídia Paga escalando investimentos multimilionários.",
+      "desc": "Ajudo empresas a escalar receita com experimentação orientada por dados e otimização full-funnel.",
       "contact": "Contato",
-      "menu": "Menu"
+      "menu": "Menu",
+      "resources": "Recursos",
+      "tools": "Ferramentas",
+      "contactLink": "Contato",
+      "location": "Brasil",
+      "kicker": "Pronto para crescer",
+      "ctaTitle": "Vamos construir sua máquina de growth",
+      "ctaSubtitle": "Um sistema estruturado e orientado por dados para escalar aquisição, retenção e receita.",
+      "rights": "Todos os direitos reservados."
     }
   },
   "about": {
