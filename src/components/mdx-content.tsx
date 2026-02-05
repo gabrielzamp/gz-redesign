@@ -1,16 +1,17 @@
+import type { HTMLAttributes } from 'react';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
 
 const components = {
-  h1: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
+  h1: (props: HTMLAttributes<HTMLHeadingElement>) => (
     <h1 {...props} className="text-3xl font-bold tracking-tight mt-8 mb-4" />
   ),
-  h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
+  h2: (props: HTMLAttributes<HTMLHeadingElement>) => (
     <h2 {...props} className="text-2xl font-semibold tracking-tight mt-8 mb-4" />
   ),
-  p: (props: React.HTMLAttributes<HTMLParagraphElement>) => (
+  p: (props: HTMLAttributes<HTMLParagraphElement>) => (
     <p {...props} className="leading-7 [&:not(:first-child)]:mt-6" />
   ),
   // Add more custom components as needed

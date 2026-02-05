@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/layout/navigation";
@@ -19,12 +20,15 @@ export const metadata: Metadata = {
   title: "Gabriel Zamp - Growth Marketer & Paid Ads Manager",
   description:
     "Growth manager, paid ads manager, digital marketeer and developer based in Brazil",
+  metadataBase: new URL("https://growwithzamp.com"),
 };
+
+import { LanguageProvider } from "@/context/LanguageContext";
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -63,14 +67,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans selection:bg-blue-500/30`}
       >
-        {/* Header Fixo */}
-        <Navigation />
+        <LanguageProvider>
+          {/* Header Fixo */}
+          <Navigation />
 
-        {/* Conteúdo da Página */}
-        <main className="min-h-screen">{children}</main>
+          {/* Conteúdo da Página */}
+          <main className="min-h-screen">{children}</main>
 
-        {/* Novo Footer */}
-        <Footer />
+          {/* Novo Footer */}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

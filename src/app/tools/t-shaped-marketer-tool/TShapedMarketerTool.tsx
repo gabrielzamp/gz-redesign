@@ -399,7 +399,7 @@ export default function TShapedMarketerToolPage() {
   };
 
   return (
-    <main className="min-h-screen bg-secondary/30 flex flex-col md:flex-row font-sans pt-20">
+    <main className="min-h-screen bg-secondary/30 flex flex-col md:flex-row font-sans pt-0">
       {showInfo && <InfoModal onClose={() => setShowInfo(false)} />}
 
       <div className="w-full md:w-1/3 lg:w-1/4 bg-background border-r border-border h-auto md:h-screen overflow-y-auto p-4 print:hidden shadow-xl z-50">

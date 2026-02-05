@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
 
@@ -92,7 +93,7 @@ export default function Footer() {
 }
 
 // Pequenos componentes auxiliares para limpar o código principal
-function SocialLink({ href, icon }: { href: string; icon: React.ReactNode }) {
+function SocialLink({ href, icon }: { href: string; icon: ReactNode }) {
   return (
     <a
       href={href}

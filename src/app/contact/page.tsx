@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { ArrowRight } from "lucide-react";
 
 interface FormData {
@@ -40,7 +40,7 @@ export default function ContactPage() {
     message: "",
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     // Handle form submission here
     console.log(formData);

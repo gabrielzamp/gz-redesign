@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 import {
   ArrowRight,
   Briefcase,
@@ -13,6 +16,7 @@ import {
 // --- Components ---
 
 function AboutHero() {
+  const { t } = useLanguage();
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-brand-blue text-white">
       <div className="container px-4 mx-auto relative z-10">
@@ -21,16 +25,16 @@ function AboutHero() {
           <div className="flex-1">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-100 text-xs font-bold mb-6">
               <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-              The Story So Far
+              {t("about.hero.badge")}
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Data-Driven Growth. <br />
+              {t("about.hero.title1")} <br />
               <span className="text-blue-200">
-                Proven Results.
+                {t("about.hero.title2")}
               </span>
             </h1>
             <p className="text-xl text-blue-100 leading-relaxed mb-8 max-w-xl font-medium">
-              A Growth Marketing and Paid Media Specialist with a proven track record of scaling revenue and optimizing multi-million dollar budgets for high-growth companies across the US, Canada, and Europe.
+              {t("about.hero.subtitle")}
             </p>
             <div className="flex gap-4">
               <Link
@@ -39,7 +43,7 @@ function AboutHero() {
                 rel="noopener noreferrer"
                 className="h-14 px-10 rounded-md bg-brand-orange text-white font-bold flex items-center gap-2 hover:bg-orange-600 transition-colors shadow-lg group"
               >
-                Book a Growth Call
+                {t("common.bookCall")}
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -65,11 +69,12 @@ function AboutHero() {
 }
 
 function StatsSection() {
+  const { t } = useLanguage();
   const stats = [
-    { label: "Years Experience", value: "11+" },
-    { label: "Ad Spend Managed", value: "$4M+" },
-    { label: "Revenue Growth", value: "1.3K%" },
-    { label: "Countries & Regions", value: "US, CA, EU" },
+    { label: t("about.stats.experience"), value: "11+" },
+    { label: t("about.stats.adSpend"), value: "$4M+" },
+    { label: t("about.stats.revenue"), value: "1.3K%" },
+    { label: t("about.stats.regions"), value: "US, CA, EU" },
   ];
 
   return (
@@ -93,29 +98,30 @@ function StatsSection() {
 }
 
 function KeyHighlights() {
+  const { t } = useLanguage();
   const highlights = [
     {
       icon: Target,
-      title: "Budget Management",
-      desc: "Managed over $4M in lead generation spend across Google, Microsoft, and TikTok Ads.",
+      title: t("about.highlights.items.budget.title"),
+      desc: t("about.highlights.items.budget.desc"),
       color: "blue",
     },
     {
       icon: TrendingUp,
-      title: "Revenue Growth",
-      desc: "Drove a 1.3K% increase in monthly sales and an 18% ROAS improvement at Lift Ventures.",
+      title: t("about.highlights.items.revenue.title"),
+      desc: t("about.highlights.items.revenue.desc"),
       color: "green",
     },
     {
       icon: Users,
-      title: "SaaS Optimization",
-      desc: "Redesigned onboarding flows at Wishpond, resulting in an 86% decrease in revenue churn.",
+      title: t("about.highlights.items.saas.title"),
+      desc: t("about.highlights.items.saas.desc"),
       color: "purple",
     },
     {
       icon: Zap,
-      title: "SEO Impact",
-      desc: "Successfully coordinated SEO initiatives that delivered over 473K new monthly organic users.",
+      title: t("about.highlights.items.seo.title"),
+      desc: t("about.highlights.items.seo.desc"),
       color: "orange",
     },
   ];
@@ -131,9 +137,9 @@ function KeyHighlights() {
     <section className="section-padding bg-background">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-heading mb-4">Key Highlights</h2>
+          <h2 className="text-3xl font-bold text-heading mb-4">{t("about.highlights.title")}</h2>
           <p className="text-body">
-            Transforming paid channels into sustainable revenue engines.
+            {t("about.highlights.subtitle")}
           </p>
         </div>
 
@@ -161,28 +167,16 @@ function KeyHighlights() {
 }
 
 function ExpertiseSection() {
-  const expertise = [
-    "PPC (Google/Meta/TikTok)",
-    "Growth Marketing",
-    "SEO Audits",
-    "GA4/GTM Setup",
-    "Data Analysis",
-    "Lead Generation",
-    "A/B Testing",
-    "Search Engine Marketing (SEM)",
-    "Budget Management",
-    "Conversion Rate Optimization (CRO)",
-    "Email Marketing",
-    "Marketing Automation",
-  ];
+  const { t, dict } = useLanguage();
+  const expertise = dict.about.expertise.items;
 
   return (
     <section className="py-20 bg-secondary/30">
       <div className="container px-4 mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-heading mb-4">Core Expertise</h2>
+          <h2 className="text-3xl font-bold text-heading mb-4">{t("about.expertise.title")}</h2>
           <p className="text-body">
-            Thriving at the intersection of data analysis and creative strategy.
+            {t("about.expertise.subtitle")}
           </p>
         </div>
 
@@ -202,95 +196,14 @@ function ExpertiseSection() {
 }
 
 function ExperienceTimeline() {
-  const experiences = [
-    {
-      company: "InterActive Financial Marketing Group",
-      role: "Sr Digital Marketing Strategist",
-      period: "Feb 2025 - Nov 2025",
-      location: "United States · Remote",
-      highlights: [
-        "Managed $4M lead generation budget across Google Ads, Microsoft Ads, and TikTok Ads for auto finance and new cars",
-        "Restructured TikTok Ads account, leading to a CPL decrease of +50% through A/B testing",
-        "Implemented audience segmentation driving RPL up by 30% through tailored geo-targeting",
-        "Built an AI Agent that sped up 5x the launching of Search campaigns",
-      ],
-    },
-    {
-      company: "Wishpond (TSXV:WISH)",
-      role: "Digital Marketing Manager",
-      period: "Jan 2023 - Jan 2024",
-      location: "Vancouver, BC · Remote",
-      highlights: [
-        "Spearheaded growth marketing initiatives driving a 10% increase in MRR",
-        "Designed subscription-based business model resulting in 406% increase in ARPU",
-        "Managed cross-functional collaboration achieving 47% growth in Active Users",
-        "Deployed Customer Success framework achieving 86% Revenue Churn reduction",
-      ],
-    },
-    {
-      company: "Lift Ventures",
-      role: "Performance Marketing Manager",
-      period: "Aug 2021 - Jan 2023",
-      location: "San Francisco Bay Area",
-      highlights: [
-        "Managed Google Ads leading a 1.3K% increase in monthly sales with 18% ROAS improvement",
-        "Established Google Ads as sustainable channel representing +25% of monthly revenue",
-        "Championed Google Analytics implementation in 3 products with +3M monthly users",
-        "Collaborated on CRO A/B tests with Product team and CRE consultants",
-      ],
-    },
-    {
-      company: "Seasoned",
-      role: "Sr Project Manager (Product Owner)",
-      period: "Mar 2020 - Aug 2021",
-      location: "Remote",
-      highlights: [
-        "Led team of developers and designers at SuperSummary.com and TheClearCut.com",
-        "Led launching phases of a product with +1M monthly users",
-        "Conducted feature Discovery with Startup founders and stakeholders",
-      ],
-    },
-    {
-      company: "Hostinger International",
-      role: "Sr Paid Media Specialist",
-      period: "Aug 2017 - Dec 2019",
-      location: "Vilnius, Lithuania · Remote",
-      highlights: [
-        "Collaborated on managing +$1M quarterly PPC budget in +20 countries",
-        "Grew monthly PPC revenue by 287% in one year across Paid Search, Display, Video, and Social Ads",
-        "Ran keyword research that generated +473K new monthly organic users",
-        "Accelerated PPC global expansion strategy for +9 countries",
-      ],
-    },
-    {
-      company: "NoxCar",
-      role: "Marketing Assistant (Paid Media)",
-      period: "Sep 2016 - Sep 2017",
-      location: "Florianópolis, Brazil",
-      highlights: [
-        "Led a 3x online sales growth by implementing full-funnel strategy",
-        "Grew monthly Organic traffic from 0 to +10k through Content and SEO strategies",
-        "Implemented Sales Funnel process using CRM and training for +20 sales reps",
-      ],
-    },
-    {
-      company: "bn3",
-      role: "Digital Marketing Intern",
-      period: "Sep 2015 - Oct 2016",
-      location: "Florianópolis, Brazil",
-      highlights: [
-        "4x client's revenue by implementing marketing funnels across Meta Ads and Email",
-        "Developed funnel strategies for +20 SMB clients",
-        "Managed team of copywriters, designers, and account managers for +10 clients",
-      ],
-    },
-  ];
+  const { t, dict } = useLanguage();
+  const experiences = dict.about.experience.items;
 
   return (
     <section className="py-24 bg-white">
       <div className="container px-4 mx-auto max-w-4xl">
         <h2 className="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3">
-          <Briefcase className="text-blue-600" /> Career Journey
+          <Briefcase className="text-blue-600" /> {t("about.experience.title")}
         </h2>
 
         <div className="relative border-l-2 border-slate-200 ml-3 space-y-12">
@@ -331,11 +244,12 @@ function ExperienceTimeline() {
 }
 
 function Education() {
+  const { t } = useLanguage();
   return (
     <section className="py-24 border-t border-slate-100 bg-slate-50/50">
       <div className="container px-4 mx-auto max-w-3xl">
         <h2 className="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3">
-          <GraduationCap className="text-blue-600" /> Education
+          <GraduationCap className="text-blue-600" /> {t("about.education.title")}
         </h2>
 
         <div className="grid gap-6">
@@ -345,13 +259,13 @@ function Education() {
             </div>
             <div>
               <h3 className="text-lg font-bold text-slate-900">
-                MBA in Marketing, Growth & Branding
+                {t("about.education.mba.title")}
               </h3>
               <p className="text-slate-600 text-sm mb-2">
-                Pontifical Catholic University (PUCRS)
+                {t("about.education.mba.school")}
               </p>
               <p className="text-xs text-slate-500">
-                Bridging technical execution and high-level business strategy.
+                {t("about.education.mba.desc")}
               </p>
             </div>
           </div>
@@ -362,13 +276,13 @@ function Education() {
             </div>
             <div>
               <h3 className="text-lg font-bold text-slate-900">
-                Bachelor&apos;s in Information Science
+                {t("about.education.bs.title")}
               </h3>
               <p className="text-slate-600 text-sm mb-2">
-                Federal University of Santa Catarina (UFSC)
+                {t("about.education.bs.school")}
               </p>
               <p className="text-xs text-slate-500">
-                Emphasis on Data Analysis (Python, SQL) and Startup Business Models.
+                {t("about.education.bs.desc")}
               </p>
             </div>
           </div>
@@ -379,14 +293,15 @@ function Education() {
 }
 
 function FinalCTA() {
+  const { t } = useLanguage();
   return (
     <section className="py-32 bg-gradient-to-b from-slate-50 to-white text-center border-t border-slate-100">
       <div className="container px-4 mx-auto max-w-2xl">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-          Ready to scale your revenue?
+          {t("about.cta.title")}
         </h2>
         <p className="text-lg text-slate-600 mb-10">
-          I&apos;m currently open for new growth projects and consulting engagements.
+          {t("about.cta.subtitle")}
         </p>
         <Link
           href="https://calendly.com/gabriel-growwithzamp/30min"
@@ -394,7 +309,7 @@ function FinalCTA() {
           rel="noopener noreferrer"
           className="inline-flex h-14 px-10 rounded-md bg-brand-orange text-white font-bold text-lg items-center justify-center hover:bg-orange-600 transition-colors shadow-lg group"
         >
-          Book a Growth Call
+          {t("common.bookCall")}
           <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>
