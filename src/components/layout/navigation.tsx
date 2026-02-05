@@ -4,6 +4,8 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ArrowRight } from "lucide-react";
+import LanguageSwitcher from "./language-switcher";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -18,11 +20,12 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const { t } = useLanguage();
+
   const navLinks = [
-    { name: "About", href: "/about" },
-    { name: "Case Studies", href: "/case-studies" },
-   // { name: "Tools", href: "/tools" },
-    //{ name: "Blog", href: "/blog" },
+    { name: t("common.nav.about"), href: "/about" },
+    { name: t("common.nav.caseStudies"), href: "/case-studies" },
+    { name: t("common.nav.methodology"), href: "/methodology" },
   ];
 
   return (
@@ -53,24 +56,27 @@ export default function Navigation() {
                 {link.name}
               </Link>
             ))}
+            <div className="pl-4 border-l border-white/20 flex items-center">
+              <LanguageSwitcher />
+            </div>
           </div>
 
           {/* CTA Button (Desktop) */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-4">
             <Link
               href="https://calendly.com/gabriel-growwithzamp/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-brand-orange text-white text-sm font-bold hover:bg-orange-600 transition-all shadow-md group"
             >
-              Book a Growth Call
+              {t("common.bookCall")}
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-slate-600 hover:text-slate-900 z-50"
+            className="md:hidden text-white hover:text-white/80 z-50"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -99,9 +105,12 @@ export default function Navigation() {
               onClick={() => setIsOpen(false)}
               className="mt-4 inline-flex items-center gap-2 px-8 py-4 rounded-md bg-brand-orange text-white font-bold text-lg shadow-lg hover:bg-orange-600 transition-colors group"
             >
-              Book a Growth Call
+              {t("common.bookCall")}
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
+            <div className="mt-8">
+              <LanguageSwitcher />
+            </div>
           </div>
         </nav>
       </div>

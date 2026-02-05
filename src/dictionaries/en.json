@@ -1,0 +1,638 @@
+{
+  "common": {
+    "bookCall": "Book a Growth Call",
+    "backToHome": "Back to Home",
+    "about": "About",
+    "caseStudies": "Case Studies",
+    "blog": "Blog",
+    "contact": "Contact",
+    "challenge": "The Challenge",
+    "result": "Result",
+    "finalImpact": "Final Impact",
+    "step": "Step",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "caseStudies": "Case Studies",
+      "methodology": "Methodology",
+      "tools": "Tools",
+      "blog": "Blog"
+    },
+    "footer": {
+      "desc": "Growth Marketing and Paid Media Specialist scaling multi-million dollar budgets.",
+      "contact": "Contact",
+      "menu": "Menu"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "The Story So Far",
+      "title1": "Data-Driven Growth.",
+      "title2": "Proven Results.",
+      "subtitle": "A Growth Marketing and Paid Media Specialist with a proven track record of scaling revenue and optimizing multi-million dollar budgets for high-growth companies across the US, Canada, and Europe."
+    },
+    "stats": {
+      "experience": "Years Experience",
+      "adSpend": "Ad Spend Managed",
+      "revenue": "Revenue Growth",
+      "regions": "Countries & Regions"
+    },
+    "highlights": {
+      "title": "Key Highlights",
+      "subtitle": "Transforming paid channels into sustainable revenue engines.",
+      "items": {
+        "budget": {
+          "title": "Budget Management",
+          "desc": "Managed over $4M in lead generation spend across Google, Microsoft, and TikTok Ads."
+        },
+        "revenue": {
+          "title": "Revenue Growth",
+          "desc": "Drove a 1.3K% increase in monthly sales and an 18% ROAS improvement at Lift Ventures."
+        },
+        "saas": {
+          "title": "SaaS Optimization",
+          "desc": "Redesigned onboarding flows at Wishpond, resulting in an 86% decrease in revenue churn."
+        },
+        "seo": {
+          "title": "SEO Impact",
+          "desc": "Successfully coordinated SEO initiatives that delivered over 473K new monthly organic users."
+        }
+      }
+    },
+    "expertise": {
+      "title": "Core Expertise",
+      "subtitle": "Thriving at the intersection of data analysis and creative strategy.",
+      "items": [
+        "PPC (Google/Meta/TikTok)",
+        "Growth Marketing",
+        "SEO Audits",
+        "GA4/GTM Setup",
+        "Data Analysis",
+        "Lead Generation",
+        "A/B Testing",
+        "Search Engine Marketing (SEM)",
+        "Budget Management",
+        "Conversion Rate Optimization (CRO)",
+        "Email Marketing",
+        "Marketing Automation"
+      ]
+    },
+    "experience": {
+      "title": "Career Journey",
+      "items": [
+        {
+          "company": "InterActive Financial Marketing Group",
+          "role": "Sr Digital Marketing Strategist",
+          "period": "Feb 2025 - Nov 2025",
+          "location": "United States · Remote",
+          "highlights": [
+            "Managed $4M lead generation budget across Google Ads, Microsoft Ads, and TikTok Ads for auto finance and new cars",
+            "Restructured TikTok Ads account, leading to a CPL decrease of +50% through A/B testing",
+            "Implemented audience segmentation driving RPL up by 30% through tailored geo-targeting",
+            "Built an AI Agent that sped up 5x the launching of Search campaigns"
+          ]
+        },
+        {
+          "company": "Wishpond (TSXV:WISH)",
+          "role": "Digital Marketing Manager",
+          "period": "Jan 2023 - Jan 2024",
+          "location": "Vancouver, BC · Remote",
+          "highlights": [
+            "Spearheaded growth marketing initiatives driving a 10% increase in MRR",
+            "Designed subscription-based business model resulting in 406% increase in ARPU",
+            "Managed cross-functional collaboration achieving 47% growth in Active Users",
+            "Deployed Customer Success framework achieving 86% Revenue Churn reduction"
+          ]
+        },
+        {
+          "company": "Lift Ventures",
+          "role": "Performance Marketing Manager",
+          "period": "Aug 2021 - Jan 2023",
+          "location": "San Francisco Bay Area",
+          "highlights": [
+            "Managed Google Ads leading a 1.3K% increase in monthly sales with 18% ROAS improvement",
+            "Established Google Ads as sustainable channel representing +25% of monthly revenue",
+            "Championed Google Analytics implementation in 3 products with +3M monthly users",
+            "Collaborated on CRO A/B tests with Product team and CRE consultants"
+          ]
+        },
+        {
+          "company": "Seasoned",
+          "role": "Sr Project Manager (Product Owner)",
+          "period": "Mar 2020 - Aug 2021",
+          "location": "Remote",
+          "highlights": [
+            "Led team of developers and designers at SuperSummary.com and TheClearCut.com",
+            "Led launching phases of a product with +1M monthly users",
+            "Conducted feature Discovery with Startup founders and stakeholders"
+          ]
+        },
+        {
+          "company": "Hostinger International",
+          "role": "Sr Paid Media Specialist",
+          "period": "Aug 2017 - Dec 2019",
+          "location": "Vilnius, Lithuania · Remote",
+          "highlights": [
+            "Collaborated on managing +$1M quarterly PPC budget in +20 countries",
+            "Grew monthly PPC revenue by 287% in one year across Paid Search, Display, Video, and Social Ads",
+            "Ran keyword research that generated +473K new monthly organic users",
+            "Accelerated PPC global expansion strategy for +9 countries"
+          ]
+        },
+        {
+          "company": "NoxCar",
+          "role": "Marketing Assistant (Paid Media)",
+          "period": "Sep 2016 - Sep 2017",
+          "location": "Florianópolis, Brazil",
+          "highlights": [
+            "Led a 3x online sales growth by implementing full-funnel strategy",
+            "Grew monthly Organic traffic from 0 to +10k through Content and SEO strategies",
+            "Implemented Sales Funnel process using CRM and training for +20 sales reps"
+          ]
+        },
+        {
+          "company": "bn3",
+          "role": "Digital Marketing Intern",
+          "period": "Sep 2015 - Oct 2016",
+          "location": "Florianópolis, Brazil",
+          "highlights": [
+            "4x client's revenue by implementing marketing funnels across Meta Ads and Email",
+            "Developed funnel strategies for +20 SMB clients",
+            "Managed team of copywriters, designers, and account managers for +10 clients"
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "mba": {
+        "title": "MBA in Marketing, Growth & Branding",
+        "school": "Pontifical Catholic University (PUCRS)",
+        "desc": "Bridging technical execution and high-level business strategy."
+      },
+      "bs": {
+        "title": "Bachelor's in Information Science",
+        "school": "Federal University of Santa Catarina (UFSC)",
+        "desc": "Emphasis on Data Analysis (Python, SQL) and Startup Business Models."
+      }
+    },
+    "cta": {
+      "title": "Ready to scale your revenue?",
+      "subtitle": "I'm currently open for new growth projects and consulting engagements."
+    }
+  },
+  "hero": {
+    "badge": "Available for new growth projects",
+    "title1": "Scale Your Revenue With",
+    "title2": "The G.R.O.W.S Method",
+    "subtitle": "A growth marketing service for ambitious companies that wants to grow fast. Run by experts, driven by data, and focused on rapidly, measurable results without long-term contract.",
+    "trustedBy": "Trusted by 40+ teams around the world who play to win"
+  },
+  "results": {
+    "title": "Firms that adopts experimentation see a 30% to 100% improvement in performance in just one year.",
+    "cta": "See Case Studies"
+  },
+  "resultsLayer": {
+    "title1": "Results That Matter.",
+    "title2": "Not Just Vanity Metrics.",
+    "desc1": "Most marketers talk about \"clicks\". I talk about revenue, retention, and scaling efficiency.",
+    "stats": {
+      "tiktok": "Reduction in CPA (TikTok Ads)",
+      "adSpend": "Annual Ad Spend Managed",
+      "churn": "Reduction in Revenue Churn",
+      "ai": "Faster Campaign Launch (AI)"
+    }
+  },
+  "personas": {
+    "title": "Who I Work With",
+    "subtitle": "From startups to Fortune 500, I help growth-focused companies maximize their marketing ROI.",
+    "items": {
+      "saas": {
+        "title": "SaaS Founders",
+        "desc": "Scale user acquisition profitably while maintaining healthy unit economics.",
+        "metric": "3x ROAS improvement"
+      },
+      "ecommerce": {
+        "title": "E-commerce Brands",
+        "desc": "Lower CAC and increase AOV with data-driven creative testing and funnel optimization.",
+        "metric": "52% reduction in CPA"
+      },
+      "b2b": {
+        "title": "B2C & B2B Companies",
+        "desc": "Generate qualified leads at scale with advanced tracking and attribution models.",
+        "metric": "5x faster launches"
+      },
+      "agencies": {
+        "title": "Agencies & Partners",
+        "desc": "White-label strategy and execution for growth marketing, tracking, automation, and reporting.",
+        "metric": "10+ agency partnerships"
+      }
+    }
+  },
+  "valueProposition": {
+    "benefits": {
+      "engineering": {
+        "title": "Full-Funnel Engineering",
+        "desc": "I don't just run ads. I fix the tracking (GA4/Server-side), optimize the landing page CRO, and align the creatives. A broken funnel kills the best ads."
+      },
+      "tshaped": {
+        "title": "The T-Shaped Advantage",
+        "desc": "My seasoned background in Marketing and Information Science means I can analyze data, launch killer campaigns, optimize creatives and scale new channels fast and independently."
+      },
+      "profit": {
+        "title": "Profit-First Scaling",
+        "desc": "Scaling isn't just spending more. It's about maintaining unit economics. I use LTV:CAC ratios to determine exactly when and where to push the budget."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How I Work",
+    "subtitle": "A transparent, data-first process to identify and scale growth opportunities.",
+    "steps": [
+      {
+        "title": "Audit & Analysis",
+        "desc": "Deep dive into your current marketing stack, tracking setup, and funnel performance to identify gaps."
+      },
+      {
+        "title": "Foundational Strategy",
+        "desc": "Develop strategic assets to ensure the success of the G.R.O.W.S process implementation."
+      },
+      {
+        "title": "Launch G.R.O.W.S",
+        "desc": "Curate high-impact ideas, prioritize concepts, launch A/B tests, learn from data, and scale winners."
+      },
+      {
+        "title": "Optimize & Report",
+        "desc": "Continuous improvement through data analysis, creative iteration, and transparent ROI reporting."
+      }
+    ]
+  },
+  "skills": {
+    "title": "My T-Shaped Skill Stack",
+    "subtitle": "Bridging the gap between Marketing, Data, and Engineering.",
+    "interactive": "View Interactive Map",
+    "categories": {
+      "channels": {
+        "title": "Growth Channels",
+        "items": ["Google Ads", "Meta Ads", "TikTok Ads", "LinkedIn Ads", "SEO"]
+      },
+      "technical": {
+        "title": "Technical & Data",
+        "items": ["Python", "SQL", "GA4 & GTM", "HTML/CSS/JS", "Next.js"]
+      },
+      "strategy": {
+        "title": "Strategy",
+        "items": ["CRO", "Unit Economics", "Retention/Churn", "Marketing Automation", "AI Agents"]
+      }
+    }
+  },
+  "faq": {
+    "title": "Common Questions",
+    "subtitle": "Everything you need to know about working with a growth specialist.",
+    "items": [
+      {
+        "q": "What exactly do you help with?",
+        "a": "I manage the full growth system—ad strategy, media buying, tracking (GA4/server-side), creative optimization, landing page CRO, and experimentation."
+      },
+      {
+        "q": "Is this just performance marketing, or full growth strategy?",
+        "a": "It's full-funnel growth. I go beyond ads to align acquisition, activation, retention, and referral with your business goals using proven frameworks like G.R.O.W.S."
+      },
+      {
+        "q": "What budgets do you work with?",
+        "a": "I deliver the best impact for companies spending between $10k - $200k/month on ads who want to scale efficiently and learn fast."
+      },
+      {
+        "q": "How fast can we launch?",
+        "a": "With my pre-built AI agents and growth frameworks, we can typically audit, fix tracking, and launch new campaigns within 7–10 days."
+      },
+      {
+        "q": "Do I need in-house resources to work with you?",
+        "a": "Not necessarily. I can run end-to-end or plug into your team. I handle setup, tracking, creatives, execution, and reporting."
+      },
+      {
+        "q": "Do you work as a freelancer or agency?",
+        "a": "Think of me as your external growth partner—with the flexibility of a freelancer and the process of a well-run growth team."
+      },
+      {
+        "q": "How do you measure success?",
+        "a": "Every project starts with your main KPI—CAC, ROAS, LTV, conversion rate, etc.—and we track progress through weekly reporting."
+      },
+      {
+        "q": "Are there long-term contracts?",
+        "a": "No. I work in flexible sprints or month-to-month retainers. You stay because it works—not because you're locked in."
+      }
+    ]
+  },
+  "caseStudies": {
+    "hero": {
+      "title1": "Real Results.",
+      "title2": "Real Growth.",
+      "subtitle": "Data-driven case studies from scaling multi-million dollar budgets across US, Canada, and Europe."
+    },
+    "cs1": {
+      "badge": "AI & Paid Media",
+      "company": "InterActive Financial Marketing Group",
+      "title": "Cutting CPL, Increasing RPL, and Launching Faster",
+      "challenge": "Managing $4M+ in lead generation spend for auto finance across Google, Microsoft, and TikTok Ads. TikTok campaigns were hemorrhaging budget with a $5.00+ CPL while competitors were acquiring leads at half that cost.",
+      "beforeCpl": "Before CPL",
+      "launchTime": "Campaign Launch",
+      "launchTimeValue": "2 Days",
+      "step1": {
+        "title": "Complete TikTok Account Restructure",
+        "desc": "Ran comprehensive A/B tests on creative formats, audience segments, and bidding strategies. Identified that user-generated content (UGC) style ads with direct CTAs outperformed polished brand content by 3x. Restructured campaigns around winning creative patterns and implemented systematic creative testing framework.",
+        "result": "CPL dropped from $5.00 to $2.40 (-52%) within 6 weeks."
+      },
+      "step2": {
+        "title": "AI-Powered Campaign Automation",
+        "desc": "Built a custom AI agent using Python and LLMs to automate Google Search campaign creation. The agent reads new car inventory feeds and auto-generates keywords, ad copy, and campaign structures.",
+        "result": "Campaign launch time dropped from 2 days to 4 hours (5x faster), capturing demand immediately."
+      },
+      "step3": {
+        "title": "RPL-Based Geo-Targeting",
+        "desc": "Implemented audience segmentation based on Revenue Per Lead (RPL) metrics. Analyzed which geographic regions converted at higher rates and adjusted bids accordingly.",
+        "result": "RPL increased by 30% through strategic geo-targeting."
+      },
+      "impact": {
+        "title": "52% CPL Reduction + 5x Faster Launches",
+        "desc": "Saved budget on lowering cost per lead while improving lead revenue and time-to-market."
+      }
+    },
+    "cs2": {
+      "badge": "SaaS Growth",
+      "company": "Wishpond (TSXV:WISH)",
+      "title": "86% Churn Reduction Through Growth Marketing",
+      "challenge": "A publicly-traded SaaS company ($20M+ ARR) was bleeding revenue with high monthly churn. Users weren't seeing value fast enough, and onboarding was broken.",
+      "metric1": "Monthly Churn",
+      "metric2": "ARPU",
+      "metric1Value": "High",
+      "metric2Value": "Low",
+      "step1": {
+        "title": "Onboarding Flow Redesign",
+        "desc": "Collaborated with Product and Customer Success teams to completely redesign onboarding. Implemented progressive onboarding with milestone-based activation triggers and in-app guidance.",
+        "result": "Active users grew by 47% as more users reached \"aha moment\" faster."
+      },
+      "step2": {
+        "title": "Subscription Model Optimization",
+        "desc": "Designed and implemented a new subscription-based pricing model with strategic upsell triggers. Created data-driven upgrade paths based on usage patterns and feature engagement.",
+        "result": "Average Revenue Per User (ARPU) increased by 406%."
+      },
+      "step3": {
+        "title": "Customer Success Framework",
+        "desc": "Deployed personalized account management system with automated retention campaigns targeting at-risk accounts. Built churn prediction model to proactively intervene.",
+        "result": "Revenue churn decreased by 86%."
+      },
+      "impact": {
+        "title": "86% Churn Reduction + 406% ARPU Increase",
+        "desc": "Plus 10% MRR growth and 47% increase in Active Users."
+      }
+    },
+    "cs3": {
+      "badge": "PPC & Scale",
+      "company": "Lift Ventures",
+      "title": "1,300% Sales Increase via Google Ads Optimization",
+      "challenge": "A startup studio with 7+ products and 10M+ users needed to prove that paid advertising could be a sustainable revenue engine, not just a cost center.",
+      "metric1": "Monthly Sales",
+      "metric2": "ROAS",
+      "step1": {
+        "title": "Advanced GA4 Implementation",
+        "desc": "Championed the migration and customization of Google Analytics 4 across 3 products serving 3M+ monthly users. Implemented custom events for deep behavioral tracking and conversion attribution.",
+        "result": "Actionable data infrastructure that eliminated wasted spend."
+      },
+      "step2": {
+        "title": "Scientific A/B Testing with CRO Experts",
+        "desc": "Collaborated with Conversion Rate Experts (CRE) consultants to run rigorous pricing and messaging tests. Managed Google Ads with a focus on incremental lift, not vanity metrics.",
+        "result": "18% improvement in ROAS through data-driven optimization."
+      },
+      "step3": {
+        "title": "Campaign Scale & Optimization",
+        "desc": "Systematically scaled winning campaigns while ruthlessly cutting underperformers. Established PPC as a sustainable channel through continuous optimization cycles.",
+        "result": "1,300% increase in monthly sales. Google Ads became 25% of new revenue."
+      },
+      "impact": {
+        "title": "1,300% Sales Growth + 18% ROAS Improvement",
+        "desc": "Established PPC as sustainable channel driving 25% of revenue."
+      }
+    },
+    "cs4": {
+      "badge": "International Growth",
+      "company": "Hostinger International",
+      "title": "287% PPC Revenue Growth + 473K Organic Users",
+      "challenge": "Europe's fastest-growing web hosting company needed to scale PPC revenue in 20+ countries while simultaneously building organic traffic foundation.",
+      "metric1": "Countries",
+      "metric2": "Quarterly Budget",
+      "step1": {
+        "title": "Multi-Country PPC Management",
+        "desc": "Collaborated on managing $1M+ quarterly PPC budget across 20+ countries. Managed Paid Search, Display, Video, and Social Ads campaigns for the Brazilian branch.",
+        "result": "287% growth in monthly PPC revenue within one year."
+      },
+      "step2": {
+        "title": "Strategic SEO & Content",
+        "desc": "Ran comprehensive keyword research and coordinated SEO projects including technical audits, on-page optimizations, and link building campaigns.",
+        "result": "Generated over 473,000 new monthly organic users."
+      },
+      "step3": {
+        "title": "Global Expansion Strategy",
+        "desc": "Accelerated PPC global expansion into 9+ new countries by launching accounts and conducting market research for budget allocation and creative localization.",
+        "result": "Successfully entered 9 new markets with profitable CAC."
+      },
+      "impact": {
+        "title": "287% PPC Growth + 473K Organic Users",
+        "desc": "Plus successful expansion into 9 new international markets."
+      }
+    },
+    "caseStudiesCta": {
+      "title": "Want results like these?",
+      "subtitle": "I apply the same data-driven approach and growth frameworks to every project."
+    }
+  },
+  "methodology": {
+    "hero": {
+      "badge": "The Growth Hacking Process: A Step-by-Step Guide",
+      "title": "Growth Hacking Is a Process, Not a Trick",
+      "subtitle": "Growth hacking is not a magical solution or a quick fix. It is a disciplined, repeatable process of experimentation, measurement, and refinement.",
+      "quote": "Fall in love with the process, and the results will come - Eric Thomas"
+    },
+    "intro": {
+      "title": "Growth marketing is a system",
+      "p1": "There is no single trick. The companies that scale do it by running a strict, data-driven process. Discovering \"silver bullets\" is the result of hard work, not random ideas.",
+      "p2": "Do you follow a structured approach for researching, prioritizing, designing, testing, and analyzing growth experiments? If not, your experiments are unlikely to produce consistent paying customers.",
+      "p3": "A magic growth hack that works for everyone does not exist. Beyond the buzz, growth hacking is a step-by-step process.",
+      "p4": "Scraping, automation, virality loops, and other \"hacky\" tactics can be powerful, but without a disciplined system they rarely create sustainable growth.",
+      "quickLook": "A quick look into the process"
+    },
+    "overview": [
+      "Find product-market fit",
+      "Set the five prerequisites",
+      "Implement rapid experimentation (G.R.O.W.S)",
+      "Develop playbooks to iterate and scale"
+    ],
+    "step1": {
+      "badge": "Step 1",
+      "title": "Find Product-Market Fit",
+      "p1": "A fast growth process is useless without product-market fit. If users would not miss your product, growth will not save you. Your priority is building the right product for the right market.",
+      "noteTitle": "Growth before PMF is wasted",
+      "noteBody": "Embrace a lean approach: identify your potential customers, understand their needs, and build a product that turns them into early advocates. It takes time and iteration, but scaling a weak product wastes even more time.",
+      "signalsTitle": "How do you know you reached PMF?",
+      "signals": [
+        {
+          "title": "Sean Ellis \"Very Disappointed\" method",
+          "points": [
+            "Survey active users with: \"How would you feel if you could no longer use our product tomorrow?\"",
+            "Options: extremely upset, somewhat upset, not upset at all, or I no longer use this.",
+            "If 40%+ answer \"very disappointed\", you have a strong PMF signal."
+          ]
+        },
+        {
+          "title": "Brian Balfour Trifecta",
+          "points": [
+            "Strong organic growth and referrals.",
+            "High retention and low churn for the category.",
+            "Meaningful, frequent product usage that matches the core value."
+          ]
+        }
+      ],
+      "overlapTitle": "When can growth hacking start?",
+      "overlapBody": "There is overlap between the Problem-Solution Fit phase and PMF. At this stage, growth hacking can be used to explore opportunities in data and behavior patterns. Use frameworks like the Bullseye Template from Traction to focus on the most promising channels, but never use growth tactics to mask a product without real pull.",
+      "timingTitle": "Timing matters",
+      "timingBody": "Growth processes work best when the company is past the early validation phase and ready to scale. The right strategy at the right time turns a good product into a fast-growing business."
+    },
+    "step2": {
+      "badge": "Step 2",
+      "title": "Five prerequisites before you scale",
+      "p1": "Once you hit PMF, the growth process still needs a foundation. Align the team on these prerequisites before rapid experimentation.",
+      "p2": "Growth is a team sport. Everyone involved in the process needs to understand the system. A clear foundation ensures experiments are focused and measurable.",
+      "cards": [
+        {
+          "title": "Business Model Canvas",
+          "desc": "A one-page visual model of your value proposition, customers, channels, operations, and economics. It aligns teams and speeds onboarding."
+        },
+        {
+          "title": "Value Proposition Canvas",
+          "desc": "Clarifies how your product solves real customer pains and creates gains. It should reflect actual customer behavior, not idealized assumptions."
+        },
+        {
+          "title": "Personas",
+          "desc": "Define 2 to 3 key personas deeply: goals, behaviors, pain points, alternatives, and decision criteria. Validate them with real feedback."
+        },
+        {
+          "title": "Pirate Funnel (AAARRR)",
+          "desc": "Map the user journey (Awareness, Acquisition, Activation, Retention, Referral, Revenue) and define the key actions and metrics at each stage."
+        },
+        {
+          "title": "OMTM + North Star",
+          "desc": "Pick one metric that matters right now (OMTM). It changes over time, but it should always move you toward the North Star metric."
+        }
+      ],
+      "personaTitle": "Persona guidelines",
+      "personaPoints": [
+        "Focus on the 2 to 3 most important personas first.",
+        "Define deeper traits: goals, behaviors, day-in-the-life, and current alternatives.",
+        "Validate and refine personas through real tests and feedback."
+      ],
+      "omtmTitle": "OMTM vs North Star",
+      "omtmBody": "Your OMTM is a short-term focus that changes as you hit milestones. The North Star metric is the long-term direction. For example, a team might focus on trial conversion this month while the North Star is total hours delivered or recurring revenue."
+    },
+    "step3": {
+      "badge": "Step 3",
+      "title": "Implement Rapid Experimentation (G.R.O.W.S)",
+      "p1": "The growth loop makes experimentation predictable, fast, and measurable. It is how winning teams find the few experiments that unlock exponential growth.",
+      "p2": "It does not matter if you follow the Sean Ellis or Growth Tribe flavor of G.R.O.W.S. The structure is what creates speed and learning. If you want a visual walkthrough, Growth Tribe's David Arnoux has a clear step-by-step explanation of the loop.",
+      "grows": [
+        {
+          "letter": "G",
+          "title": "Gather Ideas",
+          "desc": "Collect hypotheses that could improve your OMTM. Use market research, qualitative insights, and quantitative data to feed a structured idea backlog.",
+          "bullets": [
+            "Observe your market: best practices, trends, articles, and competitor patterns.",
+            "Quantitative data shows what happens; qualitative data explains why it happens.",
+            "Idea format: concept title, 5Ws + H, theory, success metric, and minimum benchmark.",
+            "Use a shared system to capture ideas, rank them, and track outcomes."
+          ]
+        },
+        {
+          "letter": "R",
+          "title": "Rank Ideas",
+          "desc": "Prioritize with a scoring model (ICE, BRASS, PIES). Focus on momentum: mix high-impact bets with low-effort wins.",
+          "bullets": [
+            "Ask the team to nominate a few top ideas before the sprint meeting.",
+            "Decide and ship the best-scoring experiments each cycle.",
+            "Include low-hanging fruit to keep velocity high."
+          ]
+        },
+        {
+          "letter": "O",
+          "title": "Outline Experiments",
+          "desc": "Keep it fast and simple. Design experiments that can ship quickly and validate potential before heavy investment.",
+          "bullets": [
+            "Define roles: Growth Lead, Developer, Designer, Analyst.",
+            "Use agile rituals to keep velocity high.",
+            "Done is better than perfect when the goal is speed and learning."
+          ]
+        },
+        {
+          "letter": "W",
+          "title": "Work the Plan",
+          "desc": "Execute. Do the 20% of work that yields 80% of results. If the test shows promise, double down; if not, move on.",
+          "bullets": [
+            "Optimize for speed and learning, not perfection.",
+            "Agile Scrum principles help the team ship fast and stay aligned."
+          ]
+        },
+        {
+          "letter": "S",
+          "title": "Study the Data",
+          "desc": "Analyze carefully and categorize outcomes: inconclusive, failed (learned), failed (tweak), success (explore), success (scale).",
+          "bullets": [
+            "Expect failures; they are part of the path to a breakthrough.",
+            "Segment results by device, audience, geography, or product cohort.",
+            "Document learnings so the next tests are smarter."
+          ]
+        }
+      ],
+      "analysisTitle": "How to analyze experiments",
+      "analysisPoints": [
+        "The experiment ends (usually 1 to 3 weeks to reduce seasonality).",
+        "The growth lead reviews results using a consistent evaluation template.",
+        "Classify outcomes: inconclusive, failure (no tweak), failure (tweak), success (explore), success (scale)."
+      ],
+      "abPrereqsTitle": "A/B testing prerequisites",
+      "abPrereqs": [
+        "You need enough volume. A good rule of thumb is 1,000 conversions on the target action.",
+        "Early stage teams should run bigger changes instead of tiny tweaks.",
+        "Pick a statistical approach that matches your speed, risk tolerance, and team communication."
+      ],
+      "abNotesTitle": "A/B testing notes",
+      "abNotes": [
+        {
+          "title": "Frequentist approach",
+          "bullets": [
+            "Lower risk of false positives, but requires higher significance (95%+).",
+            "Slower velocity because you need more data before calling a winner.",
+            "Harder to communicate to non-technical teams."
+          ]
+        },
+        {
+          "title": "Bayesian approach",
+          "bullets": [
+            "Higher velocity with probability thresholds (ex: 80% = winner).",
+            "Better for fast-moving teams where speed matters.",
+            "Easier to communicate: \"Variant B has an 84% chance to win.\""
+          ]
+        }
+      ]
+    },
+    "step4": {
+      "badge": "Step 4",
+      "title": "Develop playbooks to iterate and scale",
+      "p1": "Store every experiment with its hypothesis, setup, results, and learnings. A living knowledge base prevents repeated failures and accelerates onboarding for new team members.",
+      "p2": "Keep communication open. Many top teams share weekly updates or maintain a dedicated channel for experiment results and learnings. This keeps momentum high and aligns stakeholders.",
+      "cta": "Book a Growth Call"
+    }
+  },
+  "finalCta": {
+    "title": "Ready to scale past your current plateau?",
+    "subtitle": "I only take on 2 new growth projects per quarter to ensure maximum focus.",
+    "button": "Book a Growth Call"
+  }
+}

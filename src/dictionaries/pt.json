@@ -1,0 +1,638 @@
+{
+  "common": {
+    "bookCall": "Agendar uma Chamada de Growth",
+    "backToHome": "Voltar para a Home",
+    "about": "Sobre",
+    "caseStudies": "Casos de Estudo",
+    "blog": "Blog",
+    "contact": "Contato",
+    "challenge": "O Desafio",
+    "result": "Resultado",
+    "finalImpact": "Impacto Final",
+    "step": "Etapa",
+    "nav": {
+      "home": "Home",
+      "about": "Sobre",
+      "caseStudies": "Casos de Estudo",
+      "methodology": "Metodologia",
+      "tools": "Ferramentas",
+      "blog": "Blog"
+    },
+    "footer": {
+      "desc": "Especialista em Growth Marketing e Mídia Paga escalando investimentos multimilionários.",
+      "contact": "Contato",
+      "menu": "Menu"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "A Jornada Até Aqui",
+      "title1": "Crescimento Guiado por Dados.",
+      "title2": "Resultados Comprovados.",
+      "subtitle": "Especialista em Growth Marketing e Mídia Paga, com histórico comprovado de escalar receita e otimizar investimentos multimilionários para empresas de alto crescimento nos EUA, Canadá e Europa."
+    },
+    "stats": {
+      "experience": "Anos de Experiência",
+      "adSpend": "Investimento Gerenciado",
+      "revenue": "Crescimento de Receita",
+      "regions": "Países & Regiões"
+    },
+    "highlights": {
+      "title": "Principais Destaques",
+      "subtitle": "Transformando canais pagos em motores de receita sustentáveis.",
+      "items": {
+        "budget": {
+          "title": "Gestão de Investimentos",
+          "desc": "Responsável por mais de US$ 4M em investimentos de geração de leads em Google, Microsoft e TikTok Ads."
+        },
+        "revenue": {
+          "title": "Crescimento de Receita",
+          "desc": "Impulsionei um aumento de 1.300% nas vendas mensais e uma melhoria de 18% no ROAS na Lift Ventures."
+        },
+        "saas": {
+          "title": "Otimização de SaaS",
+          "desc": "Redesenhei fluxos de onboarding na Wishpond, reduzindo o churn de receita em 86%."
+        },
+        "seo": {
+          "title": "Impacto em SEO",
+          "desc": "Coordenei iniciativas de SEO que geraram mais de 473 mil novos usuários orgânicos mensais."
+        }
+      }
+    },
+    "expertise": {
+      "title": "Principais Especialidades",
+      "subtitle": "Atuando na interseção entre análise de dados e estratégia criativa.",
+      "items": [
+        "PPC (Google / Meta / TikTok)",
+        "Growth Marketing",
+        "Auditorias de SEO",
+        "Configuração de GA4 / GTM",
+        "Análise de Dados",
+        "Geração de Leads",
+        "Testes A/B",
+        "Search Engine Marketing (SEM)",
+        "Gestão de Investimentos",
+        "Otimização de Conversão (CRO)",
+        "Email Marketing",
+        "Automação de Marketing"
+      ]
+    },
+    "experience": {
+      "title": "Trajetória Profissional",
+      "items": [
+        {
+          "company": "InterActive Financial Marketing Group",
+          "role": "Estrategista Sênior de Marketing Digital",
+          "period": "Fev 2025 - Nov 2025",
+          "location": "Estados Unidos · Remoto",
+          "highlights": [
+            "Gestão de US$ 4M em investimentos de geração de leads em Google Ads, Microsoft Ads e TikTok Ads para financiamento automotivo",
+            "Reestruturação completa da conta de TikTok Ads, reduzindo o CPL em mais de 50% através de testes A/B",
+            "Implementação de segmentação avançada aumentando o RPL em 30% via geo-targeting estratégico",
+            "Desenvolvimento de um agente de IA que acelerou em 5x o lançamento de campanhas de Search"
+          ]
+        },
+        {
+          "company": "Wishpond (TSXV:WISH)",
+          "role": "Gerente de Marketing Digital",
+          "period": "Jan 2023 - Jan 2024",
+          "location": "Vancouver, BC · Remoto",
+          "highlights": [
+            "Liderança de iniciativas de growth que impulsionaram um aumento de 10% no MRR",
+            "Desenvolvimento de modelo de negócio por assinatura resultando em aumento de 406% no ARPU",
+            "Colaboração interfuncional que gerou 47% de crescimento em Usuários Ativos",
+            "Implementação de framework de Customer Success reduzindo o churn de receita em 86%"
+          ]
+        },
+        {
+          "company": "Lift Ventures",
+          "role": "Gerente de Performance Marketing",
+          "period": "Ago 2021 - Jan 2023",
+          "location": "San Francisco Bay Area",
+          "highlights": [
+            "Gestão de Google Ads resultando em aumento de 1.300% nas vendas mensais com melhoria de 18% no ROAS",
+            "Estabelecimento do Google Ads como canal sustentável representando 25% da receita mensal",
+            "Implementação do Google Analytics em 3 produtos com mais de 3 milhões de usuários mensais",
+            "Colaboração em testes A/B de CRO com time de Produto e consultores da CRE"
+          ]
+        },
+        {
+          "company": "Seasoned",
+          "role": "Gerente de Projetos Sênior (Product Owner)",
+          "period": "Mar 2020 - Ago 2021",
+          "location": "Remoto",
+          "highlights": [
+            "Liderança de equipes de desenvolvimento e design no SuperSummary.com e TheClearCut.com",
+            "Coordenação de lançamentos de produtos com mais de 1 milhão de usuários mensais",
+            "Condução de discovery de funcionalidades com fundadores e stakeholders"
+          ]
+        },
+        {
+          "company": "Hostinger International",
+          "role": "Especialista Sênior em Mídia Paga",
+          "period": "Ago 2017 - Dez 2019",
+          "location": "Vilnius, Lituânia · Remoto",
+          "highlights": [
+            "Gestão colaborativa de mais de US$ 1M em investimentos trimestrais de PPC em mais de 20 países",
+            "Crescimento de 287% na receita mensal de PPC em um ano",
+            "Pesquisa de palavras-chave responsável por gerar mais de 473 mil novos usuários orgânicos mensais",
+            "Aceleração da expansão global de PPC para mais de 9 países"
+          ]
+        },
+        {
+          "company": "NoxCar",
+          "role": "Assistente de Marketing (Mídia Paga)",
+          "period": "Set 2016 - Set 2017",
+          "location": "Florianópolis, Brasil",
+          "highlights": [
+            "Crescimento de 3x nas vendas online com implementação de estratégia full-funnel",
+            "Expansão do tráfego orgânico mensal de 0 para mais de 10 mil usuários",
+            "Implementação de processo de funil de vendas com CRM e treinamento de mais de 20 vendedores"
+          ]
+        },
+        {
+          "company": "bn3",
+          "role": "Estagiário de Marketing Digital",
+          "period": "Set 2015 - Out 2016",
+          "location": "Florianópolis, Brasil",
+          "highlights": [
+            "Quadruplicação da receita de clientes através de funis em Meta Ads e Email Marketing",
+            "Desenvolvimento de estratégias de funil para mais de 20 clientes SMB",
+            "Gestão de equipes de copywriters, designers e account managers"
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Formação Acadêmica",
+      "mba": {
+        "title": "MBA em Marketing, Growth & Branding",
+        "school": "Pontifícia Universidade Católica (PUCRS)",
+        "desc": "Conectando execução técnica com estratégia de negócios de alto nível."
+      },
+      "bs": {
+        "title": "Bacharelado em Ciência da Informação",
+        "school": "Universidade Federal de Santa Catarina (UFSC)",
+        "desc": "Ênfase em Análise de Dados (Python, SQL) e Modelos de Negócio para Startups."
+      }
+    },
+    "cta": {
+      "title": "Pronto para escalar sua receita?",
+      "subtitle": "Atualmente aberto a novos projetos de growth e consultorias."
+    }
+  },
+  "hero": {
+    "badge": "Disponível para novos projetos de growth",
+    "title1": "Escale sua Receita com o",
+    "title2": "Método G.R.O.W.S",
+    "subtitle": "Um serviço de growth marketing para empresas ambiciosas que querem crescer rápido. Operado por especialistas, orientado por dados e focado em resultados rápidos e mensuráveis — sem contratos de longo prazo.",
+    "trustedBy": "Confiado por mais de 40 equipes ao redor do mundo que jogam para ganhar"
+  },
+  "results": {
+    "title": "Empresas que adotam experimentação veem uma melhoria de 30% a 100% na performance em apenas um ano.",
+    "cta": "Ver Cases de Estudo"
+  },
+  "resultsLayer": {
+    "title1": "Resultados Que Importam.",
+    "title2": "Além de Métricas de Vaidade.",
+    "desc1": "A maioria dos profissionais de marketing fala sobre \"cliques\". Eu foco em receita, retenção e eficiência de escala.",
+    "stats": {
+      "tiktok": "Redução no CPA (TikTok Ads)",
+      "adSpend": "Investimento Gerenciado Anualmente",
+      "churn": "Redução no Churn de Receita",
+      "ai": "Lançamentos Mais Rápidos (IA)"
+    }
+  },
+  "personas": {
+    "title": "Com Quem Eu Trabalho",
+    "subtitle": "De startups a empresas Fortune 500, ajudo negócios focados em crescimento a maximizar seu ROI de marketing.",
+    "items": {
+      "saas": {
+        "title": "Fundadores de SaaS",
+        "desc": "Escala de aquisição de usuários de forma lucrativa, mantendo uma economia unitária saudável.",
+        "metric": "Melhoria de 3x no ROAS"
+      },
+      "ecommerce": {
+        "title": "Marcas de E-commerce",
+        "desc": "Redução de CAC e aumento de AOV com testes criativos baseados em dados e otimização de funil.",
+        "metric": "Redução de 52% no CPA"
+      },
+      "b2b": {
+        "title": "Empresas B2C & B2B",
+        "desc": "Geração de leads qualificados em escala com rastreamento avançado e modelos de atribuição.",
+        "metric": "Lançamentos 5x mais rápidos"
+      },
+      "agencies": {
+        "title": "Agências & Parceiros",
+        "desc": "Estratégia e execução white-label para growth marketing, tracking, automação e relatórios.",
+        "metric": "Mais de 10 parcerias"
+      }
+    }
+  },
+  "valueProposition": {
+    "benefits": {
+      "engineering": {
+        "title": "Engenharia de Funil Completo",
+        "desc": "Eu não apenas rodo anúncios. Corrijo o rastreamento (GA4/Server-side), otimizo a conversão (CRO) das landing pages e alinho os criativos. Um funil quebrado mata os melhores anúncios."
+      },
+      "tshaped": {
+        "title": "A Vantagem T-Shaped",
+        "desc": "Minha sólida formação em Marketing e Ciência da Informação permite que eu analise dados, lance campanhas matadoras, otimize criativos e escale novos canais de forma rápida e independente."
+      },
+      "profit": {
+        "title": "Escala com Foco em Lucro",
+        "desc": "Escalar não é apenas gastar mais. Trata-se de manter a economia unitária. Uso proporções LTV:CAC para determinar exatamente quando e onde impulsionar o orçamento."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Como Eu Trabalho",
+    "subtitle": "Um processo transparente e guiado por dados para identificar e escalar oportunidades de crescimento.",
+    "steps": [
+      {
+        "title": "Auditoria & Análise",
+        "desc": "Mergulho profundo no seu stack de marketing atual, configuração de rastreamento e performance de funil para identificar gaps."
+      },
+      {
+        "title": "Estratégia Fundacional",
+        "desc": "Desenvolvimento de ativos estratégicos para garantir o sucesso da implementação do processo G.R.O.W.S."
+      },
+      {
+        "title": "Lançamento G.R.O.W.S",
+        "desc": "Curadoria de ideias de alto impacto, priorização de conceitos, lançamento de testes A/B, aprendizado com dados e escala de vencedores."
+      },
+      {
+        "title": "Otimização & Relatórios",
+        "desc": "Melhoria contínua através da análise de dados, iteração criativa e relatórios de ROI transparentes."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Meu Skill Stack T-Shaped",
+    "subtitle": "Conectando Marketing, Dados e Engenharia.",
+    "interactive": "Ver Mapa Interativo",
+    "categories": {
+      "channels": {
+        "title": "Canais de Growth",
+        "items": ["Google Ads", "Meta Ads", "TikTok Ads", "LinkedIn Ads", "SEO"]
+      },
+      "technical": {
+        "title": "Técnico & Dados",
+        "items": ["Python", "SQL", "GA4 & GTM", "HTML/CSS/JS", "Next.js"]
+      },
+      "strategy": {
+        "title": "Estratégia",
+        "items": ["CRO", "Economia Unitária", "Retenção/Churn", "Automação de Marketing", "Agentes de IA"]
+      }
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tudo o que você precisa saber sobre trabalhar com um especialista em growth.",
+    "items": [
+      {
+        "q": "Em que exatamente você ajuda?",
+        "a": "Gerencio todo o sistema de growth — estratégia de anúncios, mídia paga, tracking (GA4/server-side), otimização criativa, CRO de landing pages e experimentação."
+      },
+      {
+        "q": "Isso é apenas marketing de performance ou estratégia completa de growth?",
+        "a": "É growth de funil completo. Vou além dos anúncios para alinhar aquisição, ativação, retenção e indicação com seus objetivos de negócio usando frameworks comprovados como G.R.O.W.S."
+      },
+      {
+        "q": "Com quais orçamentos você trabalha?",
+        "a": "Entrego o melhor impacto para empresas que investem entre US$ 10k - US$ 200k/mês em anúncios e que querem escalar com eficiência e aprender rápido."
+      },
+      {
+        "q": "Quão rápido podemos lançar?",
+        "a": "Com meus agentes de IA próprios e frameworks de growth, normalmente podemos auditar, corrigir o tracking e lançar novas campanhas em 7 a 10 dias."
+      },
+      {
+        "q": "Preciso de recursos internos para trabalhar com você?",
+        "a": "Não necessariamente. Posso atuar de ponta a ponta ou me integrar à sua equipe. Cuido do setup, tracking, criativos, execução e relatórios."
+      },
+      {
+        "q": "Você trabalha como freelancer ou agência?",
+        "a": "Pense em mim como seu parceiro de growth externo — com a flexibilidade de um freelancer e o processo de uma equipe de growth experiente."
+      },
+      {
+        "q": "Como você mede o sucesso?",
+        "a": "Cada projeto começa com seu principal KPI — CAC, ROAS, LTV, taxa de conversão, etc. — e acompanhamos o progresso através de relatórios semanais."
+      },
+      {
+        "q": "Existem contratos de longo prazo?",
+        "a": "Não. Trabalho em sprints flexíveis ou retainers mensais. Você continua porque o projeto funciona — não porque está preso por um contrato."
+      }
+    ]
+  },
+  "caseStudies": {
+    "hero": {
+      "title1": "Resultados Reais.",
+      "title2": "Crescimento Real.",
+      "subtitle": "Casos de estudo guiados por dados escalando investimentos multimilionários nos EUA, Canadá e Europa."
+    },
+    "cs1": {
+      "badge": "IA & Mídia Paga",
+      "company": "InterActive Financial Marketing Group",
+      "title": "Reduzindo CPL, Aumentando RPL e Lançando Mais Rápido",
+      "challenge": "Gestão de mais de US$ 4M em investimentos de geração de leads para financiamento automotivo em Google, Microsoft e TikTok Ads. As campanhas de TikTok estavam apresentando um CPL alto enquanto concorrentes adquiriam leads pela metade do custo.",
+      "beforeCpl": "CPL Anterior",
+      "launchTime": "Lançamento de Campanha",
+      "launchTimeValue": "2 Dias",
+      "step1": {
+        "title": "Reestruturação Completa da Conta TikTok",
+        "desc": "Realizei testes A/B abrangentes em formatos criativos, públicos e estratégias de lances. Identifiquei que anúncios no estilo UGC com CTAs diretas superavam conteúdos institucionais em 3x. Reestruturei campanhas em torno de padrões vencedores e implementei um framework sistemático de testes.",
+        "result": "O CPL caiu de US$ 5,00 para US$ 2,40 (-52%) em 6 semanas."
+      },
+      "step2": {
+        "title": "Automação de Campanhas com IA",
+        "desc": "Desenvolvi um agente de IA personalizado usando Python e LLMs para automatizar a criação de campanhas de Google Search. O agente lê feeds de estoque e gera automaticamente palavras-chave, anúncios e estruturas de campanha.",
+        "result": "O tempo de lançamento caiu de 2 dias para 4 horas (5x mais rápido), capturando a demanda imediatamente."
+      },
+      "step3": {
+        "title": "Geo-Targeting Baseado em RPL",
+        "desc": "Implementei segmentação de público baseada em métricas de Receita Por Lead (RPL). Analisei quais regiões geográficas convertiam a taxas mais altas e ajustei os lances estrategicamente.",
+        "result": "O RPL aumentou em 30% através de geo-targeting estratégico."
+      },
+      "impact": {
+        "title": "Redução de 52% no CPL + Lançamentos 5x Mais Rápidos",
+        "desc": "Economia de orçamento ao reduzir o custo por lead, melhorando simultaneamente o faturamento e o time-to-market."
+      }
+    },
+    "cs2": {
+      "badge": "Growth de SaaS",
+      "company": "Wishpond (TSXV:WISH)",
+      "title": "Redução de 86% no Churn via Growth Marketing",
+      "challenge": "Uma empresa de SaaS de capital aberto (mais de US$ 20M de ARR) estava perdendo receita com alto churn mensal. Os usuários não percebiam valor rápido o suficiente e o onboarding estava ineficiente.",
+      "metric1": "Churn Mensal",
+      "metric2": "ARPU",
+      "metric1Value": "Alto",
+      "metric2Value": "Baixo",
+      "step1": {
+        "title": "Redesign do Fluxo de Onboarding",
+        "desc": "Colaborei com as equipes de Produto e Sucesso do Cliente para redesenhar completamente o onboarding. Implementei um fluxo progressivo com gatilhos de ativação baseados em marcos e suporte in-app.",
+        "result": "O número de usuários ativos cresceu 47% à medida que mais usuários alcançavam o \"momento aha\" mais rápido."
+      },
+      "step2": {
+        "title": "Otimização do Modelo de Assinatura",
+        "desc": "Desenvolvi e implementei um novo modelo de precificação por assinatura com gatilhos de upsell. Criei caminhos de upgrade guiados por dados de uso e engajamento.",
+        "result": "A Receita Média Por Usuário (ARPU) aumentou em 406%."
+      },
+      "step3": {
+        "title": "Framework de Sucesso do Cliente",
+        "desc": "Implementei um sistema de gerenciamento de contas personalizado com campanhas de retenção automatizadas para contas em risco. Construí um modelo de previsão de churn para intervenção proativa.",
+        "result": "O churn de receita diminuiu em 86%."
+      },
+      "impact": {
+        "title": "Redução de 86% no Churn + Aumento de 406% no ARPU",
+        "desc": "Além de 10% de crescimento no MRR e 47% de aumento nos Usuários Ativos."
+      }
+    },
+    "cs3": {
+      "badge": "PPC & Escala",
+      "company": "Lift Ventures",
+      "title": "Aumento de 1.300% nas Vendas via Otimização de Google Ads",
+      "challenge": "Um venture studio com mais de 7 produtos e 10 milhões de usuários precisava provar que o tráfego pago poderia ser um motor de receita sustentável, não apenas um custo.",
+      "metric1": "Vendas Mensais",
+      "metric2": "ROAS",
+      "step1": {
+        "title": "Implementação Avançada de GA4",
+        "desc": "Liderei a migração e customização do Google Analytics 4 em 3 produtos que atendem mais de 3 milhões de usuários mensais. Implementei eventos personalizados para rastreamento comportamental profundo.",
+        "result": "Infraestrutura de dados acionável que eliminou desperdícios de investimento."
+      },
+      "step2": {
+        "title": "Testes A/B Científicos",
+        "desc": "Colaborei com consultores externos para realizar testes rigorosos de preço e copy. Gerenciei Google Ads com foco em ganho incremental, não apenas em volume.",
+        "result": "Melhoria de 18% no ROAS através de otimização guiada por dados."
+      },
+      "step3": {
+        "title": "Escala e Otimização de Campanhas",
+        "desc": "Escalei sistematicamente as campanhas vencedoras, cortando investimentos em canais de baixo desempenho. Estabeleci o PPC como um canal sustentável.",
+        "result": "Aumento de 1.300% nas vendas mensais. O Google Ads passou a representar 25% da nova receita."
+      },
+      "impact": {
+        "title": "Crescimento de 1.300% nas Vendas + 18% de Melhoria no ROAS",
+        "desc": "Estabeleceu o PPC como canal sustentável gerando 25% da receita."
+      }
+    },
+    "cs4": {
+      "badge": "Expansão Internacional",
+      "company": "Hostinger International",
+      "title": "Crescimento de 287% na Receita de PPC + 473k Usuários Orgânicos",
+      "challenge": "A empresa de hospedagem web que mais cresce na Europa precisava escalar a receita de PPC em mais de 20 países, enquanto construía simultaneamente a base de tráfego orgânico.",
+      "metric1": "Países",
+      "metric2": "Investimento Trimestral",
+      "step1": {
+        "title": "Gestão de PPC Multimercado",
+        "desc": "Colaborei na gestão de mais de US$ 1M trimestrais em PPC em mais de 20 países. Gerenciei campanhas de Search, Display, Vídeo e Social Ads.",
+        "result": "Crescimento de 287% na receita mensal de PPC em um ano."
+      },
+      "step2": {
+        "title": "SEO Estratégico & Conteúdo",
+        "desc": "Realizei pesquisa detalhada de palavras-chave e coordenei projetos de SEO, incluindo auditorias técnicas e otimizações on-page.",
+        "result": "Geração de mais de 473.000 novos usuários orgânicos mensais."
+      },
+      "step3": {
+        "title": "Estratégia de Expansão Global",
+        "desc": "Acelerei a expansão global de PPC para mais de 9 novos países, lançando contas e realizando pesquisas de mercado para localização de criativos.",
+        "result": "Entrada bem-sucedida em 9 novos mercados com CAC lucrativo."
+      },
+      "impact": {
+        "title": "Crescimento de 287% em PPC + 473k Usuários Orgânicos",
+        "desc": "Além da expansão bem-sucedida em 9 novos mercados internacionais."
+      }
+    },
+    "caseStudiesCta": {
+      "title": "Quer resultados como estes?",
+      "subtitle": "Eu aplico a mesma abordagem baseada em dados e frameworks de growth em cada projeto."
+    }
+  },
+  "methodology": {
+    "hero": {
+      "badge": "O Processo de Growth Hacking: Guia Passo a Passo",
+      "title": "Growth Hacking é um processo, não um truque",
+      "subtitle": "Growth hacking não é solução mágica nem atalho. É um processo disciplinado e repetível de experimentação, medição e refinamento.",
+      "quote": "Apaixone-se pelo processo, e os resultados virão - Eric Thomas"
+    },
+    "intro": {
+      "title": "Growth marketing é um sistema",
+      "p1": "Não existe um único truque. As empresas que escalam fazem isso seguindo um processo rigoroso e orientado a dados. Encontrar \"balas de prata\" é resultado de trabalho duro, não de ideias aleatórias.",
+      "p2": "Você segue uma abordagem estruturada para pesquisar, priorizar, desenhar, testar e analisar experimentos de growth? Se não, seus experimentos dificilmente vão gerar clientes pagantes de forma consistente.",
+      "p3": "Uma growth hack mágica que funciona para todos não existe. Além do buzz, growth hacking é um processo passo a passo.",
+      "p4": "Scraping, automação, loops de viralidade e outras táticas \"hacky\" podem ser poderosas, mas sem um sistema disciplinado raramente geram crescimento sustentável.",
+      "quickLook": "Visão rápida do processo"
+    },
+    "overview": [
+      "Encontrar product-market fit",
+      "Definir os cinco pré-requisitos",
+      "Implementar experimentação rápida (G.R.O.W.S)",
+      "Criar playbooks para iterar e escalar"
+    ],
+    "step1": {
+      "badge": "Etapa 1",
+      "title": "Encontrar Product-Market Fit",
+      "p1": "Um processo de crescimento rápido é inútil sem product-market fit. Se os usuários não sentirem falta do seu produto, growth não vai salvar. Sua prioridade é construir o produto certo para o mercado certo.",
+      "noteTitle": "Growth antes de PMF é desperdício",
+      "noteBody": "Adote uma abordagem lean: identifique clientes potenciais, entenda necessidades e construa um produto que os transforme em primeiros defensores. Isso leva tempo e iteração, mas escalar um produto fraco desperdiça ainda mais tempo.",
+      "signalsTitle": "Como saber se você chegou ao PMF?",
+      "signals": [
+        {
+          "title": "Método de Sean Ellis \"Very Disappointed\"",
+          "points": [
+            "Pesquise usuários ativos com: \"Como você se sentiria se não pudesse usar nosso produto a partir de amanhã?\"",
+            "Opções: extremamente desapontado, um pouco desapontado, nada desapontado, ou não uso mais.",
+            "Se 40%+ responderem \"muito desapontado\", você tem um forte sinal de PMF."
+          ]
+        },
+        {
+          "title": "Tríade de Brian Balfour",
+          "points": [
+            "Crescimento orgânico forte e indicações.",
+            "Alta retenção e baixo churn para a categoria.",
+            "Uso significativo e frequente que reflete o valor central do produto."
+          ]
+        }
+      ],
+      "overlapTitle": "Quando o growth hacking pode começar?",
+      "overlapBody": "Há sobreposição entre a fase de Problem-Solution Fit e o PMF. Nesse estágio, growth pode explorar oportunidades em dados e padrões de uso. Use frameworks como o Bullseye Template do Traction para focar nos canais mais promissores, mas nunca use táticas de growth para mascarar um produto sem tração real.",
+      "timingTitle": "O timing importa",
+      "timingBody": "Processos de growth funcionam melhor quando a empresa já passou da validação inicial e está pronta para escalar. A estratégia certa no momento certo transforma um bom produto em um negócio de crescimento acelerado."
+    },
+    "step2": {
+      "badge": "Etapa 2",
+      "title": "Cinco pré-requisitos antes de escalar",
+      "p1": "Depois do PMF, o growth ainda precisa de uma base sólida. Alinhe o time nesses pré-requisitos antes da experimentação rápida.",
+      "p2": "Growth é um esporte coletivo. Todos no processo precisam entender o sistema. Uma base clara garante experimentos focados e mensuráveis.",
+      "cards": [
+        {
+          "title": "Business Model Canvas",
+          "desc": "Um modelo visual de uma página com proposta de valor, clientes, canais, operações e economia. Alinha o time e acelera o onboarding."
+        },
+        {
+          "title": "Value Proposition Canvas",
+          "desc": "Clarifica como seu produto resolve dores reais e gera ganhos. Deve refletir o comportamento real do cliente, não suposições idealizadas."
+        },
+        {
+          "title": "Personas",
+          "desc": "Defina de 2 a 3 personas principais em profundidade: objetivos, comportamentos, dores, alternativas e critérios de decisão. Valide com feedback real."
+        },
+        {
+          "title": "Pirate Funnel (AAARRR)",
+          "desc": "Mapeie a jornada do usuário (Awareness, Acquisition, Activation, Retention, Referral, Revenue) e defina as ações e métricas-chave de cada etapa."
+        },
+        {
+          "title": "OMTM + North Star",
+          "desc": "Escolha uma métrica que importa agora (OMTM). Ela muda com o tempo, mas sempre deve levar à North Star."
+        }
+      ],
+      "personaTitle": "Diretrizes para personas",
+      "personaPoints": [
+        "Foque primeiro nas 2 ou 3 personas mais importantes.",
+        "Defina traços profundos: objetivos, comportamentos, dia a dia e alternativas atuais.",
+        "Valide e refine as personas com testes e feedback reais."
+      ],
+      "omtmTitle": "OMTM vs North Star",
+      "omtmBody": "O OMTM é um foco de curto prazo que muda conforme você atinge marcos. A North Star é a direção de longo prazo. Por exemplo, o time pode focar conversão do trial este mês enquanto a North Star é horas entregues ou receita recorrente."
+    },
+    "step3": {
+      "badge": "Etapa 3",
+      "title": "Implementar Experimentação Rápida (G.R.O.W.S)",
+      "p1": "O loop de growth torna a experimentação previsível, rápida e mensurável. É assim que times vencedores encontram os poucos testes que desbloqueiam crescimento exponencial.",
+      "p2": "Não importa se você segue a abordagem de Sean Ellis ou Growth Tribe. A estrutura é o que gera velocidade e aprendizado. Se quiser um guia visual, o David Arnoux da Growth Tribe explica o loop passo a passo.",
+      "grows": [
+        {
+          "letter": "G",
+          "title": "Gerar Ideias",
+          "desc": "Colete hipóteses que possam melhorar seu OMTM. Use pesquisa de mercado, insights qualitativos e dados quantitativos para alimentar um backlog estruturado de ideias.",
+          "bullets": [
+            "Observe seu mercado: melhores práticas, tendências, artigos e padrões de concorrentes.",
+            "Dados quantitativos mostram o que acontece; qualitativos explicam o porquê.",
+            "Formato da ideia: título, 5Ws + H, teoria, métrica de sucesso e benchmark mínimo.",
+            "Use um sistema compartilhado para capturar ideias, ranqueá-las e acompanhar resultados."
+          ]
+        },
+        {
+          "letter": "R",
+          "title": "Priorizar Ideias",
+          "desc": "Priorize com um modelo de pontuação (ICE, BRASS, PIES). Busque momentum: combine apostas de alto impacto com ganhos rápidos.",
+          "bullets": [
+            "Peça ao time para indicar poucas ideias antes da reunião de sprint.",
+            "Decida e execute os experimentos com maior pontuação.",
+            "Inclua low-hanging fruit para manter a velocidade."
+          ]
+        },
+        {
+          "letter": "O",
+          "title": "Desenhar Experimentos",
+          "desc": "Mantenha rápido e simples. Desenhe experimentos que possam ser lançados rápido e validem potencial antes de investir pesado.",
+          "bullets": [
+            "Defina papéis: Growth Lead, Dev, Designer, Analista.",
+            "Use rituais ágeis para manter a cadência.",
+            "Feito é melhor que perfeito quando o objetivo é velocidade e aprendizado."
+          ]
+        },
+        {
+          "letter": "W",
+          "title": "Executar o Plano",
+          "desc": "Execute. Faça os 20% de trabalho que geram 80% dos resultados. Se o teste mostrar potencial, aprofunde; se não, siga em frente.",
+          "bullets": [
+            "Otimize para velocidade e aprendizado, não perfeição.",
+            "Princípios de Agile Scrum ajudam o time a entregar rápido e alinhado."
+          ]
+        },
+        {
+          "letter": "S",
+          "title": "Estudar os Dados",
+          "desc": "Analise com cuidado e categorize resultados: inconclusivo, falha (aprender), falha (ajustar), sucesso (explorar), sucesso (escalar).",
+          "bullets": [
+            "Espere falhas; elas fazem parte do caminho até o acerto.",
+            "Segmente resultados por dispositivo, audiência, geografia ou coorte.",
+            "Documente aprendizados para os próximos testes."
+          ]
+        }
+      ],
+      "analysisTitle": "Como analisar experimentos",
+      "analysisPoints": [
+        "O experimento termina (geralmente de 1 a 3 semanas para reduzir sazonalidade).",
+        "O growth lead revisa os resultados usando um template consistente.",
+        "Classifique os resultados: inconclusivo, falha (sem ajuste), falha (ajustar), sucesso (explorar), sucesso (escalar)."
+      ],
+      "abPrereqsTitle": "Pré-requisitos para A/B testing",
+      "abPrereqs": [
+        "É preciso volume suficiente. Uma boa regra é 1.000 conversões na ação-alvo.",
+        "Times em estágio inicial devem fazer mudanças maiores, não micro ajustes.",
+        "Escolha uma abordagem estatística que combine com velocidade, risco e comunicação do time."
+      ],
+      "abNotesTitle": "Notas sobre A/B testing",
+      "abNotes": [
+        {
+          "title": "Abordagem frequentista",
+          "bullets": [
+            "Menor risco de falsos positivos, mas exige significância alta (95%+).",
+            "Velocidade menor porque você precisa de mais dados para declarar um vencedor.",
+            "Mais difícil de comunicar para times não técnicos."
+          ]
+        },
+        {
+          "title": "Abordagem bayesiana",
+          "bullets": [
+            "Maior velocidade com limiares de probabilidade (ex: 80% = vencedor).",
+            "Melhor para times rápidos onde velocidade importa.",
+            "Mais fácil de comunicar: \"A variação B tem 84% de chance de vencer.\""
+          ]
+        }
+      ]
+    },
+    "step4": {
+      "badge": "Etapa 4",
+      "title": "Criar playbooks para iterar e escalar",
+      "p1": "Armazene cada experimento com hipótese, setup, resultados e aprendizados. Uma base viva evita repetir falhas e acelera o onboarding.",
+      "p2": "Mantenha comunicação aberta. Muitos times de alto desempenho compartilham atualizações semanais ou mantêm um canal dedicado aos resultados e aprendizados dos testes.",
+      "cta": "Agendar uma Chamada de Growth"
+    }
+  },
+  "finalCta": {
+    "title": "Pronto para escalar além do seu patamar atual?",
+    "subtitle": "Aceito apenas 2 novos projetos de growth por trimestre para garantir foco máximo.",
+    "button": "Agendar uma Chamada de Growth"
+  }
+}
