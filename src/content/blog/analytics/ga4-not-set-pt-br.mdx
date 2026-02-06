@@ -1,0 +1,51 @@
+---
+title: '[GA4] O que significa o valor (not set) nos seus relatorios'
+description: 'Saiba por que valores (not set) aparecem nos relatorios do Google Analytics e como reduzir esse problema.'
+publishedAt: '2026-02-06'
+tags: ['ga4', 'analytics', 'atribuicao', 'utm']
+category: 'Analytics'
+coverImage: '/img/blog-cover-placeholder.png'
+author:
+  name: 'Gabriel Zamp'
+  image: '/img/gabriel-zamp-3.png'
+  twitter: 'gabrielzamp'
+---
+
+# [GA4] O que significa o valor (not set) nos seus relatorios
+
+Saiba por que valores (not set) aparecem nos relatorios do Google Analytics e como reduzir esse problema.
+
+## Por que (not set) aparece
+
+O valor (not set) nos relatorios do Google Analytics indica que o GA4 nao recebeu dados de uma dimensao especifica. Isso e mais comum em dimensoes de origem de trafego como ID da campanha, Nome da campanha, Formato do criativo, Estrategia de marketing, Midia, Origem e Plataforma de origem.
+
+Os motivos mais comuns sao:
+
+- Informacoes de inicio de sessao ausentes: o evento `session_start` e coletado automaticamente quando a sessao comeca e carrega os dados de atribuicao. Se ele estiver ausente, a atribuicao pode quebrar.
+- O comando de configuracao chega tarde: garanta que o comando de configuracao do GA4 dispare antes de qualquer comando de evento.
+- Consentimento do usuario final: se voce usa o Consent Mode, verifique se as tags foram implementadas corretamente e se os valores de consentimento padrao foram definidos e propagados em todas as paginas. Em alguns casos, mesmo com a codificacao automatica ativada, o GCLID nao pode ser usado como esperado. Isso pode ocorrer quando `ad_user_data` e negado. Como resultado, dimensoes de campanha podem aparecer como (not set). Para melhorar, combine codificacao manual (parametros UTM) com codificacao automatica.
+- Consentimento nao propagado nas paginas: se o usuario atualiza o consentimento para concedido, esse estado deve ser enviado em todas as paginas da sessao.
+- Conta do Google Ads desvinculada: desvincular a conta do Google Ads de uma propriedade do GA4 pode gerar valores (not set). Mesmo sem importar conversoes do GA4, a vinculacao continua importante para relatorios precisos de campanha.
+- Codificacao automatica nao ativada: a codificacao automatica anexa o parametro GCLID ao URL e ajuda o GA4 a identificar qual anuncio foi clicado. Se estiver desativada, surgem lacunas de atribuicao.
+- UTMs incompletas ou incorretas: quando voce usa codificacao manual, UTMs incompletas ou erradas podem gerar (not set) nas dimensoes de origem/midia/campanha.
+- Tempo de processamento: (not set) pode aparecer enquanto o GA4 determina os valores de origem de trafego. Os dados podem ser atualizados mais tarde.
+
+## Motivos menos comuns para (not set)
+
+- Cadeias de redirecionamento que removem parametros de URL.
+- Scripts customizados que reescrevem URLs e removem UTMs.
+- Cross-domain tracking nao configurado para todos os dominios relevantes.
+- Eventos via Measurement Protocol sem parametros de origem.
+
+## Altas taxas de (not set): o que fazer
+
+- Audite eventos `session_start` e confirme que estao disparando em todas as sessoes.
+- Confirme que as tags de configuracao do GA4 disparam antes de qualquer outro evento.
+- Revise a implementacao do Consent Mode e garanta propagacao de consentimento em todas as paginas.
+- Ative a codificacao automatica do Google Ads e mantenha GA4 e Ads vinculados.
+- Padronize UTMs e valide regras do URL builder.
+- Verifique redirecionamentos e reescritas de URL que possam remover parametros.
+
+## Observacao
+
+Mudancas no GA4 levam tempo para aparecer nos relatorios. As atualizacoes podem levar de 24 a 48 horas.

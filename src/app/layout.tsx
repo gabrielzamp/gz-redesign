@@ -5,6 +5,8 @@ import "./globals.css";
 import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer"; // Importando o novo Footer
 import Script from "next/script";
+import GA4Tracker from "@/components/analytics/ga4-tracker";
+import { GA_MEASUREMENT_ID } from "@/lib/ga";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,6 +23,9 @@ export const metadata: Metadata = {
   description:
     "Growth manager, paid ads manager, digital marketeer and developer based in Brazil",
   metadataBase: new URL("https://growwithzamp.com"),
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 import { LanguageProvider } from "@/context/LanguageContext";
@@ -47,7 +52,7 @@ export default function RootLayout({
           }}
         />
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-099FT30VFS"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
         />
         <Script
@@ -59,7 +64,10 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', 'G-099FT30VFS');
+              gtag('config', '${GA_MEASUREMENT_ID}', {
+                send_page_view: false,
+                anonymize_ip: true
+              });
             `,
           }}
         />
@@ -68,6 +76,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans selection:bg-blue-500/30`}
       >
         <LanguageProvider>
+          <GA4Tracker />
           {/* Header Fixo */}
           <Navigation />
 

@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/LanguageContext";
+import { trackEvent } from "@/lib/ga";
 
 // --- 1. Visual Hierarchy Layer (Hero) ---
 function Hero() {
@@ -56,7 +57,19 @@ function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 items-center mt-10">
             <Button asChild size="lg" className="h-14 px-10 text-lg shadow-xl bg-brand-orange hover:bg-orange-600 text-white border-0 font-bold rounded-md group">
-              <Link href="https://calendly.com/gabriel-growwithzamp/30min" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <Link
+                href="https://calendly.com/gabriel-growwithzamp/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+                onClick={() =>
+                  trackEvent({
+                    action: "book_growth_call_click",
+                    category: "cta",
+                    label: "home_hero",
+                  })
+                }
+              >
                 {t("common.bookCall")}
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
@@ -410,6 +423,13 @@ function ContactCTA() {
             href="https://calendly.com/gabriel-growwithzamp/30min"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              trackEvent({
+                action: "book_growth_call_click",
+                category: "cta",
+                label: "home_final_cta",
+              })
+            }
             className="h-14 px-10 rounded-md bg-brand-orange text-white font-bold text-lg flex items-center justify-center hover:bg-orange-600 transition-colors shadow-xl group"
           >
             {dict.finalCta.button}

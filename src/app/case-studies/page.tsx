@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
+import { trackEvent } from "@/lib/ga";
 import {
   ArrowLeft,
   ArrowRight,
@@ -448,6 +449,13 @@ function CTASection() {
           href="https://calendly.com/gabriel-growwithzamp/30min"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() =>
+            trackEvent({
+              action: "book_growth_call_click",
+              category: "cta",
+              label: "case_studies_cta",
+            })
+          }
           className="inline-flex h-14 px-10 rounded-md bg-brand-orange text-white font-bold text-lg items-center justify-center hover:bg-orange-600 transition-colors shadow-xl group"
         >
           {t("common.bookCall")}

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ArrowRight } from "lucide-react";
 import LanguageSwitcher from "./language-switcher";
 import { useLanguage } from "@/context/LanguageContext";
+import { trackEvent } from "@/lib/ga";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -40,7 +41,7 @@ export default function Navigation() {
             className="text-2xl font-bold tracking-tighter text-white z-50 hover:text-white/90 transition-colors"
             onClick={() => setIsOpen(false)}
           >
-            grow<span className="text-white/80">.with.</span>zamp
+            🧑‍🔬 grow<span className="text-white/80">.with.</span>zamp
           </Link>
 
           {/* Desktop Nav */}
@@ -67,6 +68,13 @@ export default function Navigation() {
               href="https://calendly.com/gabriel-growwithzamp/30min"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent({
+                  action: "book_growth_call_click",
+                  category: "cta",
+                  label: "nav_desktop",
+                })
+              }
               className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-brand-orange text-white text-sm font-bold hover:bg-orange-600 transition-all shadow-md group"
             >
               {t("common.bookCall")}
@@ -105,7 +113,14 @@ export default function Navigation() {
               href="https://calendly.com/gabriel-growwithzamp/30min"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                trackEvent({
+                  action: "book_growth_call_click",
+                  category: "cta",
+                  label: "nav_mobile",
+                });
+                setIsOpen(false);
+              }}
               className="mt-4 inline-flex items-center gap-2 px-8 py-4 rounded-md bg-brand-orange text-white font-bold text-lg shadow-lg hover:bg-orange-600 transition-colors group"
             >
               {t("common.bookCall")}

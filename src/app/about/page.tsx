@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
+import { trackEvent } from "@/lib/ga";
 import {
   ArrowRight,
   Briefcase,
@@ -41,6 +42,13 @@ function AboutHero() {
                 href="https://calendly.com/gabriel-growwithzamp/30min"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  trackEvent({
+                    action: "book_growth_call_click",
+                    category: "cta",
+                    label: "about_hero",
+                  })
+                }
                 className="h-14 px-10 rounded-md bg-brand-orange text-white font-bold flex items-center gap-2 hover:bg-orange-600 transition-colors shadow-lg group"
               >
                 {t("common.bookCall")}
@@ -303,6 +311,13 @@ function FinalCTA() {
           href="https://calendly.com/gabriel-growwithzamp/30min"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() =>
+            trackEvent({
+              action: "book_growth_call_click",
+              category: "cta",
+              label: "about_cta",
+            })
+          }
           className="inline-flex h-14 px-10 rounded-md bg-brand-orange text-white font-bold text-lg items-center justify-center hover:bg-orange-600 transition-colors shadow-lg group"
         >
           {t("common.bookCall")}

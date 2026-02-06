@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { trackEvent } from "@/lib/ga";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,6 +30,13 @@ export default function Footer() {
               href="https://calendly.com/gabriel-growwithzamp/30min"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent({
+                  action: "book_growth_call_click",
+                  category: "cta",
+                  label: "footer",
+                })
+              }
               className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-brand-orange text-white text-sm font-bold hover:bg-orange-600 transition-all shadow-lg group"
             >
               {t("common.bookCall")}
@@ -39,7 +47,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-12">
             <div className="md:col-span-2">
               <Link href="/" className="text-2xl font-bold text-white mb-4 block">
-                grow<span className="text-white/60">.with.</span>zamp
+                🧑‍🔬 grow<span className="text-white/60">.with.</span>zamp
               </Link>
               <p className="text-white/70 max-w-sm leading-relaxed mb-6">
                 {t("common.footer.desc")}
