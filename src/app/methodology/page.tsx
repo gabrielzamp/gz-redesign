@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import {
   ArrowRight,
   Beaker,
@@ -25,19 +24,19 @@ export default function MethodologyPage() {
         <div className="absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_0%,rgba(59,130,246,0.22),transparent_60%)]"></div>
 
-        <div className="container px-4 mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center pt-32 pb-20 md:pt-48 md:pb-28">
+        <div className="container px-4 mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center page-hero">
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-6">
               <Sparkles className="w-4 h-4 text-white" />
               <span className="text-sm font-semibold text-white">{m.hero.badge}</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+            <h1 className="page-title text-white mb-6">
               {m.hero.title}
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 leading-relaxed font-medium max-w-2xl">
+            <p className="page-subtitle text-blue-100 font-medium max-w-2xl">
               {m.hero.subtitle}
             </p>
-            <p className="mt-6 text-blue-100 text-base md:text-lg">{m.hero.quote}</p>
+            <p className="page-subtitle mt-6 text-blue-100">{m.hero.quote}</p>
           </div>
 
           <div className="relative">
@@ -69,7 +68,7 @@ export default function MethodologyPage() {
       <section className="section-padding bg-background">
         <div className="container px-4 mx-auto grid lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-7">
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-6">{m.intro.title}</h2>
+            <h2 className="section-title mb-6">{m.intro.title}</h2>
             <div className="space-y-4 text-body">
               <p>{m.intro.p1}</p>
               <p>{m.intro.p2}</p>
@@ -110,7 +109,7 @@ export default function MethodologyPage() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold mb-6">
               {m.step1.badge}
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">{m.step1.title}</h2>
+            <h2 className="section-title mb-4">{m.step1.title}</h2>
             <p className="text-body mb-6">{m.step1.lead}</p>
             <div className="rounded-2xl border border-brand-orange/40 bg-white p-6 shadow-sm">
               <h3 className="text-lg font-bold text-heading mb-2">{m.step1.foundationTitle}</h3>
@@ -170,7 +169,7 @@ export default function MethodologyPage() {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100 text-purple-600 text-xs font-bold mb-4">
                 {m.step2.badge}
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-heading mb-3">{m.step2.title}</h2>
+              <h2 className="section-title mb-3">{m.step2.title}</h2>
               <p className="text-body max-w-2xl">{m.step2.lead}</p>
             </div>
             <div className="rounded-2xl bg-slate-50 border border-slate-200 p-5 max-w-md">
@@ -214,7 +213,7 @@ export default function MethodologyPage() {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 border border-green-100 text-green-600 text-xs font-bold mb-6">
                 {m.step3.badge}
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">{m.step3.title}</h2>
+              <h2 className="section-title mb-4">{m.step3.title}</h2>
               <p className="text-body mb-4">{m.step3.lead}</p>
               <p className="text-body">{m.step3.note}</p>
             </div>
@@ -293,7 +292,7 @@ export default function MethodologyPage() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-xs font-bold mb-6">
               {m.step4.badge}
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">{m.step4.title}</h2>
+            <h2 className="section-title mb-4">{m.step4.title}</h2>
             <p className="text-body">{m.step4.lead}</p>
           </div>
           <div className="lg:col-span-7 space-y-4">
@@ -317,7 +316,7 @@ export default function MethodologyPage() {
       <section className="py-20 bg-brand-blue text-white">
         <div className="container px-4 mx-auto grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{m.cta.title}</h2>
+            <h2 className="section-title mb-4">{m.cta.title}</h2>
             <p className="text-blue-100 text-lg mb-6">{m.cta.subtitle}</p>
             <ul className="space-y-3 text-sm text-blue-100">
               {m.cta.bullets.map((bullet) => (

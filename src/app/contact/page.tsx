@@ -56,13 +56,13 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background pt-32 pb-16">
-      <div className="max-w-3xl mx-auto px-4 md:px-8">
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-center mb-4">
+    <div className="min-h-screen bg-background page-hero">
+      <div className="max-w-3xl mx-auto px-4 md:px-6">
+        <h1 className="page-title text-center mb-4">
           <span className="text-muted-foreground">Say Hi!</span> and tell me
           <br /> about your idea
         </h1>
-        <p className="text-center text-muted-foreground text-lg mb-16">
+        <p className="page-subtitle text-center text-muted-foreground mb-16">
           Have a nice works? Reach out and let&apos;s chat.
         </p>
 

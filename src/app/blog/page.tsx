@@ -14,12 +14,12 @@ export default function BlogPage() {
   return (
     <>
       {/* Brand Blue Header */}
-      <div className="bg-brand-blue text-white pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden">
+      <div className="bg-brand-blue text-white page-hero relative overflow-hidden">
         <div className="container text-center space-y-6 relative z-10 px-4">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
+          <h1 className="page-title text-white leading-tight">
             The <span className="text-blue-200">Growth</span> Blog
           </h1>
-          <p className="text-blue-100 text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed font-medium">
+          <p className="page-subtitle text-blue-100 max-w-2xl mx-auto font-medium">
             Expand your SEO and marketing knowledge with detailed <br className="hidden md:block" />
             tutorials, engineering insights, and audited case studies.
           </p>

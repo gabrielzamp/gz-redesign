@@ -48,4 +48,25 @@
   .section-padding {
     @apply py-20 md:py-24;
   }
+
+  /* Page layout standards */
+  .page-hero {
+    @apply pt-28 pb-16 md:pt-40 md:pb-24;
+  }
+
+  .page-title {
+    @apply text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight;
+  }
+
+  .page-subtitle {
+    @apply text-lg md:text-2xl leading-relaxed;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-heading;
+  }
+
+  .section-subtitle {
+    @apply text-body;
+  }
 }

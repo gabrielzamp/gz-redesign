@@ -38,19 +38,19 @@ function Hero() {
       <div className="absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_0%,rgba(59,130,246,0.25),transparent_60%)]"></div>
 
-      <div className="container px-4 mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center pt-32 pb-20 md:pt-48 md:pb-28">
+      <div className="container px-4 mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center page-hero">
         <div className="relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100/10 border border-green-400/20 backdrop-blur-sm mb-6">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
             <span className="text-sm font-medium text-green-100">{t("hero.badge")}</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-6 leading-tight text-white">
+          <h1 className="page-title text-white mb-6">
             {t("hero.title1")} <br className="hidden md:block" />
             {t("hero.title2")}
           </h1>
 
-          <p className="text-xl md:text-2xl text-blue-100 max-w-2xl leading-relaxed font-medium">
+          <p className="page-subtitle text-blue-100 font-medium max-w-2xl">
             {t("hero.subtitle")}
           </p>
 
@@ -158,7 +158,7 @@ function ResultsLayer() {
             <p className="text-xs uppercase tracking-[0.2em] text-blue-600 font-semibold mb-3">
               {dict.resultsLayer.kicker}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-heading">
+            <h2 className="section-title mb-4">
               {dict.resultsLayer.title}
             </h2>
             <p className="text-body mb-6">
@@ -216,7 +216,7 @@ function HowItWorksSection() {
       <div className="container px-4 mx-auto">
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-5">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-heading">
+            <h2 className="section-title mb-4">
               {dict.howItWorks.title}
             </h2>
             <p className="text-body">
@@ -292,7 +292,7 @@ function CapabilitiesSection() {
       <div className="container px-4 mx-auto">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-10 gap-6">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-2">{dict.home.capabilitiesTitle}</h2>
+            <h2 className="section-title mb-2">{dict.home.capabilitiesTitle}</h2>
             <p className="text-body max-w-2xl">{dict.home.capabilitiesSubtitle}</p>
           </div>
           <Link
@@ -372,7 +372,7 @@ function FaqSection() {
   return (
     <section className="py-20 bg-background">
       <div className="container px-4 mx-auto max-w-3xl">
-        <h2 className="text-3xl font-bold text-heading text-center mb-12">
+        <h2 className="section-title text-center mb-12">
           {dict.faq.title}
         </h2>
         <div className="space-y-6">
@@ -399,7 +399,7 @@ function ContactCTA() {
   return (
     <section className="py-32 bg-gradient-to-b from-slate-50 to-white text-center border-t border-slate-100">
       <div className="container px-4 mx-auto max-w-2xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+        <h2 className="section-title text-slate-900 mb-6">
           {dict.finalCta.title}
         </h2>
         <p className="text-xl text-slate-600 mb-10">

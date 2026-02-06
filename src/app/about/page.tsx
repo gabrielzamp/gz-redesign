@@ -18,7 +18,7 @@ import {
 function AboutHero() {
   const { t } = useLanguage();
   return (
-    <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-brand-blue text-white">
+    <section className="relative page-hero overflow-hidden bg-brand-blue text-white">
       <div className="container px-4 mx-auto relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Text Content */}
@@ -27,13 +27,13 @@ function AboutHero() {
               <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
               {t("about.hero.badge")}
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="page-title text-white mb-6">
               {t("about.hero.title1")} <br />
               <span className="text-blue-200">
                 {t("about.hero.title2")}
               </span>
             </h1>
-            <p className="text-xl text-blue-100 leading-relaxed mb-8 max-w-xl font-medium">
+            <p className="page-subtitle text-blue-100 mb-8 max-w-xl font-medium">
               {t("about.hero.subtitle")}
             </p>
             <div className="flex gap-4">
@@ -137,10 +137,8 @@ function KeyHighlights() {
     <section className="section-padding bg-background">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-heading mb-4">{t("about.highlights.title")}</h2>
-          <p className="text-body">
-            {t("about.highlights.subtitle")}
-          </p>
+          <h2 className="section-title mb-4">{t("about.highlights.title")}</h2>
+          <p className="section-subtitle">{t("about.highlights.subtitle")}</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -171,13 +169,11 @@ function ExpertiseSection() {
   const expertise = dict.about.expertise.items;
 
   return (
-    <section className="py-20 bg-secondary/30">
+    <section className="section-padding bg-secondary/30">
       <div className="container px-4 mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-heading mb-4">{t("about.expertise.title")}</h2>
-          <p className="text-body">
-            {t("about.expertise.subtitle")}
-          </p>
+          <h2 className="section-title mb-4">{t("about.expertise.title")}</h2>
+          <p className="section-subtitle">{t("about.expertise.subtitle")}</p>
         </div>
 
         <div className="flex flex-wrap gap-3 justify-center">
@@ -200,9 +196,9 @@ function ExperienceTimeline() {
   const experiences = dict.about.experience.items;
 
   return (
-    <section className="py-24 bg-white">
+    <section className="section-padding bg-white">
       <div className="container px-4 mx-auto max-w-4xl">
-        <h2 className="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3">
+        <h2 className="section-title mb-12 flex items-center gap-3">
           <Briefcase className="text-blue-600" /> {t("about.experience.title")}
         </h2>
 
@@ -246,9 +242,9 @@ function ExperienceTimeline() {
 function Education() {
   const { t } = useLanguage();
   return (
-    <section className="py-24 border-t border-slate-100 bg-slate-50/50">
+    <section className="section-padding border-t border-slate-100 bg-slate-50/50">
       <div className="container px-4 mx-auto max-w-3xl">
-        <h2 className="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3">
+        <h2 className="section-title mb-12 flex items-center gap-3">
           <GraduationCap className="text-blue-600" /> {t("about.education.title")}
         </h2>
 
@@ -295,12 +291,12 @@ function Education() {
 function FinalCTA() {
   const { t } = useLanguage();
   return (
-    <section className="py-32 bg-gradient-to-b from-slate-50 to-white text-center border-t border-slate-100">
+    <section className="section-padding bg-gradient-to-b from-slate-50 to-white text-center border-t border-slate-100">
       <div className="container px-4 mx-auto max-w-2xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+        <h2 className="section-title text-slate-900 mb-6">
           {t("about.cta.title")}
         </h2>
-        <p className="text-lg text-slate-600 mb-10">
+        <p className="section-subtitle text-slate-600 mb-10">
           {t("about.cta.subtitle")}
         </p>
         <Link

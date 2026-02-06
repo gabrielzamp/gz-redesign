@@ -16,7 +16,7 @@ import {
 function CaseStudyHero() {
   const { t } = useLanguage();
   return (
-    <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-brand-blue text-white">
+    <section className="relative page-hero overflow-hidden bg-brand-blue text-white">
       <div className="container px-4 mx-auto text-center relative z-10">
         <Link
           href="/"
@@ -24,13 +24,13 @@ function CaseStudyHero() {
         >
           <ArrowLeft size={16} className="mr-2" /> {t("common.backToHome")}
         </Link>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight">
+        <h1 className="page-title text-white mb-8">
           {t("caseStudies.hero.title1")}{" "}
           <span className="text-blue-200">
             {t("caseStudies.hero.title2")}
           </span>
         </h1>
-        <p className="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto leading-relaxed font-medium">
+        <p className="page-subtitle text-blue-100 max-w-2xl mx-auto font-medium">
           {t("caseStudies.hero.subtitle")}
         </p>
       </div>
@@ -53,7 +53,7 @@ function CaseStudy1() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold mb-6">
               <Bot size={14} /> {t("caseStudies.cs1.badge")}
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
+            <h2 className="section-title mb-4">
               {t("caseStudies.cs1.title")}
             </h2>
             <div className="text-lg text-body font-medium mb-6">
@@ -151,7 +151,7 @@ function CaseStudy2() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100 text-purple-600 text-xs font-bold mb-6">
               <Users size={14} /> {t("caseStudies.cs2.badge")}
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
+            <h2 className="section-title mb-4">
               {t("caseStudies.cs2.title")}
             </h2>
             <div className="text-lg text-body font-medium mb-6">
@@ -249,7 +249,7 @@ function CaseStudy3() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 border border-green-100 text-green-600 text-xs font-bold mb-6">
               <TrendingUp size={14} /> {t("caseStudies.cs3.badge")}
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
+            <h2 className="section-title mb-4">
               {t("caseStudies.cs3.title")}
             </h2>
             <div className="text-lg text-body font-medium mb-6">
@@ -347,7 +347,7 @@ function CaseStudy4() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-xs font-bold mb-6">
               <BarChart3 size={14} /> {t("caseStudies.cs4.badge")}
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
+            <h2 className="section-title mb-4">
               {t("caseStudies.cs4.title")}
             </h2>
             <div className="text-lg text-body font-medium mb-6">
@@ -438,10 +438,10 @@ function CTASection() {
   return (
     <section className="section-padding border-t border-border bg-background text-center">
       <div className="container px-4 mx-auto max-w-2xl">
-        <h2 className="text-3xl font-bold text-heading mb-6">
+        <h2 className="section-title mb-6">
           {t("caseStudies.caseStudiesCta.title")}
         </h2>
-        <p className="text-body mb-8">
+        <p className="section-subtitle mb-8">
           {t("caseStudies.caseStudiesCta.subtitle")}
         </p>
         <Link
