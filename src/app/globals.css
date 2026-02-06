@@ -4,16 +4,16 @@
 
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #0f172a;
-    --border: #e2e8f0;
+    --background: #f8faff;
+    --foreground: #0b1220;
+    --border: #e3e8f5;
     --primary: #0f172a;
     --primary-foreground: #ffffff;
-    --secondary: #f1f5f9;
+    --secondary: #eef2ff;
     --secondary-foreground: #0f172a;
-    --muted: #f8fafc;
+    --muted: #f4f6fb;
     --muted-foreground: #64748b;
-    --accent: #f1f5f9;
+    --accent: #eef2ff;
     --accent-foreground: #0f172a;
   }
 }
@@ -24,6 +24,11 @@
   }
   body {
     @apply bg-background text-body text-base leading-relaxed font-sans antialiased;
+    background-image:
+      radial-gradient(1200px 600px at 10% -10%, rgba(0, 55, 255, 0.08), transparent 60%),
+      radial-gradient(900px 500px at 90% 0%, rgba(244, 128, 32, 0.08), transparent 60%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   /* Typography Hierarchy Standards */

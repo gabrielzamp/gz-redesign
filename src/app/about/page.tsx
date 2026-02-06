@@ -86,7 +86,9 @@ function StatsSection() {
   ];
 
   return (
-    <section className="section-padding border-y border-border bg-muted/50">
+    <section className="section-padding relative overflow-hidden border-y border-white/60 bg-gradient-to-b from-white via-slate-50 to-indigo-50/40">
+      <div className="absolute -top-24 right-10 h-64 w-64 rounded-full bg-brand-blue/10 blur-3xl" />
+      <div className="absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-brand-orange/10 blur-3xl" />
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, idx) => (
@@ -142,7 +144,8 @@ function KeyHighlights() {
   };
 
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-blue-50/40">
+      <div className="absolute -top-20 right-0 h-64 w-64 rounded-full bg-brand-blue/10 blur-3xl" />
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title mb-4">{t("about.highlights.title")}</h2>
@@ -153,7 +156,7 @@ function KeyHighlights() {
           {highlights.map((item, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-xl bg-white border border-slate-100 hover:border-blue-500/50 transition-all hover:shadow-lg group"
+              className="p-6 rounded-xl bg-white/90 border border-white/70 hover:border-blue-500/40 transition-all hover:shadow-lg group backdrop-blur"
             >
               <div className={`w-12 h-12 rounded-lg ${colorMap[item.color as keyof typeof colorMap]} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                 <item.icon className="w-6 h-6" />
@@ -177,7 +180,8 @@ function ExpertiseSection() {
   const expertise = dict.about.expertise.items;
 
   return (
-    <section className="section-padding bg-secondary/30">
+    <section className="section-padding relative overflow-hidden bg-gradient-to-b from-indigo-50/40 via-white to-slate-50/60">
+      <div className="absolute -top-24 left-0 h-64 w-64 rounded-full bg-brand-blue/10 blur-3xl" />
       <div className="container px-4 mx-auto max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="section-title mb-4">{t("about.expertise.title")}</h2>
@@ -188,7 +192,7 @@ function ExpertiseSection() {
           {expertise.map((skill, idx) => (
             <span
               key={idx}
-              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-sm font-medium text-slate-700 hover:border-blue-500 hover:text-blue-600 transition-colors"
+              className="px-4 py-2 rounded-full bg-white/80 border border-white/70 text-sm font-medium text-slate-700 hover:border-blue-500 hover:text-blue-600 transition-colors backdrop-blur"
             >
               {skill}
             </span>
@@ -204,7 +208,8 @@ function ExperienceTimeline() {
   const experiences = dict.about.experience.items;
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white">
+      <div className="absolute -top-20 right-0 h-64 w-64 rounded-full bg-brand-blue/10 blur-3xl" />
       <div className="container px-4 mx-auto max-w-4xl">
         <h2 className="section-title mb-12 flex items-center gap-3">
           <Briefcase className="text-blue-600" /> {t("about.experience.title")}
@@ -250,14 +255,15 @@ function ExperienceTimeline() {
 function Education() {
   const { t } = useLanguage();
   return (
-    <section className="section-padding border-t border-slate-100 bg-slate-50/50">
+    <section className="section-padding relative overflow-hidden border-t border-white/60 bg-gradient-to-b from-slate-50 via-white to-blue-50/30">
+      <div className="absolute -top-20 left-0 h-64 w-64 rounded-full bg-brand-orange/10 blur-3xl" />
       <div className="container px-4 mx-auto max-w-3xl">
         <h2 className="section-title mb-12 flex items-center gap-3">
           <GraduationCap className="text-blue-600" /> {t("about.education.title")}
         </h2>
 
         <div className="grid gap-6">
-          <div className="p-6 rounded-xl bg-white border border-slate-100 flex flex-col md:flex-row gap-4 items-start">
+          <div className="p-6 rounded-xl bg-white/90 border border-white/70 flex flex-col md:flex-row gap-4 items-start shadow-sm backdrop-blur">
             <div className="w-12 h-12 rounded bg-slate-50 flex items-center justify-center shrink-0 font-bold text-slate-400">
               MBA
             </div>
@@ -274,7 +280,7 @@ function Education() {
             </div>
           </div>
 
-          <div className="p-6 rounded-xl bg-white border border-slate-100 flex flex-col md:flex-row gap-4 items-start">
+          <div className="p-6 rounded-xl bg-white/90 border border-white/70 flex flex-col md:flex-row gap-4 items-start shadow-sm backdrop-blur">
             <div className="w-12 h-12 rounded bg-slate-50 flex items-center justify-center shrink-0 font-bold text-slate-400">
               BS
             </div>
@@ -299,7 +305,9 @@ function Education() {
 function FinalCTA() {
   const { t } = useLanguage();
   return (
-    <section className="section-padding bg-gradient-to-b from-slate-50 to-white text-center border-t border-slate-100">
+    <section className="section-padding relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-orange-50 text-center border-t border-white/60">
+      <div className="absolute -top-24 right-0 h-72 w-72 rounded-full bg-brand-blue/10 blur-3xl" />
+      <div className="absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-brand-orange/10 blur-3xl" />
       <div className="container px-4 mx-auto max-w-2xl">
         <h2 className="section-title text-slate-900 mb-6">
           {t("about.cta.title")}
@@ -332,7 +340,7 @@ function FinalCTA() {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white text-slate-900 selection:bg-blue-500/30">
+    <main className="min-h-screen bg-background text-slate-900 selection:bg-blue-500/30">
       <AboutHero />
       <StatsSection />
       <KeyHighlights />

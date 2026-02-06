@@ -164,7 +164,9 @@ function ResultsLayer() {
   const proofPoints = dict.resultsLayer.proofPoints;
 
   return (
-    <section id="case-studies" className="section-padding bg-slate-50">
+    <section id="case-studies" className="section-padding relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-blue-50/40">
+      <div className="absolute -top-20 right-0 h-64 w-64 rounded-full bg-brand-orange/10 blur-3xl" />
+      <div className="absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-brand-blue/10 blur-3xl" />
       <div className="container px-4 mx-auto">
         <div className="grid lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-5">
@@ -197,9 +199,9 @@ function ResultsLayer() {
             {stats.map((stat, idx) => (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
+                className="p-6 rounded-2xl bg-white/90 border border-white/70 shadow-sm hover:shadow-md transition-shadow backdrop-blur"
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-xl bg-blue-50/80 flex items-center justify-center mb-4">
                   <stat.icon className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-4xl font-bold text-heading mb-2">
@@ -225,7 +227,9 @@ function HowItWorksSection() {
   ];
 
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-indigo-50/30">
+      <div className="absolute -top-32 left-10 h-72 w-72 rounded-full bg-blue-200/20 blur-3xl" />
+      <div className="absolute -bottom-24 right-0 h-72 w-72 rounded-full bg-brand-orange/10 blur-3xl" />
       <div className="container px-4 mx-auto">
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-5">
@@ -235,7 +239,7 @@ function HowItWorksSection() {
             <p className="text-body">
               {dict.howItWorks.subtitle}
             </p>
-            <div className="mt-8 p-5 rounded-xl bg-slate-50 border border-slate-200">
+            <div className="mt-8 p-5 rounded-xl bg-white/80 border border-white/60 shadow-sm backdrop-blur">
               <p className="text-sm text-slate-600">
                 {dict.howItWorks.note}
               </p>
@@ -255,9 +259,9 @@ function HowItWorksSection() {
                   <span className="absolute -left-[14px] top-1 w-8 h-8 rounded-full bg-brand-blue text-white flex items-center justify-center text-xs font-bold">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <div className="rounded-xl bg-white border border-slate-200 p-5 shadow-sm">
+                  <div className="rounded-xl bg-white/90 border border-white/60 p-5 shadow-sm backdrop-blur">
                     <div className="flex items-center gap-3 mb-2">
-                      <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-lg bg-blue-50/80 flex items-center justify-center">
                         <step.icon className="w-5 h-5 text-blue-600" />
                       </div>
                       <h3 className="text-lg font-bold text-heading">{step.title}</h3>
@@ -301,7 +305,9 @@ function CapabilitiesSection() {
   const PrimaryIcon = primaryBenefit.icon;
 
   return (
-    <section className="section-padding bg-secondary/40 border-y border-border">
+    <section className="section-padding relative overflow-hidden bg-gradient-to-b from-indigo-50/60 via-white to-slate-50/70 border-y border-white/60">
+      <div className="absolute -top-24 right-16 h-72 w-72 rounded-full bg-brand-blue/10 blur-3xl" />
+      <div className="absolute -bottom-24 left-10 h-72 w-72 rounded-full bg-brand-orange/10 blur-3xl" />
       <div className="container px-4 mx-auto">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-10 gap-6">
           <div>
@@ -318,9 +324,9 @@ function CapabilitiesSection() {
 
         <div className="grid lg:grid-cols-12 gap-6">
           <div className="lg:col-span-7 grid gap-6">
-            <div className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-blue-50/80 flex items-center justify-center">
                   <PrimaryIcon className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-bold text-heading">{primaryBenefit.title}</h3>
@@ -330,9 +336,9 @@ function CapabilitiesSection() {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {secondaryBenefits.map((item) => (
-                <div key={item.title} className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+                <div key={item.title} className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-lg bg-slate-50/80 flex items-center justify-center">
                       <item.icon className="w-5 h-5 text-blue-600" />
                     </div>
                     <h3 className="text-lg font-bold text-heading">{item.title}</h3>
@@ -366,7 +372,7 @@ function CapabilitiesSection() {
               </div>
             </div>
 
-            <div className="mt-6 rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="mt-6 rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
               <h4 className="text-lg font-bold text-heading mb-2">{dict.home.playbooksTitle}</h4>
               <p className="text-sm text-body">{dict.home.playbooksDesc}</p>
             </div>
@@ -383,7 +389,9 @@ function FaqSection() {
   const faqs = dict.faq.items;
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-blue-50/30">
+      <div className="absolute -top-32 right-0 h-72 w-72 rounded-full bg-brand-blue/10 blur-3xl" />
+      <div className="absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-brand-orange/10 blur-3xl" />
       <div className="container px-4 mx-auto max-w-3xl">
         <h2 className="section-title text-center mb-12">
           {dict.faq.title}
@@ -392,7 +400,7 @@ function FaqSection() {
           {faqs.map((item, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-lg bg-slate-50 border border-slate-100"
+              className="p-6 rounded-lg bg-white/90 border border-white/70 shadow-sm backdrop-blur"
             >
               <h3 className="text-lg font-semibold text-heading mb-2">
                 {item.q}
@@ -410,7 +418,9 @@ function ContactCTA() {
   const { dict } = useLanguage();
 
   return (
-    <section className="py-32 bg-gradient-to-b from-slate-50 to-white text-center border-t border-slate-100">
+    <section className="py-32 relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-orange-50 text-center border-t border-white/60">
+      <div className="absolute -top-20 left-10 h-64 w-64 rounded-full bg-brand-blue/10 blur-3xl" />
+      <div className="absolute -bottom-24 right-0 h-72 w-72 rounded-full bg-brand-orange/10 blur-3xl" />
       <div className="container px-4 mx-auto max-w-2xl">
         <h2 className="section-title text-slate-900 mb-6">
           {dict.finalCta.title}

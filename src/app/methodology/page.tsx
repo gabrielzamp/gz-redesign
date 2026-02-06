@@ -65,7 +65,9 @@ export default function MethodologyPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-background">
+      <section className="section-padding relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-blue-50/30">
+        <div className="absolute -top-24 right-0 h-64 w-64 rounded-full bg-brand-blue/10 blur-3xl" />
+        <div className="absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-brand-orange/10 blur-3xl" />
         <div className="container px-4 mx-auto grid lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-7">
             <h2 className="section-title mb-6">{m.intro.title}</h2>
@@ -78,7 +80,7 @@ export default function MethodologyPage() {
           </div>
 
           <div className="lg:col-span-5 space-y-4">
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <div className="rounded-2xl border border-white/70 bg-white/90 p-6 shadow-sm backdrop-blur">
               <p className="text-xs uppercase tracking-[0.2em] text-slate-500 mb-4">
                 {m.intro.quickLook}
               </p>
@@ -86,7 +88,7 @@ export default function MethodologyPage() {
                 {m.overview.map((item) => (
                   <div
                     key={item}
-                    className="flex items-center justify-between rounded-xl bg-white border border-slate-200 px-4 py-3 text-sm font-semibold"
+                    className="flex items-center justify-between rounded-xl bg-white/90 border border-white/70 px-4 py-3 text-sm font-semibold shadow-sm backdrop-blur"
                   >
                     <span>{item}</span>
                     <ArrowRight className="w-4 h-4 text-blue-600" />
@@ -103,7 +105,8 @@ export default function MethodologyPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-muted/50 border-t border-border">
+      <section className="section-padding relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-100/60 border-t border-white/60">
+        <div className="absolute -top-24 left-0 h-64 w-64 rounded-full bg-brand-blue/10 blur-3xl" />
         <div className="container px-4 mx-auto grid lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-5">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold mb-6">
@@ -111,14 +114,14 @@ export default function MethodologyPage() {
             </div>
             <h2 className="section-title mb-4">{m.step1.title}</h2>
             <p className="text-body mb-6">{m.step1.lead}</p>
-            <div className="rounded-2xl border border-brand-orange/40 bg-white p-6 shadow-sm">
+            <div className="rounded-2xl border border-brand-orange/40 bg-white/90 p-6 shadow-sm backdrop-blur">
               <h3 className="text-lg font-bold text-heading mb-2">{m.step1.foundationTitle}</h3>
               <p className="text-sm text-body">{m.step1.foundationBody}</p>
             </div>
           </div>
 
           <div className="lg:col-span-7 space-y-6">
-            <div className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
               <h3 className="text-lg font-bold text-heading mb-4">{m.step1.pmfChecklistTitle}</h3>
               <ul className="space-y-3 text-sm text-body">
                 {m.step1.pmfChecklist.map((item) => (
@@ -134,7 +137,7 @@ export default function MethodologyPage() {
               <h3 className="text-lg font-bold text-heading mb-3">{m.step1.signalsTitle}</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {m.step1.signals.map((signal) => (
-                  <div key={signal.title} className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+                  <div key={signal.title} className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
                     <h4 className="font-bold text-heading mb-3">{signal.title}</h4>
                     <ul className="space-y-2 text-sm text-body">
                       {signal.points.map((point) => (
@@ -149,12 +152,12 @@ export default function MethodologyPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
               <h3 className="text-lg font-bold text-heading mb-2">{m.step1.overlapTitle}</h3>
               <p className="text-sm text-body">{m.step1.overlapBody}</p>
             </div>
 
-            <div className="rounded-2xl bg-blue-50 border border-blue-100 p-6">
+            <div className="rounded-2xl bg-blue-50/80 border border-blue-100 p-6">
               <h3 className="text-lg font-bold text-heading mb-2">{m.step1.timingTitle}</h3>
               <p className="text-sm text-body">{m.step1.timingBody}</p>
             </div>
@@ -162,7 +165,8 @@ export default function MethodologyPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-background border-t border-border">
+      <section className="section-padding relative overflow-hidden bg-gradient-to-b from-white via-indigo-50/40 to-white border-t border-white/60">
+        <div className="absolute -top-24 right-0 h-64 w-64 rounded-full bg-purple-200/20 blur-3xl" />
         <div className="container px-4 mx-auto">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 mb-10">
             <div>
@@ -172,14 +176,14 @@ export default function MethodologyPage() {
               <h2 className="section-title mb-3">{m.step2.title}</h2>
               <p className="text-body max-w-2xl">{m.step2.lead}</p>
             </div>
-            <div className="rounded-2xl bg-slate-50 border border-slate-200 p-5 max-w-md">
+            <div className="rounded-2xl bg-white/90 border border-white/70 p-5 max-w-md shadow-sm backdrop-blur">
               <p className="text-sm text-body">{m.step2.teamNote}</p>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {m.step2.cards.map((item) => (
-              <div key={item.title} className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+              <div key={item.title} className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
                 <h3 className="text-lg font-bold text-heading mb-2">{item.title}</h3>
                 <p className="text-sm text-body">{item.desc}</p>
               </div>
@@ -187,7 +191,7 @@ export default function MethodologyPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 mt-8">
-            <div className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
               <h3 className="text-lg font-bold text-heading mb-3">{m.step2.personaTitle}</h3>
               <ul className="space-y-2 text-sm text-body">
                 {m.step2.personaPoints.map((point) => (
@@ -198,7 +202,7 @@ export default function MethodologyPage() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl bg-slate-50 border border-slate-200 p-6">
+            <div className="rounded-2xl bg-white/80 border border-white/70 p-6 shadow-sm backdrop-blur">
               <h3 className="text-lg font-bold text-heading mb-2">{m.step2.omtmTitle}</h3>
               <p className="text-sm text-body">{m.step2.omtmBody}</p>
             </div>
@@ -206,7 +210,8 @@ export default function MethodologyPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-muted/50 border-t border-border">
+      <section className="section-padding relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-emerald-50/30 border-t border-white/60">
+        <div className="absolute -top-24 left-0 h-64 w-64 rounded-full bg-emerald-200/20 blur-3xl" />
         <div className="container px-4 mx-auto">
           <div className="grid lg:grid-cols-12 gap-10 items-start">
             <div className="lg:col-span-5">
@@ -220,7 +225,7 @@ export default function MethodologyPage() {
 
             <div className="lg:col-span-7 grid md:grid-cols-2 gap-4">
               {m.step3.grows.map((step) => (
-                <div key={step.letter} className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+                <div key={step.letter} className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="w-10 h-10 rounded-full bg-brand-blue text-white flex items-center justify-center font-bold">
                       {step.letter}
@@ -242,7 +247,7 @@ export default function MethodologyPage() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-4 mt-10">
-            <div className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
               <h3 className="text-lg font-bold text-heading mb-3">{m.step3.analysisTitle}</h3>
               <ul className="space-y-2 text-sm text-body">
                 {m.step3.analysisPoints.map((phase) => (
@@ -253,7 +258,7 @@ export default function MethodologyPage() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
               <h3 className="text-lg font-bold text-heading mb-3">{m.step3.abPrereqsTitle}</h3>
               <ul className="space-y-2 text-sm text-body">
                 {m.step3.abPrereqs.map((point) => (
@@ -264,11 +269,11 @@ export default function MethodologyPage() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
               <h3 className="text-lg font-bold text-heading mb-3">{m.step3.abNotesTitle}</h3>
               <div className="grid gap-3">
                 {m.step3.abNotes.map((note) => (
-                  <div key={note.title} className="rounded-xl bg-slate-50 border border-slate-200 p-4">
+                  <div key={note.title} className="rounded-xl bg-white/80 border border-white/70 p-4 shadow-sm backdrop-blur">
                     <h4 className="text-sm font-bold text-heading mb-2">{note.title}</h4>
                     <ul className="space-y-2 text-sm text-body">
                       {note.bullets.map((bullet) => (
@@ -286,7 +291,8 @@ export default function MethodologyPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-background border-t border-border">
+      <section className="section-padding relative overflow-hidden bg-gradient-to-b from-white via-amber-50/30 to-white border-t border-white/60">
+        <div className="absolute -top-24 right-0 h-64 w-64 rounded-full bg-orange-200/30 blur-3xl" />
         <div className="container px-4 mx-auto grid lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-5">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-xs font-bold mb-6">
@@ -296,7 +302,7 @@ export default function MethodologyPage() {
             <p className="text-body">{m.step4.lead}</p>
           </div>
           <div className="lg:col-span-7 space-y-4">
-            <div className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="rounded-2xl bg-white/90 border border-white/70 p-6 shadow-sm backdrop-blur">
               <ul className="space-y-3 text-sm text-body">
                 {m.step4.bullets.map((bullet) => (
                   <li key={bullet} className="flex items-start gap-2">
@@ -306,7 +312,7 @@ export default function MethodologyPage() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl bg-slate-50 border border-slate-200 p-6">
+            <div className="rounded-2xl bg-white/80 border border-white/70 p-6 shadow-sm backdrop-blur">
               <p className="text-sm text-body">{m.step4.note}</p>
             </div>
           </div>
