@@ -118,6 +118,8 @@ export default function PricingPage() {
                 name: string;
                 tag: string;
                 price: string;
+                originalPrice?: string;
+                discount?: string;
                 description: string;
                 features: string[];
                 cta: string;
