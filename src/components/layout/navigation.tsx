@@ -27,6 +27,7 @@ export default function Navigation() {
     { name: t("common.nav.about"), href: "/about" },
     { name: t("common.nav.caseStudies"), href: "/case-studies" },
     { name: t("common.nav.methodology"), href: "/methodology" },
+    { name: t("common.nav.pricing"), href: "/pricing" },
   ];
 
   return (

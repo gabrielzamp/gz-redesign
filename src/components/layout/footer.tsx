@@ -77,6 +77,7 @@ export default function Footer() {
                 <FooterLink href="/" label={t("common.nav.home")} />
                 <FooterLink href="/about" label={t("common.nav.about")} />
                 <FooterLink href="/case-studies" label={t("common.nav.caseStudies")} />
+                <FooterLink href="/pricing" label={t("common.nav.pricing")} />
                 <FooterLink href="/methodology" label={t("common.nav.methodology")} />
               </ul>
             </div>

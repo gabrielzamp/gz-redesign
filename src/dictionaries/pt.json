@@ -16,7 +16,8 @@
       "caseStudies": "Casos de Estudo",
       "methodology": "Metodologia",
       "tools": "Ferramentas",
-      "blog": "Blog"
+      "blog": "Blog",
+      "pricing": "Precos"
     },
     "footer": {
       "desc": "Ajudo empresas a escalar receita com experimentação orientada por dados e otimização full-funnel.",
@@ -720,5 +721,216 @@
     "title": "Pronto para escalar além do seu patamar atual?",
     "subtitle": "Aceito apenas 2 novos projetos de growth por trimestre para garantir foco máximo.",
     "button": "Agendar uma Chamada de Growth"
+  },
+  "pricing": {
+    "hero": {
+      "badge": "Precos",
+      "title": "Precos feitos para crescimento que escala",
+      "subtitle": "Escolha o plano certo para o seu estagio. Todos incluem o metodo G.R.O.W.S, QA de tracking e um caminho claro para ROI.",
+      "bullets": [
+        "Sem contratos longos",
+        "Experimentos semanais e reporting",
+        "QA de tracking e clareza de conversao"
+      ],
+      "primaryCta": "Agendar uma Chamada de Growth",
+      "secondaryCta": "Ver planos",
+      "note": "Kickoff medio em 7 a 10 dias.",
+      "visualAlt": "Ilustracao de precos"
+    },
+    "trust": {
+      "items": [
+        {
+          "value": "12+ anos",
+          "label": "lideranca em growth"
+        },
+        {
+          "value": "$1M+",
+          "label": "verba gerida"
+        },
+        {
+          "value": "40+",
+          "label": "times escalados"
+        },
+        {
+          "value": "Semanal",
+          "label": "cadencia de testes"
+        }
+      ]
+    },
+    "plans": {
+      "title": "Escolha seu plano de growth",
+      "subtitle": "Escopo transparente com resultados claros. Ajuste quando quiser.",
+      "popularLabel": "Mais escolhido",
+      "tiers": [
+        {
+          "name": "Starter",
+          "tag": "Para pilotos",
+          "price": "$1k/mes",
+          "description": "Ideal para times em estagio inicial validando um canal.",
+          "features": [
+            "Auditoria de canal e quick wins",
+            "2 experimentos por semana",
+            "Relatorio semanal com proximos passos",
+            "Revisao de conversao da landing page",
+            "Suporte por email"
+          ],
+          "cta": "Comecar com auditoria",
+          "originalPrice": "$2k/mes",
+          "discount": "Economize 50%"
+        },
+        {
+          "name": "Growth",
+          "tag": "Para escalar",
+          "price": "$2k/mes",
+          "description": "Feito para times escalando paid com disciplina.",
+          "features": [
+            "Estrategia full-funnel e backlog",
+            "4 experimentos por semana",
+            "Sistema de testes criativos",
+            "Sprints de CRO + QA de analytics",
+            "Atualizacoes via Slack ou async"
+          ],
+          "cta": "Agendar uma chamada",
+          "highlight": true,
+          "originalPrice": "$6k/mes",
+          "discount": "Economize 67%"
+        },
+        {
+          "name": "Scale",
+          "tag": "Enterprise",
+          "price": "Sob medida",
+          "description": "Orquestracao multi-canal para budgets maiores.",
+          "features": [
+            "Orquestracao multi-canal",
+            "Analista dedicado + growth lead",
+            "Atribuicao avancada + conversoes offline",
+            "Producao criativa always-on",
+            "Revisao executiva mensal"
+          ],
+          "cta": "Falar com a equipe"
+        }
+      ],
+      "note": "Todos os planos incluem onboarding, QA de mensuracao e um roadmap de 90 dias.",
+      "offer": {
+        "title": "Preco especial de lancamento",
+        "detail": "Desconto para os 2 primeiros slots de growth neste trimestre."
+      }
+    },
+    "value": {
+      "title": "Feito para ROI, nao apenas atividade",
+      "subtitle": "Tudo amarrado a LTV:CAC, payback e sua North Star.",
+      "visualAlt": "Ilustracao de metricas",
+      "cards": [
+        {
+          "title": "Plano profit-first",
+          "description": "Protegemos sua margem com regras de pacing, analise por coorte e metas de payback."
+        },
+        {
+          "title": "Sistema de experimentos",
+          "description": "Sprints semanais com hipoteses claras, aprendizados e playbooks documentados."
+        },
+        {
+          "title": "Atribuicao confiavel",
+          "description": "GA4 + server-side, UTMs limpos e feedback de conversoes offline."
+        }
+      ]
+    },
+    "process": {
+      "title": "Como funciona",
+      "subtitle": "Um sistema simples e repetivel que escala com seu estagio.",
+      "steps": [
+        {
+          "title": "Auditoria e metas",
+          "description": "Alinhamos North Star, baseline e guardrails."
+        },
+        {
+          "title": "Backlog de testes",
+          "description": "Construimos e priorizamos experimentos em criativo, oferta e targeting."
+        },
+        {
+          "title": "Sprints semanais",
+          "description": "Executamos rapido, monitoramos e reportamos aprendizados."
+        },
+        {
+          "title": "Escalar vencedores",
+          "description": "Dobramos o que funciona com regras claras de budget."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Compare os planos",
+      "subtitle": "Escolha o nivel de suporte ideal para suas metas.",
+      "headers": {
+        "feature": "Recurso",
+        "starter": "Starter",
+        "growth": "Growth",
+        "scale": "Scale"
+      },
+      "rows": [
+        {
+          "label": "Experimentos semanais",
+          "starter": "2",
+          "growth": "4",
+          "scale": "Sob medida"
+        },
+        {
+          "label": "Canais cobertos",
+          "starter": "1",
+          "growth": "2",
+          "scale": "Multi"
+        },
+        {
+          "label": "Testes criativos",
+          "starter": "Basico",
+          "growth": "Avancado",
+          "scale": "Always-on"
+        },
+        {
+          "label": "Sprints de CRO",
+          "starter": "Mensal",
+          "growth": "Quinzenal",
+          "scale": "Semanal"
+        },
+        {
+          "label": "Cadencia de reporting",
+          "starter": "Semanal",
+          "growth": "Semanal",
+          "scale": "Semanal + Exec"
+        },
+        {
+          "label": "Suporte",
+          "starter": "Email",
+          "growth": "Slack/Async",
+          "scale": "Dedicado"
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ de precos",
+      "items": [
+        {
+          "q": "Tem contrato longo?",
+          "a": "Nao. Os planos sao mensais com um minimo de 90 dias para resultados consistentes."
+        },
+        {
+          "q": "O que inclui o onboarding?",
+          "a": "QA de tracking, auditorias, guardrails de KPI e um roadmap de experimentos."
+        },
+        {
+          "q": "Posso pausar ou fazer upgrade?",
+          "a": "Sim. Voce pode ajustar o plano conforme seu estagio de crescimento."
+        },
+        {
+          "q": "Voce produz criativos?",
+          "a": "Guiamos estrategia e testes. A producao pode ser do seu time ou parceiros."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Pronto para escalar com confianca?",
+      "subtitle": "Agende uma chamada e receba um plano de 90 dias baseado nas suas metas.",
+      "primary": "Agendar uma Chamada de Growth",
+      "secondary": "Ver planos"
+    }
   }
 }

@@ -16,7 +16,8 @@
       "caseStudies": "Case Studies",
       "methodology": "Methodology",
       "tools": "Tools",
-      "blog": "Blog"
+      "blog": "Blog",
+      "pricing": "Pricing"
     },
     "footer": {
       "desc": "Helping companies scale revenue through data-driven experimentation programs and full-funnel optimization.",
@@ -720,5 +721,216 @@
     "title": "Ready to scale past your current plateau?",
     "subtitle": "I only take on 2 new growth projects per quarter to ensure maximum focus.",
     "button": "Book a Growth Call"
+  },
+  "pricing": {
+    "hero": {
+      "badge": "Pricing",
+      "title": "Pricing built for growth that scales",
+      "subtitle": "Pick the plan that matches your stage. Every plan includes the G.R.O.W.S experimentation system, tracking QA, and a clear path to ROI.",
+      "bullets": [
+        "No long-term contracts",
+        "Weekly experiments and reporting",
+        "Tracking QA and conversion clarity"
+      ],
+      "primaryCta": "Book a Growth Call",
+      "secondaryCta": "See plans",
+      "note": "Average kickoff in 7 to 10 days.",
+      "visualAlt": "Pricing illustration"
+    },
+    "trust": {
+      "items": [
+        {
+          "value": "12+ years",
+          "label": "growth leadership"
+        },
+        {
+          "value": "$1M+",
+          "label": "managed ad spend"
+        },
+        {
+          "value": "40+",
+          "label": "teams scaled"
+        },
+        {
+          "value": "Weekly",
+          "label": "experiment cadence"
+        }
+      ]
+    },
+    "plans": {
+      "title": "Choose your growth plan",
+      "subtitle": "Transparent scope with clear outcomes. Upgrade or pause any time.",
+      "popularLabel": "Most popular",
+      "tiers": [
+        {
+          "name": "Starter",
+          "tag": "Best for pilots",
+          "price": "$1k/mo",
+          "description": "Ideal for early-stage teams validating one channel.",
+          "features": [
+            "Channel audit and quick wins",
+            "2 experiments per week",
+            "Weekly report with next steps",
+            "Landing page conversion review",
+            "Email support"
+          ],
+          "cta": "Start with an audit",
+          "originalPrice": "$2k/mo",
+          "discount": "Save 50%"
+        },
+        {
+          "name": "Growth",
+          "tag": "For scale",
+          "price": "$2k/mo",
+          "description": "Built for teams scaling paid acquisition with discipline.",
+          "features": [
+            "Full-funnel strategy and backlog",
+            "4 experiments per week",
+            "Creative testing system",
+            "CRO sprints + analytics QA",
+            "Slack or async updates"
+          ],
+          "cta": "Book a Growth Call",
+          "highlight": true,
+          "originalPrice": "$6k/mo",
+          "discount": "Save 67%"
+        },
+        {
+          "name": "Scale",
+          "tag": "Enterprise",
+          "price": "Custom",
+          "description": "Multi-channel orchestration for larger budgets.",
+          "features": [
+            "Multi-channel orchestration",
+            "Dedicated analyst + growth lead",
+            "Advanced attribution + offline conversions",
+            "Always-on creative production",
+            "Monthly executive review"
+          ],
+          "cta": "Talk to us"
+        }
+      ],
+      "note": "All plans include onboarding, measurement QA, and a clear 90-day roadmap.",
+      "offer": {
+        "title": "Limited founder pricing",
+        "detail": "Launch discount for the first 2 growth slots this quarter."
+      }
+    },
+    "value": {
+      "title": "Designed for ROI, not just activity",
+      "subtitle": "Everything is tied to LTV:CAC, payback, and your North Star metric.",
+      "visualAlt": "Growth metrics illustration",
+      "cards": [
+        {
+          "title": "Profit-first growth plan",
+          "description": "We protect your margin with pacing rules, cohort analysis, and payback targets."
+        },
+        {
+          "title": "Experimentation system",
+          "description": "Weekly sprints with clear hypotheses, learning loops, and documented wins."
+        },
+        {
+          "title": "Attribution you can trust",
+          "description": "GA4 + server-side tagging, clean UTMs, and offline conversion feedback."
+        }
+      ]
+    },
+    "process": {
+      "title": "How it works",
+      "subtitle": "A simple, repeatable system that scales with your growth stage.",
+      "steps": [
+        {
+          "title": "Audit and goals",
+          "description": "Align on North Star metrics, baseline data, and guardrails."
+        },
+        {
+          "title": "Experiment backlog",
+          "description": "Build and prioritize tests across creative, offers, and targeting."
+        },
+        {
+          "title": "Weekly sprints",
+          "description": "Ship experiments fast, monitor results, and share learnings."
+        },
+        {
+          "title": "Scale winners",
+          "description": "Double down on what works with clear budget rules."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Compare plans",
+      "subtitle": "Pick the level of support that matches your goals.",
+      "headers": {
+        "feature": "Feature",
+        "starter": "Starter",
+        "growth": "Growth",
+        "scale": "Scale"
+      },
+      "rows": [
+        {
+          "label": "Weekly experiments",
+          "starter": "2",
+          "growth": "4",
+          "scale": "Custom"
+        },
+        {
+          "label": "Channels covered",
+          "starter": "1",
+          "growth": "2",
+          "scale": "Multi"
+        },
+        {
+          "label": "Creative testing",
+          "starter": "Basic",
+          "growth": "Advanced",
+          "scale": "Always-on"
+        },
+        {
+          "label": "CRO sprints",
+          "starter": "Monthly",
+          "growth": "Bi-weekly",
+          "scale": "Weekly"
+        },
+        {
+          "label": "Reporting cadence",
+          "starter": "Weekly",
+          "growth": "Weekly",
+          "scale": "Weekly + Exec"
+        },
+        {
+          "label": "Support",
+          "starter": "Email",
+          "growth": "Slack/Async",
+          "scale": "Dedicated"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Pricing FAQ",
+      "items": [
+        {
+          "q": "Do you require long-term contracts?",
+          "a": "No. Plans are month-to-month with a minimum 90-day growth runway for meaningful results."
+        },
+        {
+          "q": "What is included in onboarding?",
+          "a": "Tracking QA, account audits, KPI guardrails, and a prioritized experiment roadmap."
+        },
+        {
+          "q": "Can I pause or upgrade?",
+          "a": "Yes. You can upgrade, downgrade, or pause based on your current growth stage."
+        },
+        {
+          "q": "Do you manage creative?",
+          "a": "We guide creative strategy and testing. Production can be handled by your team or our partners."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Ready to scale with confidence?",
+      "subtitle": "Book a growth call and get a 90-day plan built around your targets.",
+      "primary": "Book a Growth Call",
+      "secondary": "See plans"
+    }
   }
 }
